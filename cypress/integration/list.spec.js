@@ -1,21 +1,10 @@
 import { getRandomNumber, getRandomString } from '../test-utils';
 
-describe('On List Page', function () {
+describe('On List Page', function() {
   const URL = 'list';
 
   const setStub = (firstName, secondName) => {
     cy.server();
-    cy.route({
-      method: 'GET',
-      url: 'tags',
-      response: [
-        {
-          id: 1,
-          code: 'terror',
-          name: getRandomString(getRandomNumber(1, 10)),
-        },
-      ],
-    });
 
     cy.route({
       method: 'GET',
@@ -23,33 +12,29 @@ describe('On List Page', function () {
       response: [
         {
           id: '1',
-          name: firstName,
+          name: 'name',
           description: getRandomString(getRandomNumber(1, 100)),
-          likeCount: getRandomNumber(1, 1000),
-          commentsCount: getRandomNumber(1, 1000),
-          price: getRandomNumber(1, 1000000),
-          isGroupPrice: false,
-          isEditorsChoice: false,
-          image: 'fake_imgs/room.jpg',
-          tags: [1, 2],
+          preparationTime: firstName,
+          eventDate: '26/04/2020',
+          difficulty: getRandomNumber(1, 5),
+          nIngredients: getRandomNumber(1, 5),
+          image: 'imgs/recipes/gyozas.jpeg',
         },
         {
           id: '2',
-          name: secondName,
+          name: 'name',
           description: getRandomString(getRandomNumber(1, 100)),
-          like_count: getRandomNumber(1, 1000),
-          comment_count: getRandomNumber(1, 1000),
-          price: getRandomNumber(1, 1000000),
-          isGroupPrice: true,
-          isEditorsChoice: true,
-          image: 'fake_imgs/room.jpg',
-          category_id: [3],
+          preparationTime: secondName,
+          eventDate: '26/04/2020',
+          difficulty: getRandomNumber(1, 5),
+          nIngredients: getRandomNumber(1, 5),
+          image: 'imgs/recipes/gyozas.jpeg',
         },
       ],
     });
   };
 
-  it('User sees that list items are rendered', function () {
+  it('User sees that list items are rendered', function() {
     const firstName = getRandomString(getRandomNumber(1, 20));
     const secondName = getRandomString(getRandomNumber(1, 20));
 
@@ -60,15 +45,17 @@ describe('On List Page', function () {
     cy.contains(secondName);
   });
 
-  it('User writes on search text input', function () {
+  it('User writes on search text input', function() {
     const inputText = getRandomString(getRandomNumber(1, 10));
 
     cy.visit(URL);
 
-    cy.get('#search').type(inputText).should('have.value', inputText);
+    cy.get('#search')
+      .type(inputText)
+      .should('have.value', inputText);
   });
 
-  it('User clicks the "room 1" item link', function () {
+  it('User clicks the "recipe 1" item link', function() {
     const firstName = getRandomString(getRandomNumber(1, 20));
 
     setStub(firstName, firstName);

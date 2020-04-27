@@ -1,16 +1,10 @@
 import { getRandomNumber, getRandomString } from '../test-utils';
 
-describe('On List Page, in About Drawer Panel', function () {
+describe('On List Page, in About Drawer Panel', function() {
   const URL = 'list';
 
   const setStub = () => {
     cy.server();
-    cy.route({
-      method: 'GET',
-      url: 'tags',
-      response: [],
-    });
-
     cy.route({
       method: 'GET',
       url: 'recipes',
@@ -18,7 +12,7 @@ describe('On List Page, in About Drawer Panel', function () {
     });
   };
 
-  it('User opens drawer side menu and sees author and project data', function () {
+  it('User opens drawer side menu and sees author and project data', function() {
     setStub();
     cy.visit(URL);
 

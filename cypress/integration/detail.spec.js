@@ -3,23 +3,21 @@ import { getRandomNumber, getRandomString } from '../test-utils';
 describe('On Detail Page, navigate', function() {
   const URL = 'detail/1';
 
-  const setStub = (name, likeCount) => {
+  const setStub = name => {
     cy.server();
     cy.route({
       method: 'GET',
-      url: 'details*',
+      url: 'details/*',
       response: [
         {
           id: '1',
           name,
           description: getRandomString(getRandomNumber(1, 100)),
-          likeCount,
-          commentsCount: 0,
-          price: 0,
-          isGroupPrice: false,
-          isEditorsChoice: false,
-          image: 'fake_imgs/room.jpg',
-          tags: [1, 2],
+          preparationTime: '02:00',
+          eventDate: '26/04/2020',
+          difficulty: getRandomNumber(1, 5),
+          nIngredients: getRandomNumber(1, 5),
+          image: 'imgs/recipes/gyozas.jpeg',
         },
       ],
     });
@@ -31,15 +29,13 @@ describe('On Detail Page, navigate', function() {
     cy.url().should('include', '/list');
   });
 
-  it('User checks that list item is rendered with its name and like count', function() {
+  it('User checks that list item is rendered with its name', function() {
     const name = getRandomString(getRandomNumber(1, 20));
-    const likeCount = getRandomNumber(1, 100);
 
-    setStub(name, likeCount);
+    setStub(name);
 
     cy.visit(URL);
 
     cy.contains(name);
-    cy.get('#likeCount').contains(likeCount);
   });
 });
