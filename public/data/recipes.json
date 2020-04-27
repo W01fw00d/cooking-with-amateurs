@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Gyozas",
+    "description": "Ingredientes de las gyozas",
+    "preparationTime": "02:00",
+    "eventDate": "26/04/2020",
+    "difficulty": 5,
+    "nIngredients": 13,
+    "image": "imgs/recipes/gyozas.jpeg"
+  }
+]
