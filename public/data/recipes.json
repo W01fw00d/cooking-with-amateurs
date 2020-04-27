@@ -1,8 +1,86 @@
 [
   {
     "id": 1,
+    "name": "Gnocchi",
+    "category": "main",
+    "description": "Ingredientes",
+    "preparationTime": "02:00",
+    "eventDate": "28/03/2020",
+    "difficulty": 3,
+    "nIngredients": 12,
+    "image": "imgs/recipes/gnocchi.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Croquetas",
+    "category": "main",
+    "description": "Ingredientes",
+    "preparationTime": "02:00",
+    "eventDate": "05/04/2020",
+    "difficulty": 3,
+    "nIngredients": 11,
+    "image": "imgs/recipes/croquetas.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Risotto",
+    "category": "main",
+    "description": "Ingredientes",
+    "preparationTime": "02:00",
+    "eventDate": "11/04/2020",
+    "difficulty": 3,
+    "nIngredients": 11,
+    "image": "imgs/recipes/risotto.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Fideua",
+    "category": "main",
+    "description": "Ingredientes",
+    "preparationTime": "02:00",
+    "eventDate": "18/04/2020",
+    "difficulty": 3,
+    "nIngredients": 11,
+    "image": "imgs/recipes/fideua.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Tártar de salmón",
+    "category": "main",
+    "description": "Ingredientes",
+    "preparationTime": "01:00",
+    "eventDate": "19/04/2020",
+    "difficulty": 2,
+    "nIngredients": 9,
+    "image": "imgs/recipes/tartar.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Pilotes",
+    "category": "main",
+    "description": "Ingredientes",
+    "preparationTime": "01:30",
+    "eventDate": "25/04/2020",
+    "difficulty": 4,
+    "nIngredients": 15,
+    "image": "imgs/recipes/pilotes.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Natillas",
+    "category": "dessert",
+    "description": "Ingredientes",
+    "preparationTime": "00:30",
+    "eventDate": "25/04/2020",
+    "difficulty": 2,
+    "nIngredients": 5,
+    "image": "imgs/recipes/natillas.jpg"
+  },
+  {
+    "id": 8,
     "name": "Gyozas",
-    "description": "Ingredientes de las gyozas",
+    "category": "main",
+    "description": "Ingredientes",
     "preparationTime": "02:00",
     "eventDate": "26/04/2020",
     "difficulty": 5,
