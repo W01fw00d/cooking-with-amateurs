@@ -1,5 +1,7 @@
 import React from 'react';
 
+import common from '../../public/literals/english/common.json';
+
 export default function NotFoundPage() {
-  return <div>Lamentablemente la página no se encontró</div>;
+  return <div>{common.notFound}</div>;
 }

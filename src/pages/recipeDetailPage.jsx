@@ -3,12 +3,14 @@ import { useParams } from 'react-router-dom';
 
 import { RecipeDetailTemplate } from 'chemistry-ui';
 
+import recipe from '../../public/literals/majorcan/recipe.json';
+
 import { getRecipeDetails } from '../utils/request';
 
 export default function RecipeDetailPage() {
-  const literals = {
-    description: 'Descripción',
-  };
+  const getLiterals = ({ ingredients }) => ({
+    ingredients,
+  });
 
   const [data, setData] = useState();
   const { recipeId } = useParams();
@@ -27,5 +29,5 @@ export default function RecipeDetailPage() {
     });
   }, [recipeId]);
 
-  return <RecipeDetailTemplate literals={literals} data={data} handleClick={() => {}} />;
+  return <RecipeDetailTemplate literals={getLiterals(recipe)} data={data} handleClick={() => {}} />;
 }

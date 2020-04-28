@@ -2,14 +2,20 @@ import React, { useState, useEffect } from 'react';
 
 import { RecipeListTemplate } from 'chemistry-ui';
 
+import common from '../../public/literals/majorcan/common.json';
+import recipe from '../../public/literals/majorcan/recipe.json';
+
 import { getRecipes } from '../utils/request';
 
 export default function RecipeListPage() {
-  const literals = {
-    search: 'Search',
-  };
+  const literals = { ...common, ...recipe };
+  const getLiterals = ({ difficulty, preparationTime, howManyIngredients }) => ({
+    difficulty,
+    preparationTime,
+    howManyIngredients,
+  });
 
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState(common.comingSoon);
   const [recipes, setRecipes] = useState();
 
   useEffect(() => {
@@ -18,16 +24,14 @@ export default function RecipeListPage() {
 
   return (
     <RecipeListTemplate
-      literals={literals}
+      literals={getLiterals(literals)}
       authorData={{
-        name: 'Gabriel Romay Machado',
+        name: common.gabriel,
         email: 'romay.gabriel@gmail.com',
-        url: 'https://www.linkedin.com/in/gabriel-romay-machado-40050a114/?locale=en_US',
+        url: common.cv,
       }}
       projectData={{
-        description:
-          'While quarentined, a group of friends ' +
-          'attempt to learn how to cook under the expert guidance of the Great Chef Mateu...',
+        description: recipe.projectDescription,
         url: 'https://github.com/W01fw00d/cooking-with-amateurs/blob/master/README.md',
       }}
       search={search}
