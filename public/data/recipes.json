@@ -8,7 +8,7 @@
     "difficulty": 3,
     "nIngredients": 12,
     "ingredients": [],
-    "image": "imgs/recipes/gnocchi.jpg"
+    "image": "public/imgs/recipes/gnocchi.jpg"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "difficulty": 3,
     "nIngredients": 8,
     "ingredients": [],
-    "image": "imgs/recipes/croquetas.jpg"
+    "image": "public/imgs/recipes/croquetas.jpg"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "difficulty": 3,
     "nIngredients": 11,
     "ingredients": [],
-    "image": "imgs/recipes/risotto.jpg"
+    "image": "public/imgs/recipes/risotto.jpg"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "difficulty": 3,
     "nIngredients": 11,
     "ingredients": [],
-    "image": "imgs/recipes/fideua.jpeg"
+    "image": "public/imgs/recipes/fideua.jpeg"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "difficulty": 2,
     "nIngredients": 9,
     "ingredients": [],
-    "image": "imgs/recipes/tartar.jpeg"
+    "image": "public/imgs/recipes/tartar.jpeg"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "difficulty": 4,
     "nIngredients": 15,
     "ingredients": [],
-    "image": "imgs/recipes/pilotes.jpeg"
+    "image": "public/imgs/recipes/pilotes.jpeg"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "difficulty": 2,
     "nIngredients": 5,
     "ingredients": [],
-    "image": "imgs/recipes/natillas.jpg"
+    "image": "public/imgs/recipes/natillas.jpg"
   },
   {
     "id": 8,
@@ -85,6 +85,6 @@
     "difficulty": 5,
     "nIngredients": 13,
     "ingredients": [],
-    "image": "imgs/recipes/gyozas.jpeg"
+    "image": "public/imgs/recipes/gyozas.jpeg"
   }
 ]
