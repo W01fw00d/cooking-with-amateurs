@@ -113,8 +113,8 @@ npm run build
 
 ## Atribution
 
-- Logo created by [Marta Ximenis](https://www.domestika.org/es/projects/686583-escaping-boredom)
+- Logo created by [Marta Ximenis](https://www.domestika.org/es/projects/692722-cocina-con-amateurs)
 
 - Favicon formatted from logo with [favicon-generator](https://www.favicon-generator.org/)
 
-- Recipes Images by Mateu
+- Recipes recopilation images by Mateu
