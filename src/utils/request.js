@@ -1,8 +1,8 @@
 const httpGet = (params, callback) => {
   // prod
-  // const url = `/${params}`;
+  const url = `/${params}`;
   // dev
-  const url = `http://localhost:5000/${params}`;
+  // const url = `http://localhost:5000/${params}`;
   const xmlHttp = new XMLHttpRequest();
   xmlHttp.onreadystatechange = () => {
     if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
