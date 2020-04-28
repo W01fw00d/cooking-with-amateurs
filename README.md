@@ -1,4 +1,4 @@
-<img alt="Cooking with aMateuRS Logo" src="https://github.com/W01fw00d/cooking-with-amateurs/blob/master/public/escaping-boredom-title-logo.png?raw=true" width="350" title="by Marta Ximenis">
+<img alt="Cooking with aMateuRS Logo" src="https://github.com/W01fw00d/cooking-with-amateurs/blob/master/public/logo.png?raw=true" width="350" title="by Marta Ximenis">
 
 ![Node.js CI](https://github.com/W01fw00d/cooking-with-amateurs/workflows/Node.js%20CI/badge.svg)
 
