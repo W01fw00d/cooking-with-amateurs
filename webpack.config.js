@@ -7,7 +7,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx|tsx)$/,
+        test: /\.(js|ts|jsx|tsx)$/,
         exclude: /(node_modules)/,
         use: [
           {
@@ -28,7 +28,7 @@ module.exports = {
       },
     ],
   },
-  resolve: { extensions: ['*', '.js', '.jsx', '.tsx'] },
+  resolve: { extensions: ['*', '.js', '.ts', '.jsx', '.tsx'] },
   output: {
     path: path.resolve(__dirname, 'dist/'),
     publicPath: '/dist/',
