@@ -1,4 +1,4 @@
-import { getRandomNumber, getRandomString } from '../test-utils';
+import { getRandomNumber, getRandomString } from '../utils/test-utils';
 
 describe('On Detail Page, navigate', function() {
   const URL = 'detail/1';

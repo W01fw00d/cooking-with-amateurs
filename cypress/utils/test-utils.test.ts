@@ -1,4 +1,4 @@
-import { getRandomNumber, getRandomString } from '../cypress/test-utils';
+import { getRandomNumber, getRandomString } from './test-utils';
 
 describe('test-utils', () => {
   const EMPTY_STRING = '';
