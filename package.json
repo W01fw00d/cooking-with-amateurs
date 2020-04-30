@@ -6,7 +6,7 @@
   "scripts": {
     "dev-front": "webpack-dev-server --mode development",
     "dev-back": "nodemon back-server.js",
-    "utest": "babel-node spec/run.js",
+    "utest": "jest utests",
     "ftest": "cypress run",
     "ftest-spec": "cypress run --spec",
     "ftest-ui": "cypress open",
@@ -44,7 +44,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.3",
     "husky": "^4.2.1",
-    "jasmine": "^3.5.0",
+    "jest": "^25.5.2",
     "lint-staged": "^10.0.7",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",

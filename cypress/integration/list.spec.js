@@ -52,7 +52,7 @@ describe('On List Page', function() {
 
     cy.get('#search')
       .type(inputText)
-      .should('have.value', inputText);
+      .should('have.value', 'Próximament!' + inputText);
   });
 
   it('User clicks the "recipe 1" item link', function() {
