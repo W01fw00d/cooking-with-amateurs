@@ -12,7 +12,8 @@ describe('test-utils', () => {
 
     it('shall NOT return a NaN without min and max arguments', () => {
       const result = getRandomNumber();
-      expect(typeof result === 'number' && !isNaN(result)).toBeTruthy();
+      expect(typeof result).toBe('number');
+      expect(isNaN(result)).toBeFalsy();
     });
 
     it('shall return min if min and max arguments are equals', () => {
@@ -37,12 +38,15 @@ describe('test-utils', () => {
 
     it('shall NOT return an empty string with length argument', () => {
       const result = getRandomString(10);
-      expect(result !== EMPTY_STRING && result !== null).toBeTruthy();
+
+      expect(result).not.toBe(EMPTY_STRING);
+      expect(result).not.toBeNull();
     });
 
     it('shall NOT return an empty string without length argument', () => {
       const result = getRandomString();
-      expect(result !== EMPTY_STRING && result !== null).toBeTruthy();
+      expect(result).not.toBe(EMPTY_STRING);
+      expect(result).not.toBeNull();
     });
 
     it('shall return a string with exact length as requested', () => {
