@@ -40,7 +40,7 @@ To solve this, you can execute this bash script that will perform the correct li
 sh link.sh
 ```
 
-- Launch Jasmine (Unit Tests)
+- Launch Jest (Unit Tests)
 
 ```
 npm run utest
@@ -92,7 +92,7 @@ npm run build
 - Babel (compilation)
 - Webpack (bundling)
 
-- Jasmine: Unit Testing Tool
+- Jest: Unit Testing Tool
 - Cypress: Integration Testing Tool
 
 - [Chemistry-UI](https://github.com/W01fw00d/chemistry-ui): my own Components Library, based on Material-UI.
