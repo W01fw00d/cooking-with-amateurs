@@ -2,6 +2,8 @@ import React from 'react';
 
 import common from '../../public/literals/majorcan/common.json';
 
-export default function NotFoundPage() {
+const NotFoundPage: React.FC = () => {
   return <div>{common.notFound}</div>;
-}
+};
+
+export default NotFoundPage;

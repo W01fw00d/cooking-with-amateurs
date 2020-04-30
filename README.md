@@ -84,6 +84,8 @@ npm run build
 
 ## Technical Stack
 
+- TypeScript
+
 - React
 
 - Node
@@ -92,14 +94,15 @@ npm run build
 - Babel (compilation)
 - Webpack (bundling)
 
-- Jest: Unit Testing Tool
-- Cypress: Integration Testing Tool
+- Jest (Unit Testing Tool)
+- Cypress (Integration Testing Tool)
 
-- [Chemistry-UI](https://github.com/W01fw00d/chemistry-ui): my own Components Library, based on Material-UI.
+- [Chemistry-UI](https://github.com/W01fw00d/chemistry-ui) (my own Components Library, based on Material-UI)
 
-- Prettier, ESLint (code style tools, based on airbnb conventions), Husky (pre-commit automated formatting tool)
+- Prettier, ESLint (code style tools, based on airbnb conventions)
+- Husky (pre-commit automated formatting tool)
 
-- Heroku: deploying free site for this App Demo
+- Heroku (deploying free site for this App Demo)
 
 ## Technical discusion
 
