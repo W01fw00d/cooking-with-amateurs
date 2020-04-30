@@ -34,6 +34,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.9.4",
     "@babel/preset-typescript": "^7.9.0",
+    "@cypress/webpack-preprocessor": "^5.1.2",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.1.0",
     "css-loader": "^1.0.0",
@@ -53,6 +54,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.8.0",
     "style-loader": "^0.23.0",
+    "ts-loader": "^7.0.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.10.3"

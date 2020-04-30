@@ -1,5 +1,3 @@
-import { getRandomNumber, getRandomString } from '../test-utils';
-
 describe('On List Page, in About Drawer Panel', function() {
   const URL = 'list';
 

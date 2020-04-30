@@ -3,7 +3,7 @@ import { getRandomNumber, getRandomString } from '../test-utils';
 describe('On Detail Page, navigate', function() {
   const URL = 'detail/1';
 
-  const setStub = name => {
+  const setStub = (name: string) => {
     cy.server();
     cy.route({
       method: 'GET',

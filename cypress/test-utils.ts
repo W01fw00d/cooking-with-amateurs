@@ -1,8 +1,7 @@
-export function getRandomNumber(min = 0, max = 9) {
-  return min >= max ? min : Math.floor(Math.random() * max + min);
-}
+const getRandomNumber = (min: number = 0, max: number = 9): number =>
+  min >= max ? min : Math.floor(Math.random() * max + min);
 
-export function getRandomString(requestedLength = 10) {
+const getRandomString = (requestedLength: number = 10): string => {
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 -_';
   let result = '';
 
@@ -11,4 +10,6 @@ export function getRandomString(requestedLength = 10) {
   }
 
   return result;
-}
+};
+
+export { getRandomNumber, getRandomString };

@@ -3,7 +3,7 @@ import { getRandomNumber, getRandomString } from '../test-utils';
 describe('On List Page', function() {
   const URL = 'list';
 
-  const setStub = (firstName, secondName) => {
+  const setStub = (firstName: string, secondName: string) => {
     cy.server();
 
     cy.route({
