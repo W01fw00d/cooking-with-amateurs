@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from 'react';
-
 import { RecipeListTemplate } from 'chemistry-ui';
-
+import React, { useEffect, useState } from 'react';
 import common from '../../public/literals/majorcan/common.json';
 import recipe from '../../public/literals/majorcan/recipe.json';
-
 import { getRecipes } from '../utils/request';
+
+interface Literals {
+  difficulty: String;
+  preparationTime: String;
+  howManyIngredients: String;
+}
 
 export default function RecipeListPage() {
   const literals = { ...common, ...recipe };
-  const getLiterals = ({ difficulty, preparationTime, howManyIngredients }) => ({
+  const getLiterals = ({ difficulty, preparationTime, howManyIngredients }: Literals) => ({
     difficulty,
     preparationTime,
     howManyIngredients,
@@ -36,7 +39,7 @@ export default function RecipeListPage() {
       }}
       search={search}
       itemList={recipes}
-      handleChange={({ currentTarget }) => {
+      handleChange={({ currentTarget }: { currentTarget: { value: string } }) => {
         setSearch(currentTarget.value);
       }}
       handleClick={() => {}}

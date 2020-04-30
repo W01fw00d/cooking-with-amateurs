@@ -1,4 +1,4 @@
-const httpGet = (params, callback) => {
+const httpGet = (params: string, callback: Function) => {
   // prod
   // const url = `/${params}`;
   // dev
@@ -14,10 +14,10 @@ const httpGet = (params, callback) => {
   xmlHttp.send(null);
 };
 
-export function getRecipes(callback) {
+export function getRecipes(callback: Function) {
   httpGet('recipes', callback);
 }
 
-export function getRecipeDetails(id, callback) {
+export function getRecipeDetails(id: string, callback: Function) {
   httpGet(`details/${id}`, callback);
 }
