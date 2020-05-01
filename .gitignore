@@ -2,7 +2,3 @@ node_modules
 dist
 
 notes.txt
-
-package.json
-package-lock.json
-src/utils/request.ts
