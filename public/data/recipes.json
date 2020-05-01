@@ -2,13 +2,81 @@
   {
     "id": 1,
     "name": "Gnocchi",
+    "image": "public/imgs/recipes/gnocchi.jpg",
     "category": "main",
     "preparationTime": "02:00",
     "eventDate": "28/03/2020",
     "difficulty": 3,
     "nIngredients": 12,
-    "ingredients": [],
-    "image": "public/imgs/recipes/gnocchi.jpg"
+    "ingredients": [
+      {
+        "section": "gnocchisDough",
+        "items": [
+          {
+            "code": "boiledPotato",
+            "quantity": "1kg"
+          },
+          {
+            "code": "strengthFlour",
+            "quantity": "200g"
+          },
+          {
+            "code": "yolks",
+            "quantity": "2"
+          },
+          {
+            "code": "salt"
+          },
+          {
+            "code": "nutmeg"
+          }
+        ]
+      },
+      {
+        "section": "tomatoSauce",
+        "items": [
+          {
+            "code": "crushedTomato",
+            "quantity": "2 pots"
+          },
+          {
+            "code": "garlic",
+            "quantity": "2 dents"
+          },
+          {
+            "code": "onion",
+            "quantity": "1"
+          },
+          {
+            "code": "basil"
+          }
+        ]
+      },
+      {
+        "section": "Salsa Salvia",
+        "items": [
+          {
+            "code": "potato",
+            "quantity": "100g"
+          },
+          {
+            "code": "butter",
+            "quantity": "200"
+          },
+          {
+            "code": "water",
+            "quantity": "100g"
+          },
+          {
+            "code": "cream",
+            "quantity": "200g"
+          },
+          {
+            "code": "sage"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": 2,
@@ -21,44 +89,38 @@
     "nIngredients": 8,
     "ingredients": [
       {
-        "code": "powder",
-        "quantity": "110g",
-        "name": "Farina",
-        "isOptional": false,
-        "alternatives": []
-      },
-      {
-        "code": "mantega",
-        "quantity": "110g",
-        "name": "Mantega"
-      },
-      {
-        "code": "milk",
-        "quantity": "1L",
-        "name": "Llet"
-      },
-      {
-        "code": "chicken",
-        "quantity": "300g",
-        "name": "Pollastre (piteres millor)"
-      },
-      {
-        "code": "onion",
-        "quantity": "1",
-        "name": "Ceba"
-      },
-      {
-        "code": "egg",
-        "quantity": "4",
-        "name": "Ous"
-      },
-      {
-        "code": "powderBread",
-        "name": "Pa ratllat",
-        "alternatives": [
+        "items": [
           {
-            "code": "powderCookie",
-            "name": "Galleta picada"
+            "code": "flour",
+            "quantity": "110g"
+          },
+          {
+            "code": "butter",
+            "quantity": "110g"
+          },
+          {
+            "code": "milk",
+            "quantity": "1L"
+          },
+          {
+            "code": "chickenBreast",
+            "quantity": "300g"
+          },
+          {
+            "code": "onion",
+            "quantity": "1"
+          },
+          {
+            "code": "eggs",
+            "quantity": "4"
+          },
+          {
+            "code": "breadCrumbs",
+            "alternatives": [
+              {
+                "code": "ChoppedCookie"
+              }
+            ]
           }
         ]
       }
