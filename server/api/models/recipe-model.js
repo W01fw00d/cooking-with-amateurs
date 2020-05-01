@@ -31,6 +31,9 @@ var RecipeSchema = new Schema({
   image: {
     type: String,
   },
+  showName: {
+    type: Boolean,
+  },
 });
 
 RecipeSchema.statics.initData = data => {

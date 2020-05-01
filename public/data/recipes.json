@@ -30,7 +30,8 @@
     "difficulty": 3,
     "nIngredients": 11,
     "ingredients": [],
-    "image": "public/imgs/recipes/risotto.jpg"
+    "image": "public/imgs/recipes/risotto.jpg",
+    "showName": true
   },
   {
     "id": 4,
@@ -74,7 +75,8 @@
     "difficulty": 2,
     "nIngredients": 5,
     "ingredients": [],
-    "image": "public/imgs/recipes/natillas.jpg"
+    "image": "public/imgs/recipes/natillas.jpg",
+    "showName": true
   },
   {
     "id": 8,
