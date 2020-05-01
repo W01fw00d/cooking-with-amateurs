@@ -13,13 +13,56 @@
   {
     "id": 2,
     "name": "Croquetes",
+    "image": "public/imgs/recipes/croquetas.jpg",
     "category": "main",
     "preparationTime": "02:00",
     "eventDate": "05/04/2020",
     "difficulty": 3,
     "nIngredients": 8,
-    "ingredients": [],
-    "image": "public/imgs/recipes/croquetas.jpg"
+    "ingredients": [
+      {
+        "code": "powder",
+        "quantity": "110g",
+        "name": "Farina",
+        "isOptional": false,
+        "alternatives": []
+      },
+      {
+        "code": "mantega",
+        "quantity": "110g",
+        "name": "Mantega"
+      },
+      {
+        "code": "milk",
+        "quantity": "1L",
+        "name": "Llet"
+      },
+      {
+        "code": "chicken",
+        "quantity": "300g",
+        "name": "Pollastre (piteres millor)"
+      },
+      {
+        "code": "onion",
+        "quantity": "1",
+        "name": "Ceba"
+      },
+      {
+        "code": "egg",
+        "quantity": "4",
+        "name": "Ous"
+      },
+      {
+        "code": "powderBread",
+        "name": "Pa ratllat",
+        "alternatives": [
+          {
+            "code": "powderCookie",
+            "name": "Galleta picada"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": 3,
