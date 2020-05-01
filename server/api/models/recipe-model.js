@@ -4,6 +4,16 @@ const newData = require('../../../public/data/recipes.json');
 
 var Schema = mongoose.Schema;
 
+var IngredientAlternativeSchema = new Schema({ code: String });
+
+var IngredientSchema = new Schema({
+  code: String,
+  quantity: String,
+  alternatives: [IngredientAlternativeSchema],
+});
+
+var IngredientSectionSchema = new Schema({ sectionName: String, items: [IngredientSchema] });
+
 var RecipeSchema = new Schema({
   id: {
     type: Number,
@@ -33,6 +43,9 @@ var RecipeSchema = new Schema({
   },
   showName: {
     type: Boolean,
+  },
+  ingredients: {
+    type: [IngredientSectionSchema],
   },
 });
 

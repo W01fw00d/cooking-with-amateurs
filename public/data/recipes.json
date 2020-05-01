@@ -10,7 +10,7 @@
     "nIngredients": 12,
     "ingredients": [
       {
-        "section": "gnocchisDough",
+        "sectionName": "gnocchisDough",
         "items": [
           {
             "code": "boiledPotato",
@@ -33,7 +33,7 @@
         ]
       },
       {
-        "section": "tomatoSauce",
+        "sectionName": "tomatoSauce",
         "items": [
           {
             "code": "crushedTomato",
@@ -53,7 +53,7 @@
         ]
       },
       {
-        "section": "Salsa Salvia",
+        "sectionName": "sageSauce",
         "items": [
           {
             "code": "potato",
