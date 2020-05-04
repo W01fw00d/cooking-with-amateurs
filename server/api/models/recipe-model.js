@@ -19,9 +19,9 @@ var RecipeSchema = new Schema({
     type: Number,
     required: 'Kindly enter the id of the room',
   },
-  name: {
+  code: {
     type: String,
-    required: 'Kindly enter the name of the room',
+    required: 'Kindly enter the code name of the room',
   },
   description: {
     type: String,

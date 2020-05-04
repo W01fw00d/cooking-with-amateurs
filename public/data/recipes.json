@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Gnocchi",
+    "code": "gnocchi",
     "image": "public/imgs/recipes/gnocchi.jpg",
     "category": "main",
     "preparationTime": "02:00",
@@ -80,7 +80,7 @@
   },
   {
     "id": 2,
-    "name": "Croquetes",
+    "code": "croquettes",
     "image": "public/imgs/recipes/croquetas.jpg",
     "category": "main",
     "preparationTime": "02:00",
@@ -128,19 +128,18 @@
   },
   {
     "id": 3,
-    "name": "Risotto",
+    "code": "risotto",
     "category": "main",
     "preparationTime": "02:00",
     "eventDate": "11/04/2020",
     "difficulty": 3,
     "nIngredients": 11,
     "ingredients": [],
-    "image": "public/imgs/recipes/risotto.jpeg",
-    "showName": true
+    "image": "public/imgs/recipes/risotto.jpeg"
   },
   {
     "id": 4,
-    "name": "Fideua",
+    "code": "fideua",
     "category": "main",
     "preparationTime": "02:00",
     "eventDate": "18/04/2020",
@@ -151,7 +150,7 @@
   },
   {
     "id": 5,
-    "name": "Tàrtar de salmó",
+    "code": "salmonTartar",
     "category": "main",
     "preparationTime": "01:00",
     "eventDate": "19/04/2020",
@@ -162,7 +161,7 @@
   },
   {
     "id": 6,
-    "name": "Pilotes",
+    "code": "meatballs",
     "category": "main",
     "preparationTime": "01:30",
     "eventDate": "25/04/2020",
@@ -173,7 +172,7 @@
   },
   {
     "id": 7,
-    "name": "Natilles",
+    "code": "custard",
     "category": "dessert",
     "preparationTime": "00:30",
     "eventDate": "25/04/2020",
@@ -185,7 +184,7 @@
   },
   {
     "id": 8,
-    "name": "Gyozas",
+    "code": "gyozas",
     "category": "main",
     "preparationTime": "02:00",
     "eventDate": "26/04/2020",
@@ -196,7 +195,7 @@
   },
   {
     "id": 9,
-    "name": "Ragout de Butifarra",
+    "code": "butifarraRagout",
     "image": "public/imgs/recipes/butifarra.jpeg",
     "category": "main",
     "preparationTime": "01:30",
@@ -207,7 +206,7 @@
   },
   {
     "id": 10,
-    "name": "Coulant",
+    "code": "coulant",
     "image": "public/imgs/recipes/coulant.jpeg",
     "category": "main",
     "preparationTime": "00:30",

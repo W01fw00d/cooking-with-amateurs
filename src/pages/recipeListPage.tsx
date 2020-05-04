@@ -2,6 +2,7 @@ import { RecipeListTemplate } from 'chemistry-ui';
 import React, { useEffect, useState } from 'react';
 import common from '../../public/literals/majorcan/common.json';
 import recipe from '../../public/literals/majorcan/recipe.json';
+import recipesNamesLiterals from '../../public/literals/majorcan/recipesNames.json';
 import { getRecipes } from '../utils/request';
 
 interface Literals {
@@ -22,7 +23,17 @@ export default function RecipeListPage() {
   const [recipes, setRecipes] = useState();
 
   useEffect(() => {
-    getRecipes(setRecipes);
+    getRecipes(recipeResults => {
+      setRecipes(
+        recipeResults.map(recipeResult => {
+          if (recipeResult.showName) {
+            recipeResult.name = recipesNamesLiterals[recipeResult.code];
+          }
+
+          return recipeResult;
+        }),
+      );
+    });
   }, []);
 
   return (

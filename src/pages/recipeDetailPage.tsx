@@ -2,7 +2,9 @@ import { RecipeDetailTemplate } from 'chemistry-ui';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ingredientsLiterals from '../../public/literals/majorcan/ingredients.json';
+import ingredientsSectionsLiterals from '../../public/literals/majorcan/ingredientsSections.json';
 import recipe from '../../public/literals/majorcan/recipe.json';
+import recipesNamesLiterals from '../../public/literals/majorcan/recipesNames.json';
 import { getRecipeDetails } from '../utils/request';
 
 interface Literals {
@@ -10,7 +12,7 @@ interface Literals {
 }
 
 interface RecipeDetails {
-  name: String;
+  code: String;
   image: String;
   description: String;
   preparationTime: String;
@@ -28,11 +30,11 @@ const RecipeDetailPage: React.FC = () => {
   useEffect(() => {
     getRecipeDetails(recipeId, (result: Array<RecipeDetails>) => {
       if (result) {
-        const { name, image, description, preparationTime, ingredients } = result[0];
+        const { code, image, description, preparationTime, ingredients } = result[0];
 
         const ingredientsMapping = section => {
           return {
-            sectionName: ingredientsLiterals[section.sectionName],
+            sectionName: ingredientsSectionsLiterals[section.sectionName],
             items: section.items.map(item => {
               let formattedItem = { quantity: item.quantity, name: ingredientsLiterals[item.code] };
 
@@ -47,7 +49,7 @@ const RecipeDetailPage: React.FC = () => {
           };
         };
         setData({
-          name,
+          name: recipesNamesLiterals[code],
           image,
           description,
           preparationTime,
