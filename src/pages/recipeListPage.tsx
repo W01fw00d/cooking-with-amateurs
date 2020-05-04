@@ -3,13 +3,13 @@ import React, { useEffect, useState } from 'react';
 import translate from '../language/translate';
 import { getRecipes } from '../utils/request';
 
-interface Literals {
-  difficulty: String;
-  preparationTime: String;
-  howManyIngredients: String;
-}
+export default () => {
+  interface Literals {
+    difficulty: String;
+    preparationTime: String;
+    howManyIngredients: String;
+  }
 
-export default function RecipeListPage() {
   const common = translate('common');
   const recipe = translate('recipe');
   const recipesNamesLiterals = translate('recipesNames');
@@ -58,4 +58,4 @@ export default function RecipeListPage() {
       handleClick={() => {}}
     />
   );
-}
+};

@@ -1,8 +1,4 @@
 import React from 'react';
-import common from '../../public/literals/majorcan/common.json';
+import translate from '../language/translate';
 
-const NotFoundPage: React.FC = () => {
-  return <div>{common.notFound}</div>;
-};
-
-export default NotFoundPage;
+export default () => <div>{translate('common').notFound}</div>;
