@@ -1,27 +1,25 @@
 import { RecipeListTemplate } from 'chemistry-ui';
 import React, { useEffect, useState } from 'react';
-//import { LanguageContext } from '../../containers/Language';
-import common from '../../public/literals/majorcan/common.json';
-import recipe from '../../public/literals/majorcan/recipe.json';
-import recipesNamesLiterals from '../../public/literals/majorcan/recipesNames.json';
-import { translate } from '../language';
+import translate from '../language/translate';
 import { getRecipes } from '../utils/request';
 
-interface Literals {
-  difficulty: String;
-  preparationTime: String;
-  howManyIngredients: String;
-}
+export default () => {
+  interface Literals {
+    difficulty: String;
+    preparationTime: String;
+    howManyIngredients: String;
+  }
 
-export default function RecipeListPage() {
+  const common = translate('common');
+  const recipe = translate('recipe');
+  const recipesNamesLiterals = translate('recipesNames');
+
   const literals = { ...common, ...recipe };
   const getLiterals = ({ difficulty, preparationTime, howManyIngredients }: Literals) => ({
     difficulty,
     preparationTime,
     howManyIngredients,
   });
-
-  console.log('languageContext.common', translate('common'));
 
   const [search, setSearch] = useState(common.comingSoon);
   const [recipes, setRecipes] = useState();
@@ -60,4 +58,4 @@ export default function RecipeListPage() {
       handleClick={() => {}}
     />
   );
-}
+};
