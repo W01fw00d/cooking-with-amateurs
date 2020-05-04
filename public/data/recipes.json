@@ -135,7 +135,7 @@
     "difficulty": 3,
     "nIngredients": 11,
     "ingredients": [],
-    "image": "public/imgs/recipes/risotto.jpg",
+    "image": "public/imgs/recipes/risotto.jpeg",
     "showName": true
   },
   {
@@ -193,5 +193,27 @@
     "nIngredients": 13,
     "ingredients": [],
     "image": "public/imgs/recipes/gyozas.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Ragout de Butifarra",
+    "image": "public/imgs/recipes/butifarra.jpeg",
+    "category": "main",
+    "preparationTime": "01:30",
+    "eventDate": "02/05/2020",
+    "difficulty": 2,
+    "nIngredients": 12,
+    "ingredients": []
+  },
+  {
+    "id": 10,
+    "name": "Coulant",
+    "image": "public/imgs/recipes/coulant.jpeg",
+    "category": "main",
+    "preparationTime": "00:30",
+    "eventDate": "02/05/2020",
+    "difficulty": 1,
+    "nIngredients": 12,
+    "ingredients": []
   }
 ]
