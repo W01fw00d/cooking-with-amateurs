@@ -6,7 +6,6 @@ const httpGet = (params: string, callback: Function) => {
   const xmlHttp = new XMLHttpRequest();
   xmlHttp.onreadystatechange = () => {
     if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-      console.log('xmlHttp.responseText', xmlHttp.responseText);
       callback(JSON.parse(xmlHttp.responseText));
     }
   };
