@@ -1,5 +1,23 @@
 {
-  "gnocchisDough": "Massa Gnocchis",
-  "tomatoSauce": "Salsa de tomatiga",
-  "sageSauce": "Salsa Salvia"
+  "gnocchisDough": "Pasta de Gnocchis",
+  "tomatoSauce": "Salsa de Tomatiga",
+  "sageSauce": "Salsa Salvia",
+  "croquetteDough": "Pasta de Croquetes",
+  "friedCoating": "Rebossat",
+  "coulant": "Coulant de Xocolata",
+  "dressing": "Guarnició",
+  "fideua": "Fideuà",
+  "aioli": "Allioli",
+  "meatballs": "Pilotes, qué bones, m'encanten",
+  "stew": "Aguiat",
+  "gyozaDough": "Pasta de Gyozas",
+  "stuffing": "Farcit",
+  "gyozaSauce": "Salsa per fer Mulletes",
+  "mashedPotatoes": "Puré de Patata",
+  "ragout": "Ragout",
+  "risotto": "Risotto",
+  "serranoHamPowder": "Pols de Cuixot Salat",
+  "salmonMarinated": "Marinat de salmó",
+  "tartar": "Tàrtar"
+
 }
