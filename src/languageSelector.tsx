@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import languageOptions from '../public/literals/languageOptions';
-import { LanguageContext } from './language';
+import LanguageContext from './language/languageContext';
 
-export default function LanguageSelector() {
+export default () => {
   const languageContext = useContext(LanguageContext);
 
   const handleLanguageChange = event => {
@@ -19,4 +19,4 @@ export default function LanguageSelector() {
       ))}
     </select>
   );
-}
+};

@@ -1,6 +1,6 @@
 import { RecipeListTemplate } from 'chemistry-ui';
 import React, { useEffect, useState } from 'react';
-import { translate } from '../language';
+import translate from '../language/translate';
 import { getRecipes } from '../utils/request';
 
 interface Literals {
