@@ -1,33 +1,31 @@
 import React, { createContext, useContext, useState } from 'react';
-import { dictionaryList, languageOptions } from './dictionary';
+import dictionaries from '../public/literals/dictionaries';
+import languageOptions from '../public/literals/languageOptions';
 
-// create the language context with default selected language
-export const LanguageContext = createContext({
-  language: languageOptions[0],
-  dictionary: dictionaryList[languageOptions[0].id],
-});
+const majorcanLanguage = languageOptions[2];
+const defaultContext = {
+  language: majorcanLanguage,
+  dictionary: dictionaries[majorcanLanguage.id],
+};
+export const LanguageContext = createContext(defaultContext);
 
-// it provides the language context to app
-export function LanguageProvider(props) {
-  const languageContext = useContext(LanguageContext);
-  const [language, setLanguage] = useState(languageContext.language);
-  const [dictionary, setDictionary] = useState(languageContext.dictionary);
+export function LanguageProvider({ children }) {
+  const { language, dictionary } = useContext(LanguageContext);
+  const [languageState, setLanguageState] = useState(language);
+  const [dictionaryState, setDictionaryState] = useState(dictionary);
 
   const provider = {
-    language,
-    dictionary,
+    language: languageState,
+    dictionary: dictionaryState,
     setLanguage: selectedLanguage => {
-      setLanguage(selectedLanguage);
-      setDictionary(dictionaryList[selectedLanguage.id]);
+      setLanguageState(selectedLanguage);
+      setDictionaryState(dictionaries[selectedLanguage.id]);
     },
   };
 
-  return <LanguageContext.Provider value={provider}>{props.children}</LanguageContext.Provider>;
+  return <LanguageContext.Provider value={provider}>{children}</LanguageContext.Provider>;
 }
 
-// get text according to id & current language
 export function translate(file) {
-  const languageContext = useContext(LanguageContext);
-
-  return languageContext.dictionary[file];
+  return useContext(LanguageContext).dictionary[file];
 }

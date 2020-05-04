@@ -1,21 +1,20 @@
 import React, { useContext } from 'react';
-import { languageOptions } from './dictionary';
+import languageOptions from '../public/literals/languageOptions';
 import { LanguageContext } from './language';
 
 export default function LanguageSelector() {
   const languageContext = useContext(LanguageContext);
 
   const handleLanguageChange = event => {
-    const selectedLanguage = languageOptions.find(item => item.id === event.target.value);
-    // set selected language by calling context method
+    const selectedLanguage = languageOptions.find(({ id }) => id === event.target.value);
     languageContext.setLanguage(selectedLanguage);
   };
 
   return (
     <select onChange={handleLanguageChange} value={languageContext.language.id}>
-      {languageOptions.map(item => (
-        <option key={item.id} value={item.id}>
-          {item.text}
+      {languageOptions.map(({ id, text }) => (
+        <option key={id} value={id}>
+          {text}
         </option>
       ))}
     </select>
