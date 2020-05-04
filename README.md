@@ -116,7 +116,7 @@ npm run build
 
 ## Atribution
 
-- Logo created by [Marta Ximenis](https://www.domestika.org/es/projects/692722-cocina-con-amateurs)
+- [Logo created by Marta Ximenis](https://www.domestika.org/es/projects/692722-cocina-con-amateurs) @XimenisMarta
 
 - Favicon formatted from logo with [favicon-generator](https://www.favicon-generator.org/)
 
