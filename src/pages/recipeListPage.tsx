@@ -1,8 +1,10 @@
 import { RecipeListTemplate } from 'chemistry-ui';
 import React, { useEffect, useState } from 'react';
+//import { LanguageContext } from '../../containers/Language';
 import common from '../../public/literals/majorcan/common.json';
 import recipe from '../../public/literals/majorcan/recipe.json';
 import recipesNamesLiterals from '../../public/literals/majorcan/recipesNames.json';
+import { translate } from '../language';
 import { getRecipes } from '../utils/request';
 
 interface Literals {
@@ -18,6 +20,8 @@ export default function RecipeListPage() {
     preparationTime,
     howManyIngredients,
   });
+
+  console.log('languageContext.common', translate('common'));
 
   const [search, setSearch] = useState(common.comingSoon);
   const [recipes, setRecipes] = useState();
