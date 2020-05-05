@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Salsa de Tomate",
+    "description": "La salsa que elaboraremos es muy simple, pero tiene un secreto para que quede espectacular el tiempo. Hay que dejar lo cocer a fuego muy suave mucho tiempo.",
+    "items": [
+      "Empezamos pelando y picando los ajos",
+      "Los rehogamos con un chorrito de aceite en una sartén.",
+      "Cuando empiezan a coger color, le añadimos la cebolla bien picada (brunoise pequeña). La dejamos a fuego muy suave que se confite con una pizca de sal.",
+      "Cuando la cebolla este bien confitada pondremos el tomate troceado con su jugo. Lo dejamos a fuego suave que confite.",
+      "Cuando casi se ha consumido todo el jugo de los tomates, será el momento de añadir la albahaca picada."
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Gnocchi",
+    "items": [
+      "Herviremos las patatas con la piel y enteras, partiendo del agua fría. la cocinaremos a fuego medio hasta que podamos clavar un cuchillo sin encontrar resistencia. Aproximadamente 45-60 minutos.",
+      "En caliente las pelaremos y pondremos en un bol para hacer la masa.",
+      "Empezaremos machacando la patata y añadiremos las yemas y la harina. También añadiremos sal, pimienta y nuez moscada,  mezclamos bien con las manos hasta que la masa no se nos pega a las manos.",
+      "Para darles la forma, iremos cogiendo porciones de masa y haremos un churro de un cm de diámetro. Y lo cortaremos en segmentos de un cm.",
+      "Para los más atrevidos. Para que los gnocchi queden bien empapados de la salsa se les hacen unas estrías. Esto lo conseguimos haciendo deslizar nuestras porciones sobre un esterilla de sushi o sobre un tenedor con las puntas hacia abajo.",
+      "Para cocer los gnocchi es muy simple ponemos a hervir una olla con agua y una pizca de sal. Cuando hierve ponemos los gnocchi y esperamos a que floten, punto que nos indica que ya están cocidos."
+    ]
+  },
+  {
+    "id": 3,
+    "sectionName": "Finalización",
+    "description": "Llega el momento de unir las dos elaboraciones para ello necesitaremos un poco del agua de cocción de los gnocchi, los gnocchi ya cocidos y la salsa de tomate. Rehogamos estos elementos unos minutos a fuego medio y ya lo tenemos listo para comer."
+  }
+]
