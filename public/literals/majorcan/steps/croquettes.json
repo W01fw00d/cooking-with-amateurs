@@ -1,29 +1,29 @@
 [
   {
     "id": 1,
-    "sectionName": "Pasta de Croquetas",
+    "sectionName": "Pasta de Croquetes",
     "items": [
-      "Cortamos el pollo (pechugas o contramuslos) en dados. Los salpimentamos.",
-      "Doramos los dados en un sartén a fuego fuerte con un chorrito de aceite.",
-      "Añadimos la cebolla cortada a tiras finitas (juliana) con el tomillo. Bajamos el fuego para que confite el conjunto. Mínimo 30 minutos.",
-      "En otra olla realizaremos la *bechamel*. Para hacerla derretimos la mantequilla, cocinamos unos minutos la harina y añadimos la leche sin parar de remover. Removemos hasta que rompe a hervir y espesa.",
-      "Picamos a cuchillo todo el conjunto de pollo, cebolla y tomillo y lo mezclamos con la bechamel.",
-      "Ponemos la base de croquetas en un bol y lo tapamos con film pegado a la superficie (film a piel). Lo dejamos en el frigorífico entre 12-24 h."
+      "Tallam el pollastre (piteres o contracuixes) a daus. Els adobam amb sal i prebe.",
+      "Dauram els daus a una paella a foc fort amb un raig d'oli.",
+      "Afegim la ceba tallada fineta (juliana) amb la farigola. Baixam el foc perque el conjunt confiti. Mínim 30 minuts.",
+      "A una altra olla prepararem la *beixamel*. Per a ferla fonem la mantega, cuinam uns minuts la farina i afegim la llet sense aturar de remenar. Rementam fins que comenci a bullir i espessar.",
+      "Picams amb el ganivet tot el conjunt de pollastre, ceba i farigola i ho mesclam amb la beixamel.",
+      "Posam la pasta de croquetes a un bol i ho tapam amb film aferrat a la superfície (film a pell). Ho deixam a la gelera entre 12-24 h."
     ]
   },
   {
     "id": 2,
-    "sectionName": "Rebozado",
-    "description": "Ahora que la base ha cogido consistencia ya podemos montar las croquetas.",
+    "sectionName": "Rebossat",
+    "description": "Ara que la base ha guanyat consistència ja podems muntar les croquetes.",
     "items": [
-      "Para hacer el rebozado, intentamos coger siempre la misma cantidad de mezcla y hacemos una bola con las manos. Ésta la pasamos por: harina, huevo batido y pan rallado.",
-      "Al pasarlo por el pan rallado podemos optar por dejarlas en forma esférica o, si las presionamos ligeramente, podemos realizar la forma clásica cilíndrica.",
-      "Por último, las freímos en abundante aceite de girasol hasta que se doren."
+      "Per a fer el rebossat, intentams agafar sempre la mateixa quantitat de mescla i feim una bolla amb les mans. Aquesta la passam per: farina, ou batut i galleta picada.",
+      "En passar-les per galleta picada podem triar per deixar-les en forma esfèrica o, si las pressionams lleugerament, podem fer la forma clàsica cilíndrica.",
+      "Finalment, les fregim amb abundant oli de girasol fins que es dorin."
     ]
   },
   {
     "id": 3,
-    "sectionName": "Finalización",
-    "description": "Recuerda que si te parecen demasiada cantidad puedes congelarlas para comer otro día. Ten en cuenta que es mejor guardarlas en el congelador sin apilar y separada para que no pierdan su forma. Una vez estén bien congelada ya las puedes agrupar en un tupper más pequeño."
+    "sectionName": "Finalització",
+    "description": "Recorda que si trobes que en són moltes, pots congelar-les per menjar-les un altre dia. Tingues en compte que és millor guardar-les al congelador sense apilar i separades per no perdre la forma. En estar ben congelades ja les pots agrupar a un tupper més petit."
   }
 ]
