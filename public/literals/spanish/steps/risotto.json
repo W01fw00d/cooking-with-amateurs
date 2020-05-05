@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Polvo de Jamón Serrano",
+    "description": "Elaboraremos un polvo de jamón para darle un toque especial al sabor de nuestro risotto.",
+    "items": [
+      "En un plato llano, disponemos las lonchas de jamón serrano separadas. Lo ponemos en el microondas a 500W en 3-4 tandas de 1 minuto. Hasta que nos queda bien crujiente.",
+      "Picamos a cuchillo muy pequeño para que nos quede como si fuera un polvo."
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Risotto de Setas",
+    "items": [
+      "Empezamos picando y dorando el ajo con un poco de aceite. Realizaremos todo el cocinado en la misma olla baja o sartén alta.",
+      "Añadiremos la cebolla cortada a dados muy pequeños (brunoise) y dejaremos rehogar a fuego suave.",
+      "Cortamos las setas en cuartos y láminas. Añadimos a la olla las setas cortadas, salpimentamos y dejamos que se confite la mezcla a fuego suave.",
+      "Aprovechad para poner el caldo en una olla, ya que al añadirlo al arroz, tiene que estar caliente.",
+      "Seguimos añadiendo el arroz en la olla con el ajo, cebolla y setas ya bien confitados.",
+      "Cuando el arroz ya está caliente añadimos el vino y dejamos que se evapore.",
+      "En este momento añadimos el caldo, la cantidad suficiente para cubrir el arroz y un dedo más.",
+      "Iremos añadiendo caldo caliente a medida que el arroz nos queda seco, vamos probando el grano para tener el arroz con poco caldo cuando esté listo.",
+      "También rectificando de sal y pimienta casi al final de la cocción, _tened en cuenta que le tenemos que añadir parmesano que tiene un toque salino_.",
+      "_El tiempo de cocción dependerá mucho del tipo de arroz y la moderación del fuego, generalmente el arroz tardará unos 15-20 min_.",
+      "Cuando tenemos el arroz cocido y casi seco (meloso) lo retiramos del fuego. Es el momento de mantecarlo, es decir, añadir la mantequilla en pequeños dados y el parmesano rallado, removiendo suavemente.",
+      "Estará listo cuando se nos derrita toda la mantequilla, nos quedará con un aspecto muy meloso y brillante.",
+      "En este momento podemos añadir el polvo de jamón y también pondremos un poco cuando ya esté emplatado."
+    ]
+  }
+]
