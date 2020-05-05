@@ -1,38 +1,38 @@
 [
   {
     "id": 1,
-    "sectionName": "Alioli",
-    "description": "En mi opinión, el alioli es obligatorio que acompañe la fideuá ya que al mezclarlo, realza mucho su sabor.",
+    "sectionName": "Allioli",
+    "description": "Al meu entendre, l'allioli és obligatori que acompanyi a la fideuà ja que en mesclar-ho, destaca molt el seu sabor.",
     "items": [
-      "Empezaremos pelando los ajos y cortándolos por la mitad. Quitamos el gérmen central de los ajos.",
-      "Freiremos estas mitades de ajos en aceite de girasol hasta que se nos doren bien y las sacamos sobre papel absorbente para eliminar el exceso de aceite.",
-      "En un vaso de tubo pondremos el huevo entero, los ajos fritos y una pizca de sal. Lo trituramos todo con un brazo eléctrico hasta obtener una masa homogénea.",
-      "Dejaremos el brazo eléctrico en el fondo del vaso y, sin moverlo, añadiremos el aceite de oliva suave a hilo fino, hasta observar que esté bien emulsionada la mezcla.",
-      "En este momento podemos subir y bajar el brazo eléctrico y poner a punto de sal.",
-      "Reservamos esta elaboración en el frigorífico hasta el momento de consumirla. _Recordad que las recetas con huevo crudo son muy susceptibles de estropearse con el calor._"
+      "Començarem pelant els alls i tallant-los per la meitat. Llevam el germen central dels alls.",
+      "Fregirem aquestes meitats d'alls amb oli de girasol fins que es dorin bé i els eixugarem sobre paper absorbent per eliminar l'excés d'oli.",
+      "A un tassó de tub posam l'ou sencer, els alls fregits i una mica de sal. Ho trituram tot amb un braç elèctric fins tenir una massa homogènia.",
+      "Deixarem el braç elèctric al fons del tassó i, sense moure'l, afegirem l'oli d'oliva suau a fil fi, fins observar que la mescla està ben emulsionada.",
+      "Ara ja podem pujar i baixar el braç elèctric i posar a punt de sal.",
+      "Reservams aquesta elaboració a la gelera fins el moment de consumir-la. _Recordau que les receptes amb ou cru són molt susceptibles de fer-se malbé amb la calor._"
     ]
   },
   {
     "id": 2,
-    "sectionName": "Fideuá",
-    "description": "Primero arreglaremos las carnes y las dejaremos adobar. Este proceso estaría bien hacerlo el día anterior a realizar la fideuá. Si no es posible con unas horas antes será suficiente. Para ello retiramos los huesos y la piel tanto del pollo como del cerdo. Cortamos ambas carnes en dados y las dejamos macerar con un ajo  machacado, tomillo, pimentón y aceite.",
+    "sectionName": "Fideuà",
+    "description": "Primer, arreglarem les carns i les deixarem adobar. Aquest procés estaria bé fer-lo el dia anterior a fer la fideuà. Si no és possible, amb unes hores abans serà suficient. Per fer-ho retiram els ossos i la pell tant del pollastre como del porc. Tallam ambdues carns a daus i les deixam macerar amb un all esclafat, farigola, prebe bord i oli.",
     "items": [
-      "El primer paso será freír los fideos. Para ello, pondremos aceite en la misma paella donde haremos la fideuá y los tostaremos hasta que nos cojan color.",
-      "Una vez tostados, los pondremos en un colador para eliminar el aceite.",
-      "Seguidamente, en la paella a fuego fuerte y con un poco de aceite, doraremos las carnes ya maceradas. La reservamos.",
-      "A continuación, ponemos el caldo a calentar para que ya esté caliente cuando lo necesitemos.",
-      "En la paella haremos un sofrito añadiendo los elementos en el siguiente orden: ajo picado, cebolla picada, pimientos rojo y verde en dados de medio cm.",
-      "Para acabar el sofrito pondremos el tomate pelado y cortado a dados de medio cm. Dejamos unos minutos sofreír todos los ingredientes para que se intercambien bien los sabores.",
-      "Añadiremos las carnes doradas y las dejaremos unos minutos para que suelten el jugo.",
-      "Seguidamente le ponemos también los fideos fritos y removemos unos minutos.",
-      "Ahora iremos añadiendo el caldo caliente. Primero cubriremos la fideuá y un poco más. A medida que se va evaporando vamos añadiendo más caldo, comprobando su punto de cocción. Suelen tardar entre 6-14 min dependiendo del tipo de fideo escogido.",
-      "_Es importante que nos quede muy poquito caldo cuando los fideos estén cocidos._"
+      "La primera passa serà fregir els fideus. Posam oli a la mateixa paella on farem la fideuà i els torram fins que agafin color.",
+      "En tenir-los, els posama un colador per eliminar-ne l'oli.",
+      "Seguidament, a la paella a foc fort i amb un poc d'oli, dauram les carns ja macerades. Les reservam.",
+      "A continuació, posam el brou a encalentir perquè ja estigui calent quan l'haguem de menester.",
+      "A la paella farem un sofregit afegint els element en el següent ordre: all picat, ceba picada, prebe vermell i verd a daus de mig cm.",
+      "Per acabar el sofregit hi afegirem la tomàtiga pelada i tallada a daus de mig cm. Deixam uns minuts sofregir tots els ingredients perquè s'intercanviin bé tots els sabors.",
+      "Afegirem les carns daurades i les deixarem uns minuts perquè amollin el suc.",
+      "Seguidament afegim els fideus fregits i remenam uns minuts.",
+      "Ara, anirem afegint el brou clent. Primer cubrirem la fideuà i una mica més. A mesura que s'evapora, anam afegint més brou, comprobant el punt de cocció. Solen torbar-se entre 6-14 min depenent del tipus de fideu triat.",
+      "_És important que quedi poc brou quan els fideus estiguin cuits._"
 
     ]
   },
   {
     "id": 3,
-    "sectionName": "Finalización",
-    "description": "Lo dejamos reposar unos minutos. ¡Y ya está listo para comer! Acuérdate de acompañarlo del *alioli*."
+    "sectionName": "Finalització",
+    "description": "Ho deixam reposar uns minuts. I ja està llest per menjar! Recorda acompanyar-lo de l'*allioli*."
   }
 ]
