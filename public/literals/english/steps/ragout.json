@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "sectionName": "Puré de patata",
+    "sectionName": "Mashed potatos",
     "items": [
-      "Empezaremos hirviendo las patatas enteras con piel (pero lavadas para que no tengan tierra). _Recuerda que es importante que la cocción de la patata empiece desde agua fría._",
-      "Cuando las pinchamos con un tenedor o cuchillo y no encontramos resistencia ya las tenemos bien cocidas. Suelen ser unos 45-60 min.",
-      "Dejamos enfriar un poco las patatas y cuando están tibias las pelamos.",
-      "Con la ayuda de una varilla o un tenedor las aplastamos y aliñamos con aceite de oliva virgen, sal, pimienta y nuez moscada. Removemos bien con las varillas hasta obtener una mezcla homogénea."
+      "Start by boiling the whole potatoes with skin (but washed so that they do not have soil). _Remember that it is important that the cooking of the potato starts from cold water_.",
+      "The potatos are well cooked When pricking them with a fork or knife finding no resistance. It usually takes about 45-60 min.",
+      "Let the potatoes cool a little andpeel them when they are warm.",
+      "With the help of a rod or fork, crush them and season with virgin olive oil, salt, pepper and nutmeg. Stir well with the rods until obtaining a homogeneous mixture."
     ]
   },
   {
     "id": 2,
-    "sectionName": "Ragout de Butifarra",
+    "sectionName": "Butifarra Ragout",
     "items": [
-      "Empezaremos la receta caramelizando la manzana. Para ello, pelamos las manzanas, cortamos en cuartos y cada uno en tres gajos que finalmente, cortamos por la mitad.",
-      "En una sartén con mantequilla caramelizamos las manzanas hasta que cojan color. Para ayudarlas a que queden bien doradas, les ponemos azúcar. Reservamos la elaboración.",
-      "En la misma sartén con un chorrito de aceite suave ponemos los champiñones a cuartos hasta que se doren. Salpimentamos y reservamos.",
-      "Ahora doraremos las butifarras enteras a fuego fuerte. Cuando tenga un buen color, las cortamos en tres cada una (_del tamaño de un bocado_).",
-      "En seguida seguimos añadiendo la cebolla cortada en tiras muy finitas (juliana) a fuego suave y dejamos que se confite.",
-      "Una vez bien confitada la cebolla, le añadimos los champiñones y la nata. Dejamos a fuego muy suave, para que la nata se vaya reduciendo e infusionando de todos los sabores.",
-      "Por último, cuando tenemos la nata reducida a una salsita, añadimos las manzanas caramelizadas, ya fuera del fuego, removiendo. Listo para servir con dos buenas cucharadas de nuestro puré de patata."
+      "Start the recipe by caramelizing the apple. To do this, peel the apples, cut them into quarters and each into three segments to finally cut in half.",
+      "In a pan with butter, caramelize the apples until they turn brownish. To help them stay golden brown, add sugar. Then reserve.",
+      "In the same frying pan with a dash of soft oil, put the mushrooms to quarters until golden. Season and reserve.",
+      "Now brown the whole butifarras over high heat. When having good color, we cut them into three each (_bite size_).",
+      "Then continue by add the onion cut into very thin strips (julienne) over low heat and let it confit.",
+      "Once the onion is well confited, add the mushrooms and cream. Leave over very low heat, so that the cream is reduced and infused with all the flavors.",
+      "Finally, when the cream is reduced to a sauce, add the caramelized apples, already out of the fire, stirring. Ready to serve with two good tablespoons of our mashed potato."
     ]
   }
 ]
