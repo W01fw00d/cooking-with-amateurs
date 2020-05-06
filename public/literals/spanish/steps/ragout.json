@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Puré de patata",
+    "items": [
+      "Empezaremos hirviendo las patatas enteras con piel (pero lavadas para que no tengan tierra). _Recuerda que es importante que la cocción de la patata empiece desde agua fría._",
+      "Cuando las pinchamos con un tenedor o cuchillo y no encontramos resistencia ya la tenemos bien cocidas. Suelen ser unos 45-60 min.",
+      "Dejamos enfriar un poco las patatas y cuando están tibias las pelamos.",
+      "Con la ayuda de una varilla o un tenedor las aplastamos y aliñamos con aceite oliva virgen, sal, pimienta y nuez moscada. Removemos bien con las varillas hasta obtener una mezcla homogénea."
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Ragout de Butifarra",
+    "items": [
+      "Empezaremos la receta caramelizando la manzana. Para ello, pelamos las manzanas, cortamos en cuartos y cada uno en tres gajos que finalmente, cortamos por la mitad.",
+      "En una sartén con mantequilla caramelizamos la manzana hasta que cojan color. Para ayudarlas a que queden bien doradas, les ponemos azúcar. Reservamos la elaboración.",
+      "En la misma sartén con un chorrito de aceite suave ponemos los champiñones a cuartos hasta que se doren. Salpimentamos y reservamos.",
+      "Ahora doraremos las butifarras enteras a fuego fuerte. Cuando tenga un buen color, las cortamos en tres cada una (_del tamaño de un bocado_).",
+      "En seguida seguimos añadiendo la cebolla cortada en tiras muy finitas (juliana) a fuego suave y dejamos que se confite.",
+      "Una vez bien confitada la cebolla, le añadimos los champiñones y la nata. Dejamos a fuego muy suave, para que la nata se vaya reduciendo e infusionando de todos los sabores.",
+      "Por último, cuando tenemos la nata reducida a una salsita. Añadimos las manzanas caramelizadas, ya fuera del fuego removiendo. Listo para servir con dos buenas cucharadas de nuestro puré de patata."
+    ]
+  }
+]
