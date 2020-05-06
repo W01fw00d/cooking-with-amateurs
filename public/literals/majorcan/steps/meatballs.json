@@ -6,28 +6,28 @@
     "items": [
       "A l'olla on farem l'aguiat començarem daurant dos alls molt picats.",
       "Quan aquests estiguin, hi afegirem dues cebes tallades a brunoise (daus petits) amb llorer i moraduix; els tendrem a foc suau fins que quedin ben confitats.",
-      "En tenir-los confitats, retirarem la meitat per muntar les _pilotes_ i deixarem la resta a l'olla per seguir l'aguiat.",
-      "Para seguir con las _“pilotes”_, ponemos en un bol una rebanada de pan de molde. La mojamos con la leche y con las manos hacemos una pasta sin tropezones.",
-      "Añadimos la carne, la mejorana picada, la cebolla/ajo confitado (retirada anteriormente) y salpimentamos. Mezclamos bien.",
-      "Hacemos bolitas de unos 20-30 g que posteriormente enharinaremos y freiremos en abundante aceite hasta que estén bien doradas.",
-      "Las pondremos a escurrir sobre papel absorbente y reservaremos."
+      "En tenir-los confitats, retirarem la meitat per muntar les _pilotes_ i deixarem la resta a l'olla per seguir amb l'aguiat.",
+      "Per elaborar les _pilotes_, posam a un bol una llesca de pan de motlle. La banyam amb la llet i amb les mans feim una pasta sense que quedin _“tropezones”_.",
+      "Hi afegim la carn, moraduix capolat, la ceba/all confitats (retirats prèviament) i adobam. Mesclam bé.",
+      "Feim bolletes d'uns 20-30 g que llevò enfarinarem i fregirem amb abundant oli fins que quedin ben daurades.",
+      "Les posam a sucar sobre paper absorbent i reservam."
       
     ]
   },
   {
     "id": 2,
-    "sectionName": "Guiso de _Pilotes_",
+    "sectionName": "Aguiat de Pilotes",
     "items": [
-      "En la olla dónde iniciamos el guiso, en la cual tenemos ajo/ cebolla confitada, continuamos añadiendo las zanahorias peladas, cortadas a la mitad y láminas gruesas en forma de media luna.",
-      "Seguidamente añadiremos la patata pelada y chascada (_introducimos el cuchillo en la patata y, en lugar de finalizar el corte del gajo, giramos 90 grados para arrancarlo_).",
-      "Dejaremos sofreír toda la verdura unos minutos. A continuación, añadiremos el tomate con su jugo y lo dejamos cocinarse una minutos.",
-      "Ahora es el momento de añadir el caldo (en frío, importante para no encallar la patata) y lo dejaremos hervir a fuego suave hasta que pinchando la patata y zanahorias las notemos cocidas. Este será el momento en el que añadiremos las “pilotes” ya fritas y las dejaremos guisar unos 10 min."
+      "A l'olla on vam iniciar l'aguiat, on ja hi tenim ceba/all confitats, continuam afegint les pastanagues pelades, tallades a la meitat i làmines gruixudes en forma de mitja lluna.",
+      "Seguidament afegirem la patata pelada i _“chascada”_ (introduim el ganivet a la patata i, en lloc de finalitzar el tall del grell, giram 90 graus per arrabassar-lo_).",
+      "Deixarem sofregir tota la verdura uns minuts. A continuació, afegirem la tomàtiga amb el seu suc i ho deixem cuinar uns minuts més.",
+      "Ara toca afegir el brou (en fred, important per no encallar la patata) i el deixarem bullir a foc suau fins que punxant la patata i la pastanaga les trobem cuites. En aquest moment ja podem afegir les pilotes ja fregides i les deixam aguiar uns 10 min."
 
     ]
   },
   {
     "id": 3,
-    "sectionName": "Finalización",
-    "description": "Tened en cuenta que este guiso no nos tiene que quedar muy caldoso, más bien una salsita... Y ya lo tendremos listo para comer."
+    "sectionName": "Finalització",
+    "description": "Teniu en compte que aquesta aguiat no ha de quedar amb massa brou, ha de ser més bé una salseta...I ja el tendrem llest per menjar."
   }
 ]
