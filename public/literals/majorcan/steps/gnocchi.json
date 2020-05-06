@@ -1,31 +1,31 @@
 [
   {
     "id": 1,
-    "sectionName": "Salsa de Tomate",
-    "description": "La salsa que elaboraremos es muy simple, pero tiene un secreto para que quede espectacular: el *tiempo*. Hay que dejarlo cocer a fuego muy suave, mucho tiempo.",
+    "sectionName": "Salsa de Tomàtiga",
+    "description": "La salsa que prepararem és ben senzilla, perè té un secret perqu+e quedi espectacular: el *temps*. L'hem de deixar coure a foc molt suau, molt de temps.",
     "items": [
-      "Empezamos pelando y picando los ajos",
-      "Los rehogamos con un chorrito de aceite en una sartén.",
-      "Cuando empiezan a coger color, añadimos la cebolla bien picada (brunoise pequeña). La dejamos a fuego muy suave, que se confite con una pizca de sal.",
-      "Cuando la cebolla esté bien confitada, pondremos el tomate troceado con su jugo y lo dejamos a fuego suave que confite.",
-      "Cuando casi se ha consumido todo el jugo de los tomates, será el momento de añadir la albahaca picada."
+      "Començam pelant i picant els alls.",
+      "Els sofregim amb un raig d'oli a la paella.",
+      "En començar a agafar color, afegim la ceba ben picada (brunoise petita). La deixam a foc molt suau, que confiti amb una mica de sal.",
+      "En tenir la ceba ben confitada, afegim la tomàtiga trossejada i el seu suc. Deixam a foc suau perquè confiti.",
+      "En haver-se consumit quasi tot el suc de les tomàgigues, serà el moment d'afegir l'alfabaguera capolada."
     ]
   },
   {
     "id": 2,
     "sectionName": "Gnocchi",
     "items": [
-      "Herviremos las patatas con la piel y enteras, partiendo del agua fría. Las cocinaremos a fuego medio hasta que podamos clavar un cuchillo sin encontrar resistencia (Aproximadamente 45-60 minutos).",
-      "En caliente, las pelaremos y pondremos en un bol para hacer la masa.",
-      "Empezaremos machacando la patata y añadiremos las yemas y la harina. También añadiremos sal, pimienta y nuez moscada. Mezclamos bien con las manos hasta que la masa no se nos pegue entre los dedos.",
-      "Para darles la forma, iremos cogiendo porciones de masa y haremos un churro de 1 cm de diámetro. Luego, lo cortaremos en segmentos de 1 cm.",
-      "_Para los más atrevidos:_ Para que los gnocchi queden bien empapados de la salsa, se les hacen unas estrías. Esto lo conseguimos haciendo deslizar nuestras porciones sobre una esterilla de sushi o sobre un tenedor con las puntas hacia abajo.",
-      "Para cocer los gnocchi es muy simple: ponemos a hervir una olla con agua y una pizca de sal. Cuando hierve, ponemos los gnocchi y esperamos a que floten, punto que nos indica que ya están cocidos."
+      "Bullim les patates amb pell i senceres, començant de l'aigua freda. Les cuinam a foc mitjà fins poder clavar un ganivet sense trobar ressistència (Aproximadament 45-60 minuts).",
+      "En calent, les pelarem i posarem a un bol per a fer la pasta.",
+      "Començarem esclafant la patata i afegirem els vermells d'ou i la farina. També hi posam sal, prebe negre y nou moscada. Mesclam bé amb les mans fins que la pasta no se'ns aferri als dits.",
+      "Per donar-lis la forma, anam agafant porcions de pasta i fium un xurro d'1 cm de diàmetre. Després, el tallam en segments d'1 cm.",
+      "_Per als més atrevits:_ Perquè els gnocchi agafin bé la salsa, s'hi fan unes estries. Això ho aconseguirem passant les porcions sobre una esterilla de sushi o sobre una forqueta amb les puntes per avall.",
+      "Coure els gnocchi és ben senzill: posam a bullir una olla amb aigua i una mica de sal. En bullir, posam els gnocchi i esperam a que surin, punt que ens indica que ja són cuits."
     ]
   },
   {
     "id": 3,
-    "sectionName": "Finalización",
-    "description": "Llega el momento de unir las dos elaboraciones. Para ello necesitaremos un poco del agua de cocción de los gnocchi, los gnocchi ya cocidos y la salsa de tomate. Rehogamos estos elementos unos minutos a fuego medio y ya lo tenemos listo para comer."
+    "sectionName": "Finalització",
+    "description": "Arriba el momento d'unir les dues elaboracions. Per això necessitarem un poc de l'aigua de cocció dels gnocchi, els gnocchi ja cuits i la salsa de tomàtiga. Ho mesclam tot uns minuts a foc mitjà i ja ho tenim llest per menjar."
   }
 ]
