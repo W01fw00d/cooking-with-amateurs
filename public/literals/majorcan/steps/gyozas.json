@@ -1,62 +1,62 @@
 [
   {
     "id": 1,
-    "sectionName": "Masa de Gyozas",
-    "description": "Empezaremos la receta haciendo la masa ya que una vez amasada, la tendremos que dejar reposar unos 30 min.",
+    "sectionName": "Pasta de Gyozas",
+    "description": "Començarem fent la pasta ja que un cop pastada, l'hem de deixar reposar uns 30 min.",
     "items": [
-      "Para hacer la masa, pondremos en un bol la harina y calentaremos 100ml de agua en el microondas 40s a 500W y le pondremos una pizca de sal.",
-      "Con un tenedor vamos integrado el agua con la harina en el bol, removiendo constantemente.",
-      "Cuando ya hemos integrado toda la harina, será el momento de poner las manos y trabajar la masa unos 10 min.",
-      "Una vez amasada, hacemos una bola y la tapamos con film; dejamos reposar 30 min. _Recordad que aún no hemos usado la maicena,  la usaremos más adelante para estirar la masa al formar obleas_."
+      "Per fer la pasta, posam a un bol la farina i encalentim 100 ml d'aigua al microones 40 s a 500 W i hi afegim una mica de sal.",
+      "Amb una forqueta anam integrant l'aigua amb la farina al bol, remenant constantement.",
+      "En tenir tota la farina integrada, serà el moment de posar les mans i treballar la pasta uns 10 min.",
+      "Un cop pastada, feim una bolla i la tapam amb film; deixam reposar 30 min. Recordau que encara no hemos emprat la maicena, la farem servir més endavant per estirar la pasta per muntar les oblees_."
       
     ]
   },
   {
     "id": 2,
-    "sectionName": "Relleno",
-    "description": "Para el relleno hemos querido usar carne de cerdo, pero sin variar ninguna cantidad, la podemos sustituir por langostinos bien picados a cuchillo o carne picada de ternera.",
+    "sectionName": "Farcit",
+    "description": "Per fer el farcit hem volgut emprar carn de porc, però sense variar cap quantitat, la podem substituir per llagostins ben capolats amb ganivet o carn capolada de ternera.",
     "items": [
-      "Empezamos con la col o repollo. Para ello deshojaremos y le quitaremos la parte más dura y central (el nervio de la hoja). El corte de la col lo hacemos muy finito.",
-      "El sofrito o cebollino, lo picaremos muy finito.",
-      "A continuación, pelamos el jengibre (_con cucharilla_) y medio ajo sin germen, y los picamos bien pequeños.",
-      "En un bol, mezclamos todos los elementos y añadimos: la carne picada de cerdo, aceite de sésamo, media cucharadita de maicena, pizca de sal y azúcar. De esta manera ya tendremos listo el relleno."
+      "Començam desfullant la col. Li llevarem la part més dura i central (el nervi de la fulla). Farem el tall de la col ben fi.",
+      "El sofrit o cibulet, també el tallam finet.",
+      "A continuació, pelam el gingebre (_amb cullereta_) i mig all sense germen, i els picam ben petits.",
+      "A un bol, mesclam tots els elements i afegim: la carne capolada de porc, oli de sésam, mitja culleradeta de maizena, una mica de sal i sucre. Així ja tenim llest el farcit."
 
     ]
   },
   {
     "id": 3,
-    "sectionName": "Salsa para Mojar",
-    "description": "Simplemente mezclamos los cuatro ingredientes en un cuenco, sin más (_Id probando para que quede al gusto_)."
+    "sectionName": "Salsa per fer Mulletes",
+    "description": "Simplement mesclam els quatre ingredients a un bol, talment (_Anau tastant perquè quedi com més us agradi_)."
 
   },
   {
     "id": 4,
-    "sectionName": "Formar las Gyozas",
-    "description": "Una vez transcurrido el tiempo de reposo de la masa limpiamos bien una zona de trabajo lisa, donde esparcimos maicena.",
+    "sectionName": "Muntar les Gyozas",
+    "description": "Un cop passat el temps de repòs de la pasta, netejarem bé una zona de feina llisa, on hi escampam maizena.",
     "items": [
-      "Cogemos nuestra masa y hacemos un churro muy estirado y vamos cortando mitades hasta obtener 20 porciones iguales.",
-      "Preparamos un vaso con agua fría para sellar las gyozas.",
-      "Empezamos cogiendo una de nuestras porciones, la pasamos por maicena y con la ayuda de un rodillo estiramos formando una oblea *fina*. Si tienes un aro redondo de unos 8 cm de diámetro, sería genial para tener todas la gyozas iguales. Si no es así, no pasa nada.",
-      "En el centro de la oblea pondremos una cucharada del relleno. Mojaremos el dedo en el agua fría y pintaremos media oblea. Doblamos la oblea juntando sólo la parte central y realizaremos tres pliegues a cada lado de la misma. Luego asentaremos bien la gyozas y presionaremos los bordes para asegurarnos que están bien cerrados."
+      "Agafam la nostra pasta i feim un xurro molt estirat i anem tallant meitats fins a obtenir 20 porcions iguals.",
+      "Preparem un tassó amb aigua freda per tancar les gyozas.",
+      "Començam agafant una de les nostres porcions, la passam per la maizena i amb l'ajuda d'un rodillo estiram formant una oblea * fina *. Si teniu un motllo rodó d'uns 8 cm de diàmetre, seria genial per tenir totes les gyozas iguals. Si no és així, no passa res.",
+      "Al centre de l'oblea posarem una cullerada del farcit. Mullarem el dit a l'aigua freda i pintarem mitja oblea. La doblegam ajuntant només la part central i realitzarem tres plecs a cada costat de la mateixa. Després assentarem bé la gyoza i pressionarem les vores per assegurar-nos que estan ben tancats."
 
     ]
   },
   {
     "id": 5,
-    "sectionName": "Cocción de las Gyozas",
-    "description": "Para cocerlas, necesitaremos una sartén con tapa, un chorrito de aceite oliva, un vaso con agua fría, aceite sésamo y un pizca de maicena.",
+    "sectionName": "Cocció de las Gyozas",
+    "description": "Per coure-les, necessitarem una paella amb tapa, un raig d'oli oliva, un tassó amb aigua freda, oli de sèsam i un polsim de maizena.",
     "items": [
-      "Primero pondremos a calentar la sartén con un chorrito de aceite oliva bien esparcido por toda la base.",
-      "Cuando está caliente, colocamos las gyozas (_es recomendable no poner muchas a la vez_).",
-      "Tostamos la base de las gyozas hasta que se nos doren, lo comprobamos levantándolas y mirando el color de la parte inferior.",
-      "Cuando todas ya tienen color, añadimos la mezcla de agua, aceite de sésamo y maicena, cubriendo la base de la sartén.",
-      "Rápidamente tapamos la sartén y dejamos que se genere el vapor a fuego medio unos 6 min. Pasado este tiempo, volvemos a subir el fuego 2 min y los 30 últimos segundos destapamos la sartén para que se evapore toda el agua y nos quede la base de la gyozas crujiente."
+      "Primer posarem a encalentir la paella amb un raig d'oli oliva ben escampat per tota la base.",
+      "En estar calent, col·loquem les gyozas (_És recomanable no posar-ne moltes a la vegada_).",
+      "Torram la base de les gyozas fins que se'ns dorin, ho anam comprovant aixecant i mirant el color de la part inferior.",
+      "Quan totes ja tenen color, afegim la mescla d'aigua, oli de sèsam i maizena, cobrint la base de la paella.",
+      "Ràpidament tapam la paella i deixam que es generi el vapor a foc mitjà uns 6 min. Passat aquest temps, tornam a pujar el foc 2 min i els 30 últims segons destapam la paella perquè s'evapori tota l'aigua i ens quedi la base de les gyozas cruixent."
 
     ]
   },
   {
     "id": 6,
-    "sectionName": "Finalización",
-    "description": "Ya las tenemos listas para comer junto la salsa."
+    "sectionName": "Finalització",
+    "description": "Ja les tenim llestes per menjar amb la salseta."
   }
 ]
