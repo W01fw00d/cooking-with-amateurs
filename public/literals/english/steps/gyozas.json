@@ -1,62 +1,62 @@
 [
   {
     "id": 1,
-    "sectionName": "Masa de Gyozas",
-    "description": "Empezaremos la receta haciendo la masa ya que una vez amasada, la tendremos que dejar reposar unos 30 min.",
+    "sectionName": "Gyoza Dough",
+    "description": "It is recommendable to start the recipe making the dough since once kneaded, we will have to let it rest for about 30 min.",
     "items": [
-      "Para hacer la masa, pondremos en un bol la harina y calentaremos 100 ml de agua en el microondas 40 s a 500 W y le pondremos una pizca de sal.",
-      "Con un tenedor vamos integrado el agua con la harina en el bol, removiendo constantemente.",
-      "Cuando ya hemos integrado toda la harina, será el momento de poner las manos y trabajar la masa unos 10 min.",
-      "Una vez amasada, hacemos una bola y la tapamos con film; dejamos reposar 30 min. _Recordad que aún no hemos usado la maicena, la usaremos más adelante para estirar la masa al formar obleas_."
+      "To prepare the dough, put the flour in a bowl and heat 100 ml of water in the microwave for 40 s at 500 W adding a pinch of salt.",
+      "Using a fork integrate the water with the flour in the bowl, stirring constantly.",
+      "Once all the flour is integrated, use your hands to work the dough for about 10 min.",
+      "Once kneaded, make a ball and cover it with film. Let it rest for 30 min. _Remember that cornstarch yet will be used later to roll out the dough when forming the wafers_."
       
     ]
   },
   {
     "id": 2,
-    "sectionName": "Relleno",
-    "description": "Para el relleno hemos querido usar carne de cerdo, pero sin variar ninguna cantidad, la podemos sustituir por langostinos bien picados a cuchillo o carne picada de ternera.",
+    "sectionName": "Stuffing",
+    "description": "Commonly pork is used for stuffing but, without changing any quantity, it can be substituted for well-minced prawns or minced beef.",
     "items": [
-      "Empezamos con la col o repollo. Para ello deshojaremos y le quitaremos la parte más dura y central (el nervio de la hoja). El corte de la col lo hacemos muy finito.",
-      "El sofrito o cebollino, lo picaremos muy finito.",
-      "A continuación, pelamos el jengibre (_con cucharilla_) y medio ajo sin germen, y los picamos bien pequeños.",
-      "En un bol, mezclamos todos los elementos y añadimos: la carne picada de cerdo, aceite de sésamo, media cucharadita de maicena, pizca de sal y azúcar. De esta manera ya tendremos listo el relleno."
+      "Start by defoliating the cabbage and remove the hardest central part (the nerve of the leaf). Then cut it very finely.",
+      "Then, chop very finely the chive.",
+      "Next, peel the ginger (_with a teaspoon_) and half the garlic without germ, choppin them very small.",
+      "In a bowl, mix all the elements and add: the minced pork, sesame oil, half a teaspoon of cornstarch, a pinch of salt and sugar. In this way you will have the filling ready."
 
     ]
   },
   {
     "id": 3,
-    "sectionName": "Salsa para Mojar",
-    "description": "Simplemente mezclamos los cuatro ingredientes en un cuenco, sin más (_Id probando para que quede al gusto_)."
+    "sectionName": "Dipping Sauce",
+    "description": "Simply mix the four ingredients in a bowl, and you will have it ready."
 
   },
   {
     "id": 4,
-    "sectionName": "Formar las Gyozas",
-    "description": "Una vez transcurrido el tiempo de reposo de la masa limpiamos bien una zona de trabajo lisa, donde esparcimos maicena.",
+    "sectionName": "Form the Gyozas",
+    "description": "Once the dough rest time has elapsed, clean a smooth working area well, and spread the cornstarch.",
     "items": [
-      "Cogemos nuestra masa y hacemos un churro muy estirado y vamos cortando mitades hasta obtener 20 porciones iguales.",
-      "Preparamos un vaso con agua fría para sellar las gyozas.",
-      "Empezamos cogiendo una de nuestras porciones, la pasamos por maicena y con la ayuda de un rodillo estiramos formando una oblea *fina*. Si tienes un aro redondo de unos 8 cm de diámetro, sería genial para tener todas la gyozas iguales. Si no es así, no pasa nada.",
-      "En el centro de la oblea pondremos una cucharada del relleno. Mojaremos el dedo en el agua fría y pintaremos media oblea. Doblamos la oblea juntando sólo la parte central y realizaremos tres pliegues a cada lado de la misma. Luego asentaremos bien la gyoza y presionaremos los bordes para asegurarnos que están bien cerrados."
+      "Take the dough and make a stretched cilinder and cut it into halves until obtaining 20 equal portions.",
+      "Prepare a glass with cold water to seal the gyozas.",
+      "Start by taking one of the portions, pass it through cornstarch and with the help of a rolling pin, stretch it forming a *fine* wafer. If you have a round hoop about 8 cm in diameter, it would be great to have all the gyozas the same. If not, do not worry, they will have _personality_.",
+      "Put a tablespoon of the filling in the center of the wafer. Dip the finger in the cold water and paint half a wafer. Fold the wafer joining only the central part and make three folds on each side of it. Then, seat the gyoza well and press the edges to make sure they are well closed."
 
     ]
   },
   {
     "id": 5,
-    "sectionName": "Cocción de las Gyozas",
-    "description": "Para cocerlas, necesitaremos una sartén con tapa, un chorrito de aceite oliva, un vaso con agua fría, aceite sésamo y un pizca de maicena.",
+    "sectionName": "Cooking the Gyozas",
+    "description": "To cook the gyozas, you will need a frying pan with a lid, a splash of olive oil, a glass of cold water, sesame oil and a pinch of cornstarch.",
     "items": [
-      "Primero pondremos a calentar la sartén con un chorrito de aceite oliva bien esparcido por toda la base.",
-      "Cuando está caliente, colocamos las gyozas (_es recomendable no poner muchas a la vez_).",
-      "Tostamos la base de las gyozas hasta que se nos doren, lo comprobamos levantándolas y mirando el color de la parte inferior.",
-      "Cuando todas ya tienen color, añadimos la mezcla de agua, aceite de sésamo y maicena, cubriendo la base de la sartén.",
-      "Rápidamente tapamos la sartén y dejamos que se genere el vapor a fuego medio unos 6 min. Pasado este tiempo, volvemos a subir el fuego 2 min y los 30 últimos segundos destapamos la sartén para que se evapore toda el agua y nos quede la base de la gyozas crujiente."
+      "First, heat the pan with a splash of olive oil well spread throughout the base.",
+      "When it is hot, place the gyozas (_it is recommended not to put many at the same time_).",
+      "Toast the base of the gyozas until they are golden brown, check by lifting them and looking at the color of the bottom.",
+      "When the gyozas are toasted, add the mixture of water, sesame oil and cornstarch, covering the base of the pan.",
+      "Quickly cover the pan and let the steam build over medium heat for about 6 min. After this time, raise the fire 2 min and for the last 30 seconds uncover the pan so that all the water evaporates leading to crispy gyozas."
 
     ]
   },
   {
     "id": 6,
-    "sectionName": "Finalización",
-    "description": "Ya las tenemos listas para comer junto la salsa."
+    "sectionName": "Ending",
+    "description": "Get ready to enjoy delicious gyozas with the sauce!"
   }
 ]
