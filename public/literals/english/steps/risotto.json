@@ -1,30 +1,30 @@
 [
   {
     "id": 1,
-    "sectionName": "Polvo de Jamón Serrano",
-    "description": "Elaboraremos un polvo de jamón para darle un toque especial al sabor de nuestro risotto.",
+    "sectionName": "Serrano Ham Powder",
+    "description": "This ham powder will give a special touch to the flavor of our risotto.",
     "items": [
-      "En un plato llano, disponemos las lonchas de jamón serrano separadas. Lo ponemos en el microondas a 500 W en 3-4 tandas de 1 minuto. Hasta que nos queda bien crujiente.",
-      "Picamos a cuchillo muy pequeño para que nos quede como si fuera un polvo."
+      "On a flat plate, arrange the slices of Serrano ham separately. Put it in the microwave at 500 W in 3-4 batches of 1 minute. Until the ham is crispy.",
+      "Chop the slices very small using a knife so that they remain of a powder."
     ]
   },
   {
     "id": 2,
-    "sectionName": "Risotto de Setas",
+    "sectionName": "Mushroom Risotto",
     "items": [
-      "Empezamos picando y dorando el ajo con un poco de aceite. Realizaremos todo el cocinado en la misma olla baja o sartén alta.",
-      "Añadiremos la cebolla cortada a dados muy pequeños (brunoise) y dejaremos rehogar a fuego suave.",
-      "Cortamos las setas en cuartos y láminas. Añadimos a la olla las setas cortadas, salpimentamos y dejamos que se confite la mezcla a fuego suave.",
-      "Aprovechad para poner el caldo en una olla, ya que al añadirlo al arroz, tiene que estar caliente.",
-      "Seguimos añadiendo el arroz en la olla con el ajo, cebolla y setas ya bien confitados.",
-      "Cuando el arroz ya está caliente añadimos el vino y dejamos que se evapore.",
-      "En este momento añadimos el caldo, la cantidad suficiente para cubrir el arroz y un dedo más.",
-      "Iremos añadiendo caldo caliente a medida que el arroz nos queda seco, vamos probando el grano para tener el arroz con poco caldo cuando esté listo.",
-      "También rectificando de sal y pimienta casi al final de la cocción, _tened en cuenta que le tenemos que añadir parmesano que tiene un toque salino_.",
-      "_El tiempo de cocción dependerá mucho del tipo de arroz y la moderación del fuego, generalmente el arroz tardará unos 15-20 min_.",
-      "Cuando tenemos el arroz cocido y casi seco (meloso) lo retiramos del fuego. Es el momento de mantecarlo, es decir, añadir la mantequilla en pequeños dados y el parmesano rallado, removiendo suavemente.",
-      "Estará listo cuando se nos derrita toda la mantequilla, nos quedará con un aspecto muy meloso y brillante.",
-      "En este momento podemos añadir el polvo de jamón y también pondremos un poco cuando ya esté emplatado."
+      "Start by chopping and browning the garlic with a little oil. Set all the cooking in the same low pot or high frying pan.",
+      "Add the onion cut into very small cubes (brunoise) and let it simmer over low heat.",
+      "Cut the mushrooms into quarters and sheets. Add the cut mushrooms to the pot, season with salt and pepper and allow the mixture to cook over low heat.",
+      "Take the opportunity to put the broth in a pot, since when you add it to the rice, it has to be hot.",
+      "Continue adding the rice in the pot with the garlic, onion and mushrooms already well preserved.",
+      "When the rice is already hot, add the wine and let it evaporate.",
+      "At this time add the broth, enough to cover the rice and a little more.",
+      "Keep adding hot broth as the rice is dry, testing the grain. Be sure to have the rice with little broth when it is ready.",
+      "Also rectifying salt and pepper almost at the end of cooking, _keep in mind that you will add Parmesan that has a salty touch_.",
+      "_The cooking time will depend a lot on the type of rice and the moderation of the fire, generally it will take about 15-20 min_.",
+      "When having the cooked and almost dry (syrupy) rice, remove it from the heat. It is time to add the butter in small cubes and the grated Parmesan, stirring gently.",
+      "It will be ready when all the butter is melted, leading to a mellow and shiny appearance.",
+      "Finally, add the ham powder and also put a little when it is already plated."
     ]
   }
 ]
