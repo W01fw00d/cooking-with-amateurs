@@ -1,30 +1,30 @@
 [
   {
     "id": 1,
-    "sectionName": "Polvo de Jamón Serrano",
-    "description": "Elaboraremos un polvo de jamón para darle un toque especial al sabor de nuestro risotto.",
+    "sectionName": "Pols de Cuixot Salat",
+    "description": "Elaborarem una pols de cuixot per donar-li un puntet especial al gust del nostre risotto.",
     "items": [
-      "En un plato llano, disponemos las lonchas de jamón serrano separadas. Lo ponemos en el microondas a 500 W en 3-4 tandas de 1 minuto. Hasta que nos queda bien crujiente.",
-      "Picamos a cuchillo muy pequeño para que nos quede como si fuera un polvo."
+      "A un plat pla, disposam les tallades de cuixot salat separades. El posem al microones a 500 W en 3-4 tandes d'1 minut. Fins que ens queda ben cruixent.",
+      "Picam a ganivet molt petit perquè ens quedi com si fos una pols."
     ]
   },
   {
     "id": 2,
-    "sectionName": "Risotto de Setas",
+    "sectionName": "Risotto de Bolets",
     "items": [
-      "Empezamos picando y dorando el ajo con un poco de aceite. Realizaremos todo el cocinado en la misma olla baja o sartén alta.",
-      "Añadiremos la cebolla cortada a dados muy pequeños (brunoise) y dejaremos rehogar a fuego suave.",
-      "Cortamos las setas en cuartos y láminas. Añadimos a la olla las setas cortadas, salpimentamos y dejamos que se confite la mezcla a fuego suave.",
-      "Aprovechad para poner el caldo en una olla, ya que al añadirlo al arroz, tiene que estar caliente.",
+      "Començam picant i daurant l'all amb una mica d'oli. Farem tot el cuinat a la mateixa olla baixa o paella alta.",
+      "Hi afegirem la ceba tallada a daus molt petits (brunoise) i deixarem ofegar a foc suau.",
+      "Tallem els bolets a quarts i làmines. Afegim a l'olla els bolets tallats, adobam i deixam que es confiti la mescla a foc suau.",
+      "Aprofitau per posar el brou a una olla, ja que a l'afegir-lo a l'arròs, ha d'estar calent.",
       "Seguimos añadiendo el arroz en la olla con el ajo, cebolla y setas ya bien confitados.",
-      "Cuando el arroz ya está caliente añadimos el vino y dejamos que se evapore.",
-      "En este momento añadimos el caldo, la cantidad suficiente para cubrir el arroz y un dedo más.",
-      "Iremos añadiendo caldo caliente a medida que el arroz nos queda seco, vamos probando el grano para tener el arroz con poco caldo cuando esté listo.",
-      "También rectificando de sal y pimienta casi al final de la cocción, _tened en cuenta que le tenemos que añadir parmesano que tiene un toque salino_.",
-      "_El tiempo de cocción dependerá mucho del tipo de arroz y la moderación del fuego, generalmente el arroz tardará unos 15-20 min_.",
-      "Cuando tenemos el arroz cocido y casi seco (meloso) lo retiramos del fuego. Es el momento de mantecarlo, es decir, añadir la mantequilla en pequeños dados y el parmesano rallado, removiendo suavemente.",
-      "Estará listo cuando se nos derrita toda la mantequilla, nos quedará con un aspecto muy meloso y brillante.",
-      "En este momento podemos añadir el polvo de jamón y también pondremos un poco cuando ya esté emplatado."
+      "Seguim afegint l'arròs a l'olla amb l'all, ceba i bolets ja ben confitats.",
+      "En aquest moment afegim el brou, la quantitat suficient per cobrir l'arròs i un dit més.",
+      "Anirem afegint brou calent a mesura que l'arròs ens queda sec, anam provant el gra per tenir l'arròs amb poc brou quan estigui llest.",
+      "També rectificant de sal i pebre gairebé a la fi de la cocció, teniu en compte que li hem d'afegir parmesà que té un toc salí_.",
+      "_El temps de cocció dependrà molt de l'tipus d'arròs i la moderació de foc, generalment l'arròs torbarà uns 15-20 min_.",
+      "Quan tenim l'arròs cuit i gairebé sec (melós) el retiram de foc. És el moment de mantecar-lo, és a dir, afegir la mantega en petits daus i el parmesà ratllat, remenant suaument.",
+      "Estarà llest quan se'ns fongui tota la mantega, ens quedarà amb un aspecte molt melós i brillant.",
+      "En aquest moment podem afegir la pols de cuixot i també en posarem una mica quan ja estigui emplatat."
     ]
   }
 ]
