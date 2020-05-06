@@ -120,4 +120,6 @@ npm run build
 
 - Favicon formatted from logo with [favicon-generator](https://www.favicon-generator.org/)
 
-- Recipes recopilation images by Mateu
+- Recipes data and photo recopilations by Mateu
+
+- Translations by @XimenisMarta
