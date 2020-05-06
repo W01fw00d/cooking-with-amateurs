@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "sectionName": "_Pilotes_",
+    "description": "Esta receta es un guiso de albóndigas muy típico de Mallorca. En los últimos tiempos han cogido fama fuera de la isla gracias a Miquel Montoro con su ya mítica frase _“mmmm… pilotes, que són de bones, m'encanten!”_.",
+    "items": [
+      "En la olla donde hagamos el guiso empezamos a dorar dos ajos muy picados.",
+      "Cuando éstos estén, les añadiremos dos cebollas cortadas a brunoise (dados pequeños) con laurel y mejorana; los tendremos a fuego suave hasta que queden bien confitados.",
+      "Una vez confitados, retiraremos la mitad para las _“pilotes”_ y la otra la dejamos en la olla para seguir el guiso.",
+      "Para seguir con las _“pilotes”_, ponemos en un bol una rebanada de pan de molde. La mojamos con la leche y con las manos hacemos una pasta sin tropezones.",
+      "Añadimos la carne, la mejorana picada, la cebolla/ajo confitado (retirada anteriormente) y salpimentamos. Mezclamos bien.",
+      "Hacemos bolitas de unos 20-30 g que posteriormente enharinaremos y freiremos en abundante aceite hasta que estén bien doradas.",
+      "Las pondremos a escurrir sobre papel absorbente y reservaremos."
+      
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Guiso de _Pilotes_",
+    "items": [
+      "En la olla dónde iniciamos el guiso, en la cual tenemos cebolla/ajo confitada, continuamos añadiendo las zanahorias peladas, cortadas a la mitad y láminas gruesas en forma de media luna.",
+      "Seguidamente añadiremos la patata pelada y chascada (_introducimos el cuchillo en la patata y, en lugar de finalizar el corte del gajo, giramos 90 grados para arrancarlo_).",
+      "Dejaremos sofreír toda la verdura unos minutos. A continuación, añadiremos el tomate con su jugo y lo dejamos cocinarse unos minutos más.",
+      "Ahora es el momento de añadir el caldo (en frío, importante para no encallar la patata) y lo dejaremos hervir a fuego suave hasta que pinchando la patata y zanahorias las notemos cocidas. Este será el momento en el que añadiremos las “pilotes” ya fritas y las dejaremos guisar unos 10 min."
+
+    ]
+  },
+  {
+    "id": 3,
+    "sectionName": "Finalización",
+    "description": "Tened en cuenta que este guiso no nos tiene que quedar muy caldoso, más bien una salsita... Y ya lo tendremos listo para comer."
+  }
+]
