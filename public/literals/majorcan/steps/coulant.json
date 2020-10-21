@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Coulant",
+    "items": [
+      "Fonem la mantega i la xocolata al microones.",
+      "A un bol batem amb unes varetes els ous amb el súcre.",
+      "Mesclam les dues elaboracions anteriors",
+      "Integram poc a poc la farina a la mescla.",
+      "Untam l'interior d'una tassa amb mantega i la recobrim amb un poc de farina. Això ho feim perquè sigui més fàcil desmotllar el coulant.",
+      "Posam a la tassa la massa fins omplir un terç. Posam dues pastilles de xocolata amb llet i cobrim amb més massa, deixant un dit de marge a la tassa ja que la massa pujarà.",
+      "Posam la tassa al microones a 800 W durant 1 minut... I ja el tenim llest per menjar!."
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Guarnició",
+    "description": "Per acompanyar aquest dolç tan contundent recoman afegir algun ingredient refrescant com fruita amb suc de llimona i herbes fresques. En aquesta ocasió hem triat _taronges_ i _herbasana_.",
+    "items": [
+      "Així, tallarem les taronges en _grells en viu_. És a dir, pelam la taronja amb ganivet llevant la pell i la parte blanca; retiram cada grell (separats per les membranes blanques) amb el ganivet.",
+      "Amb les restes de taronja sobrants, els sucam amb les mans mateix. Juntam aquest suc amb els grells.",
+      "Finalment, per afegir un punt de frescor, picam un poc d'herbasana."
+    ]
+  },
+  {
+    "id": 3,
+    "sectionName": "Finalització",
+    "description": "Recorda que el coulant s'ha de menjar quan encara és calent i amb la guarnició fresqueta."
+  }
+]
