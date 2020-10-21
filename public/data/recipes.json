@@ -213,7 +213,81 @@
     "eventDate": "18/04/2020",
     "difficulty": 3,
     "nIngredients": 11,
-    "ingredients": [],
+    "ingredients": [
+      {
+        "sectionName": "fideua",
+        "items": [
+          {
+            "code": "noodlesNumberFour",
+            "quantity": "400g"
+          },
+          {
+            "code": "chickenBroth",
+            "quantity": "800mL"
+          },
+          {
+            "code": "onion",
+            "quantity": "1"
+          },
+          {
+            "code": "garlic",
+            "quantity": "1"
+          },
+          {
+            "code": "garlic",
+            "quantity": "1"
+          },
+          {
+            "code": "pearTomato",
+            "quantity": "1"
+          },
+          {
+            "code": "pearTomato",
+            "quantity": "1"
+          },
+          {
+            "code": "pearTomato",
+            "quantity": "1"
+          },
+          {
+            "code": "redPepper",
+            "quantity": "½"
+          },
+          {
+            "code": "greenPepper",
+            "quantity": "½"
+          },
+
+          {
+            "code": "chickenThigh",
+            "quantity": "150g"
+          },
+          {
+            "code": "porkShoulder",
+            "quantity": "150g"
+          },
+          {
+            "code": "paprika"
+          }
+        ]
+      },
+      {
+        "sectionName": "aioli",
+        "items": [
+          {
+            "code": "garlic",
+            "quantity": "2"
+          },
+          {
+            "code": "eggs",
+            "quantity": "1"
+          },
+          {
+            "code": "smoothOliveOil"
+          }
+        ]
+      }
+    ],
     "image": "public/imgs/recipes/fideua.jpeg"
   },
   {
