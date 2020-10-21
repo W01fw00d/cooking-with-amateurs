@@ -298,7 +298,60 @@
     "eventDate": "19/04/2020",
     "difficulty": 2,
     "nIngredients": 9,
-    "ingredients": [],
+    "ingredients": [
+      {
+        "sectionName": "salmonMarinated",
+        "items": [
+          {
+            "code": "freshSalmon",
+            "quantity": "400g"
+          },
+          {
+            "code": "salt",
+            "quantity": "400g"
+          },
+          {
+            "code": "sugar",
+            "quantity": "400g"
+          },
+          {
+            "code": "peppercorns"
+          },
+          {
+            "code": "dill"
+          }
+        ]
+      },
+      {
+        "sectionName": "tartar",
+        "items": [
+          {
+            "code": "avocado",
+            "quantity": "2"
+          },
+          {
+            "code": "mango",
+            "quantity": "½"
+          },
+          {
+            "code": "sesameOil"
+          },
+          {
+            "code": "evoo"
+          },
+          {
+            "code": "lemon",
+            "quantity": "½"
+          },
+          {
+            "code": "sweetSoy"
+          },
+          {
+            "code": "chive"
+          }
+        ]
+      }
+    ],
     "image": "public/imgs/recipes/tartar.jpeg"
   },
   {
