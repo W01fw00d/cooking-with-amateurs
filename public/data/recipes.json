@@ -134,7 +134,75 @@
     "eventDate": "11/04/2020",
     "difficulty": 3,
     "nIngredients": 11,
-    "ingredients": [],
+    "ingredients": [
+      {
+        "sectionName": "risotto",
+        "items": [
+          {
+            "code": "arborioRice",
+            "quantity": "350g",
+            "alternatives": [
+              {
+                "code": "carnaroliRice"
+              }
+            ]
+          },
+          {
+            "code": "vegetableBroth",
+            "quantity": "850mL",
+            "alternatives": [
+              {
+                "code": "chickenBroth"
+              }
+            ]
+          },
+          {
+            "code": "onion",
+            "quantity": "1"
+          },
+          {
+            "code": "garlic",
+            "quantity": "1"
+          },
+          {
+            "code": "mushrooms",
+            "quantity": "200g",
+            "alternatives": [
+              {
+                "code": "portobello"
+              },
+              {
+                "code": "shitake"
+              },
+              {
+                "code": "shimeji"
+              }
+            ]
+          },
+          {
+            "code": "whiteWine",
+            "quantity": "30mL"
+          },
+          {
+            "code": "butter",
+            "quantity": "40g"
+          },
+          {
+            "code": "parmesan",
+            "quantity": "40g"
+          }
+        ]
+      },
+      {
+        "sectionName": "serranoHamPowder",
+        "items": [
+          {
+            "code": "serranoHam",
+            "quantity": "3"
+          }
+        ]
+      }
+    ],
     "image": "public/imgs/recipes/risotto.jpeg"
   },
   {
