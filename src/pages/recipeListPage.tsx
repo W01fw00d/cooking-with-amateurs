@@ -8,17 +8,20 @@ export default () => {
     difficulty: String;
     preparationTime: String;
     howManyIngredients: String;
+    participants: String;
   }
 
   const common = translate('common');
   const recipe = translate('recipe');
   const recipesNamesLiterals = translate('recipesNames');
+  const projectData = translate('projectData');
 
   const literals = { ...common, ...recipe };
-  const getLiterals = ({ difficulty, preparationTime, howManyIngredients }: Literals) => ({
+  const getLiterals = ({ difficulty, preparationTime, howManyIngredients, participants }: Literals) => ({
     difficulty,
     preparationTime,
     howManyIngredients,
+    participants,
   });
 
   const [search, setSearch] = useState(common.comingSoon);
@@ -47,8 +50,10 @@ export default () => {
         url: common.cv,
       }}
       projectData={{
-        description: recipe.projectDescription,
+        description: projectData.description,
         url: 'https://github.com/W01fw00d/cooking-with-amateurs/blob/master/README.md',
+        participants:
+          ["Mateu", "Marina", "Jose Luis", "Iris", "Malén", "PJ", "Francina", "Lluis", "Marta", "Gabriel"],
       }}
       search={search}
       itemList={recipes}
