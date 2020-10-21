@@ -234,10 +234,6 @@
             "quantity": "1"
           },
           {
-            "code": "garlic",
-            "quantity": "1"
-          },
-          {
             "code": "pearTomato",
             "quantity": "1"
           },
@@ -362,7 +358,94 @@
     "eventDate": "25/04/2020",
     "difficulty": 4,
     "nIngredients": 15,
-    "ingredients": [],
+    "ingredients": [
+      {
+        "sectionName": "meatballs",
+        "items": [
+          {
+            "code": "porkMincedMeat",
+            "quantity": "250g"
+          },
+          {
+            "code": "garlic",
+            "quantity": "1"
+          },
+          {
+            "code": "onion",
+            "quantity": "1"
+          },
+          {
+            "code": "marjoram"
+          },
+          {
+            "code": "breadLoaf",
+            "quantity": "1"
+          },
+          {
+            "code": "milk",
+            "quantity": "20mL"
+          },
+          {
+            "code": "flour",
+            "quantity": "100g"
+          },
+          {
+            "code": "salt"
+          },
+          {
+            "code": "groundBlackPepper"
+          },
+          {
+            "code": "sunflowerOil"
+          }
+        ]
+      },
+      {
+        "sectionName": "stew",
+        "items": [
+          {
+            "code": "slicedTomato",
+            "quantity": "200g"
+          },
+          {
+            "code": "garlic"
+          },
+          {
+            "code": "onion",
+            "quantity": "1"
+          },
+          {
+            "code": "marjoram"
+          },
+          {
+            "code": "laurel"
+          },
+          {
+            "code": "potato",
+            "quantity": "2"
+          },
+          {
+            "code": "peas"
+          },
+          {
+            "code": "broth",
+            "quantity": "500mL",
+            "alternatives": [
+              {
+                "code": "water"
+              }
+            ]
+          },
+          {
+            "code": "carrot",
+            "quantity": "2"
+          },
+          {
+            "code": "friedMeatballs"
+          }
+        ]
+      }
+    ],
     "image": "public/imgs/recipes/pilotes.jpeg"
   },
   {
