@@ -21,6 +21,7 @@ export default () => {
   const ingredientsSectionsLiterals = translate('ingredientsSections');
   const recipe = translate('recipe');
   const recipesNamesLiterals = translate('recipesNames');
+  const recipeSteps = translate('recipeSteps');
 
   const getLiterals = ({ ingredients }: Literals) => ({
     ingredients,
@@ -56,6 +57,7 @@ export default () => {
           description,
           preparationTime,
           ingredients: ingredients.map(ingredientsMapping),
+          steps: recipeSteps[code],
         });
       }
     });
