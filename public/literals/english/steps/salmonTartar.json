@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Marinated",
+    "description": "Tartar is an elaboration where a raw product is used, this type of elaboration is much more sensitive to causing toxiinfections since by not passing through a heat source we do not eliminate possible parasites or bacteria.",
+    "items": [
+      "First of all, it is important to freeze the piece of salmon a minimum of 48h at -18 ° C, to make sure to eliminate the risk of toxic infections.",
+      "Once thawed, carry out the marinade.",
+      "In a bowl put the salt, sugar, the crushed peppercorns and a couple of fresh dill sprouts; then mix everything.",
+      "Cover the piece of salmon on all sides with the previous mixture, film and let it marinate for 12-24 hours depending on the thickness of the piece of salmon.",
+      "To remove the salmon from the marinade, rinse it in cold water and dry it well.",
+      "Before cutting the salmon, remove the skin and fat (meat of a grayish tone)."
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Salmon Tartar",
+    "items": [
+      "To have a nice tartar, the most important thing is that the main elements (salmon, avocado and mango) have the same cut and size. To do this, cut these three into small cubes.",
+      "Remember that the avocado rusts quickly, as soon as it is cut, add a few drops of lemon juice, a drizzle of virgin oil and a pinch of salt.",
+      "To finish it, cut the chives very finely."
+    ]
+  },
+  {
+    "id": 3,
+    "sectionName": "Ending",
+    "items": [
+      "Now is the time to put it all together in a bowl and dress it with: sweet soy, sesame oil, extra virgin olive oil and salt if necessary.",
+      "Once the desired flavor is found, leave it to marinate in the refrigerator for about 20 min. And we will have it ready to eat."
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Serrano Ham Powder",
+    "description": "This ham powder will give a special touch to the flavor of our risotto.",
+    "items": [
+      "On a flat plate, arrange the slices of Serrano ham separately. Put it in the microwave at 500 W in 3-4 batches of 1 minute. Until the ham is crispy.",
+      "Chop the slices very small using a knife so that they remain of a powder."
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Mushroom Risotto",
+    "items": [
+      "Start by chopping and browning the garlic with a little oil. Set all the cooking in the same low pot or high frying pan.",
+      "Add the onion cut into very small cubes (brunoise) and let it simmer over low heat.",
+      "Cut the mushrooms into quarters and sheets. Add the cut mushrooms to the pot, season with salt and pepper and allow the mixture to cook over low heat.",
+      "Take the opportunity to put the broth in a pot, since when you add it to the rice, it has to be hot.",
+      "Continue adding the rice in the pot with the garlic, onion and mushrooms already well preserved.",
+      "When the rice is already hot, add the wine and let it evaporate.",
+      "At this time add the broth, enough to cover the rice and a little more.",
+      "Keep adding hot broth as the rice is dry, testing the grain. Be sure to have the rice with little broth when it is ready.",
+      "Also rectifying salt and pepper almost at the end of cooking, _keep in mind that you will add Parmesan that has a salty touch_.",
+      "_The cooking time will depend a lot on the type of rice and the moderation of the fire, generally it will take about 15-20 min_.",
+      "When having the cooked and almost dry (syrupy) rice, remove it from the heat. It is time to add the butter in small cubes and the grated Parmesan, stirring gently.",
+      "It will be ready when all the butter is melted, leading to a mellow and shiny appearance.",
+      "Finally, add the ham powder and also put a little when it is already plated."
+    ]
+  }
+]

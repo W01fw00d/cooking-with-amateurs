@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Marinat",
+    "description": "El tàrtar és una elaboració on feim servir un producte cru, aquest tipus d'elaboracions són molt més susceptibles a provocar toxiinfeccions ja que en no passar per una font de calor no eliminam possibles paràsits o bacteris.",
+    "items": [
+      "En primer lloc, és important congelar la peça de salmó un mínim de 48 hores a -18 ° C, així ens asseguram d'eliminar el risc de patir toxiinfeccions.",
+      "Un cop descongelat realitzarem el marinat.",
+      "A un bol posarem la sal, sucre, els grans de prebe picats i un parell de brots d'anet fresc; ho remenam tot.",
+      "Cobrim la nostra peça de salmó per tots els costats amb la barreja anterior, cobrim amb film i deixarem macerar entre 12-24 h depenent del gruix de la peça de salmó.",
+      "Per treure el salmó de la marinada ho passam per aigua freda i ho assequem bé.",
+      "Abans de tallar el salmó eliminam la pell i el greix (carn de to més grisós)."
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Tàrtar de Salmó",
+    "items": [
+      "Perquè el tàrtar faci “planta” el més important és que els elements principals (salmó, alvocat i mango) tenguin el mateix tall i grandària. Per a això, tallarem aquests tres ingredients a daus petits.",
+      "Recordau que l'alvocat s'oxida ràpidament, de seguida que el tallem li posam unes gotes de suc de llimona, un raig oli verge i una mica de sal.",
+      "Per acabar tallem el cibulet molt finet."
+    ]
+  },
+  {
+    "id": 3,
+    "sectionName": "Finalització",
+    "items": [
+      "Ara ve el moment d'unir-ho tot a un bol i adobar-ho amb: soja dolça, oli de sèsam, oli d'oliva verge extra i sal si fos necessàri.",
+      "Un cop hem trobat el gust que volem, deixarem macerar a la nevera uns 20 min. I ja el tendrem a punt per menjar."
+    ]
+  }
+]
