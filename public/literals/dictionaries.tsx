@@ -33,9 +33,9 @@ import fideua from './spanish/steps/fideua.json';
 import gnocchi from './spanish/steps/gnocchi.json';
 import gyozas from './spanish/steps/gyozas.json';
 import meatballs from './spanish/steps/meatballs.json';
-import ragout from './spanish/steps/ragout.json';
+import butifarraRagout from './spanish/steps/butifarraRagout.json';
 import risotto from './spanish/steps/risotto.json';
-import tartar from './spanish/steps/croquettes.json';
+import salmonTartar from './spanish/steps/salmonTartar.json';
 
 export default {
   en: {
@@ -54,9 +54,9 @@ export default {
       gnocchi,
       gyozas,
       meatballs,
-      ragout,
+      butifarraRagout,
       risotto,
-      tartar,
+      salmonTartar,
     },
   },
   jp: {
@@ -75,9 +75,9 @@ export default {
       gnocchi,
       gyozas,
       meatballs,
-      ragout,
+      butifarraRagout,
       risotto,
-      tartar,
+      salmonTartar,
     },
   },
   ma: {
@@ -96,9 +96,9 @@ export default {
       gnocchi,
       gyozas,
       meatballs,
-      ragout,
+      butifarraRagout,
       risotto,
-      tartar,
+      salmonTartar,
     },
   },
   sp: {
@@ -116,9 +116,9 @@ export default {
       gnocchi,
       gyozas,
       meatballs,
-      ragout,
+      butifarraRagout,
       risotto,
-      tartar,
+      salmonTartar,
     },
   },
 };
