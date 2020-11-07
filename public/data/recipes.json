@@ -583,7 +583,69 @@
     "eventDate": "02/05/2020",
     "difficulty": 2,
     "nIngredients": 12,
-    "ingredients": []
+    "ingredients": [
+      {
+        "sectionName": "mashedPotatoes",
+        "items": [
+          {
+            "code": "potato",
+            "quantity": "2 (M)"
+          },
+          {
+            "code": "evoo",
+            "quantity": "30mL"
+          },
+          {
+            "code": "salt"
+          },
+          {
+            "code": "peppercorns"
+          },
+          {
+            "code": "nutmeg"
+          }
+        ]
+      },
+      {
+        "sectionName": "ragout",
+        "items": [
+          {
+            "code": "catalanSausage",
+            "quantity": "6",
+            "alternatives": [
+              {
+                "code": "sausage",
+                "quantity": "10"
+              }
+            ]
+          },
+          {
+            "code": "onion",
+            "quantity": "1"
+          },
+          {
+            "code": "mushrooms",
+            "quantity": "200g"
+          },
+          {
+            "code": "cream",
+            "quantity": "400mL"
+          },
+          {
+            "code": "goldenApples",
+            "quantity": "2"
+          },
+          {
+            "code": "butter",
+            "quantity": "20g"
+          },
+          {
+            "code": "sugar",
+            "quantity": "30g"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": 10,
@@ -594,6 +656,51 @@
     "eventDate": "02/05/2020",
     "difficulty": 1,
     "nIngredients": 12,
-    "ingredients": []
+    "ingredients": [
+      {
+        "sectionName": "coulant",
+        "items": [
+          {
+            "code": "eggs",
+            "quantity": "2"
+          },
+          {
+            "code": "sugar",
+            "quantity": "90g"
+          },
+          {
+            "code": "butter",
+            "quantity": "110g"
+          },
+          {
+            "code": "fondantChocolate",
+            "quantity": "110g"
+          },
+          {
+            "code": "flour",
+            "quantity": "70g"
+          },
+          {
+            "code": "milkChocolateSlab",
+            "quantity": "8"
+          }
+        ]
+      },
+      {
+        "sectionName": "accompaniment",
+        "items": [
+          {
+            "code": "oranges",
+            "quantity": "4"
+          },
+          {
+            "code": "orangeJuice"
+          },
+          {
+            "code": "peppermint"
+          }
+        ]
+      }
+    ]
   }
 ]
