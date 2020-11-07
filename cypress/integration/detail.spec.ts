@@ -3,15 +3,16 @@ import { getRandomNumber, getRandomString } from '../test-utils';
 describe('On Detail Page, navigate', function() {
   const URL = 'detail/1';
 
-  const setStub = (name: string) => {
+  const setStub = () => {
     cy.server();
+
     cy.route({
       method: 'GET',
       url: 'details/*',
       response: [
         {
           id: '1',
-          name,
+          code : 'gnocchi',
           description: getRandomString(getRandomNumber(1, 100)),
           preparationTime: '02:00',
           eventDate: '26/04/2020',
@@ -30,12 +31,10 @@ describe('On Detail Page, navigate', function() {
   });
 
   it('User checks that list item is rendered with its name', function() {
-    const name = getRandomString(getRandomNumber(1, 20));
-
-    setStub(name);
+    setStub();
 
     cy.visit(URL);
 
-    cy.contains(name);
+    cy.contains('Gnocchi');
   });
 });
