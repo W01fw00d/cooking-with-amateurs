@@ -456,7 +456,31 @@
     "eventDate": "25/04/2020",
     "difficulty": 2,
     "nIngredients": 5,
-    "ingredients": [],
+    "ingredients": [
+      {
+        "items": [
+          {
+            "code": "yolks",
+            "quantity": "6"
+          },
+          {
+            "code": "sugar",
+            "quantity": "45g"
+          },
+          {
+            "code": "whippingCream",
+            "quantity": "100ml"
+          },
+          {
+            "code": "milk",
+            "quantity": "400ml"
+          },
+          {
+            "code": "vanillaEssence"
+          }
+        ]
+      }
+    ],
     "image": "public/imgs/recipes/natillas.jpg",
     "showName": true
   },
