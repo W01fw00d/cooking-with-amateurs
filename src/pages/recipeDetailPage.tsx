@@ -10,11 +10,13 @@ export default () => {
   }
 
   interface RecipeDetails {
+    name: String;
     code: String;
     image: String;
     description: String;
     preparationTime: String;
-    ingredients: [];
+    ingredients: { sectionName: any; items: any; }[];
+    steps: [];
   }
 
   const ingredientsLiterals = translate('ingredients');
@@ -35,7 +37,7 @@ export default () => {
       if (result) {
         const { code, image, description, preparationTime, ingredients } = result[0];
 
-        const ingredientsMapping = section => {
+        const ingredientsMapping = (section): { sectionName: any; items: any; } => {
           return {
             sectionName: ingredientsSectionsLiterals[section.sectionName],
             items: section.items.map(item => {
@@ -52,11 +54,14 @@ export default () => {
           };
         };
         setData({
+          code,
           name: recipesNamesLiterals[code],
           image,
           description,
           preparationTime,
-          ingredients: ingredients.map(ingredientsMapping),
+          ingredients: ingredients ?
+            ingredients.map(ingredientsMapping) :
+            [],
           steps: recipeSteps[code],
         });
       }
