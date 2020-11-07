@@ -492,7 +492,86 @@
     "eventDate": "26/04/2020",
     "difficulty": 5,
     "nIngredients": 13,
-    "ingredients": [],
+    "ingredients": [
+      {
+        "sectionName": "gyozaDough",
+        "items": [
+          {
+            "code": "strengthFlour",
+            "quantity": "200g"
+          },
+          {
+            "code": "hotWater",
+            "quantity": "100ml"
+          },
+          {
+            "code": "salt"
+          },
+          {
+            "code": "cornFlour",
+            "quantity": "50g"
+          }
+        ]
+      },
+      {
+        "sectionName": "stuffing",
+        "items": [
+          {
+            "code": "porkMincedMeat",
+            "quantity": "200g"
+          },
+          {
+            "code": "garlic",
+            "quantity": "½"
+          },
+          {
+            "code": "chive",
+            "quantity": "50g"
+          },
+          {
+            "code": "ginger",
+            "quantity": "5g"
+          },
+          {
+            "code": "cabbage",
+            "quantity": "100g (¼)"
+          },
+          {
+            "code": "sesameOil"
+          },
+          {
+            "code": "cornFlour",
+            "quantity": "5g"
+          },
+          {
+            "code": "salt"
+          },
+          {
+            "code": "sugar"
+          }
+        ]
+      },
+      {
+        "sectionName": "gyozaSauce",
+        "items": [
+          {
+            "code": "sweetchilly",
+            "quantity": "40g"
+          },
+          {
+            "code": "sesameOil",
+            "quantity": "5g"
+          },
+          {
+            "code": "sweetSoy",
+            "quantity": "20g"
+          },
+          {
+            "code": "water"
+          }
+        ]
+      }
+    ],
     "image": "public/imgs/recipes/gyozas.jpeg"
   },
   {
