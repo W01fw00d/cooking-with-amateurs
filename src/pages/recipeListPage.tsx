@@ -25,7 +25,7 @@ export default () => {
   });
 
   const [search, setSearch] = useState(common.comingSoon);
-  const [recipes, setRecipes] = useState();
+  const [recipes, setRecipes] = useState(null);
 
   useEffect(() => {
     getRecipes(recipeResults => {
@@ -41,7 +41,7 @@ export default () => {
     });
   }, []);
 
-  return (
+  return recipes &&
     <RecipeListTemplate
       literals={getLiterals(literals)}
       authorData={{
@@ -60,7 +60,6 @@ export default () => {
       handleChange={({ currentTarget }: { currentTarget: { value: string } }) => {
         setSearch(currentTarget.value);
       }}
-      handleClick={() => {}}
-    />
-  );
+      handleClick={() => { }}
+    />;
 };

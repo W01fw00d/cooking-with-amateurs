@@ -29,7 +29,7 @@ export default () => {
     ingredients,
   });
 
-  const [data, setData] = useState<RecipeDetails>();
+  const [data, setData] = useState<RecipeDetails | null>(null);
   const { recipeId } = useParams();
 
   useEffect(() => {
@@ -68,5 +68,10 @@ export default () => {
     });
   }, [recipeId]);
 
-  return <RecipeDetailTemplate literals={getLiterals(recipe)} data={data} handleClick={() => {}} />;
+  return data &&
+    <RecipeDetailTemplate
+      literals={getLiterals(recipe)}
+      data={data}
+      handleClick={() => { }}
+    />;
 };
