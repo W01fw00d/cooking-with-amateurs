@@ -61,11 +61,11 @@
           },
           {
             "code": "butter",
-            "quantity": "200"
+            "quantity": "200g"
           },
           {
             "code": "water",
-            "quantity": "100g"
+            "quantity": "100ml"
           },
           {
             "code": "cream",
@@ -253,7 +253,6 @@
             "code": "greenPepper",
             "quantity": "½"
           },
-
           {
             "code": "chickenThigh",
             "quantity": "150g"

@@ -2,6 +2,7 @@ import { RecipeDetailTemplate } from 'chemistry-ui';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import translate from '../language/translate';
+import emojis from "../../public/data/emojis.json";
 import { getRecipeDetails } from '../utils/request';
 
 export default () => {
@@ -40,8 +41,12 @@ export default () => {
         const ingredientsMapping = (section): { sectionName: any; items: any; } => {
           return {
             sectionName: ingredientsSectionsLiterals[section.sectionName],
-            items: section.items.map(item => {
-              let formattedItem = { quantity: item.quantity, name: ingredientsLiterals[item.code] };
+            items: section.items.map(({ code, quantity }) => {
+              let formattedItem = {
+                name: ingredientsLiterals[code],
+                emoji: emojis[code],
+                quantity,
+              };
 
               if (formattedItem.alternatives) {
                 formattedItem.alternatives = formattedItem.alternatives.map(alternative => ({
