@@ -1,6 +1,9 @@
 import { RecipeListTemplate } from 'chemistry-ui';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+
 import translate from '../language/translate';
+import LanguageContext from '../language/languageContext';
+import languageOptions from '../../public/literals/languageOptions';
 import { getRecipes } from '../utils/request';
 
 export default () => {
@@ -41,6 +44,13 @@ export default () => {
     });
   }, []);
 
+  const languageContext = useContext(LanguageContext);
+
+  const handleLanguageChange = event => {
+    const selectedLanguage = languageOptions.find(({ id }) => id === event.target.value);
+    languageContext.setLanguage(selectedLanguage);
+  };
+
   return recipes &&
     <RecipeListTemplate
       literals={getLiterals(literals)}
@@ -57,6 +67,11 @@ export default () => {
       }}
       search={search}
       itemList={recipes}
+      languageData={{
+        active: languageContext.language.id,
+        options: languageOptions,
+        onChange: handleLanguageChange,
+      }}
       handleChange={({ currentTarget }: { currentTarget: { value: string } }) => {
         setSearch(currentTarget.value);
       }}
