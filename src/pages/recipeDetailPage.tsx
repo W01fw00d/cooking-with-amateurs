@@ -1,6 +1,7 @@
 import { RecipeDetailTemplate } from 'chemistry-ui';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+
 import translate from '../language/translate';
 import emojis from "../../public/data/emojis.json";
 import { getRecipeDetails } from '../utils/request';
