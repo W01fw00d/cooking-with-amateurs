@@ -7,9 +7,10 @@ import {
   Switch
 } from 'react-router-dom';
 import LanguageProvider from './language/languageProvider';
+
 import NotFoundPage from './pages/notFoundPage';
-import RecipeDetailPage from './pages/recipeDetailPage';
-import RecipeListPage from './pages/recipeListPage';
+import RecipeDetailPage from './pages/recipeDetail';
+import RecipeListPage from './pages/recipeList';
 
 export default hot(module)(() => (
   <LanguageProvider>

@@ -1,19 +1,14 @@
 import { RecipeListTemplate } from 'chemistry-ui';
 import React, { useEffect, useState, useContext } from 'react';
 
-import translate from '../language/translate';
-import LanguageContext from '../language/languageContext';
-import languageOptions from '../../public/literals/languageOptions';
-import { getRecipes } from '../utils/request';
+import translate from '../../language/translate';
+import LanguageContext from '../../language/languageContext';
+import languageOptions from '../../../public/literals/languageOptions';
+import { getRecipes } from '../../utils/request';
+
+import { Literals } from './interfaces';
 
 export default () => {
-  interface Literals {
-    difficulty: String;
-    preparationTime: String;
-    howManyIngredients: String;
-    participants: String;
-  }
-
   const common = translate('common');
   const recipe = translate('recipe');
   const recipesNamesLiterals = translate('recipesNames');
