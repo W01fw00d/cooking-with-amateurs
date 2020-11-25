@@ -1,0 +1,5 @@
+
+- [ ] npm run utest (unit)
+- [ ] npm run ftest (functional)
+- [ ] While functional tests coverage is incomplete, manually test main pages
+- [ ] No errors or warning in browser console
