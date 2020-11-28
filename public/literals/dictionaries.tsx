@@ -1,5 +1,6 @@
 import commonEn from './english/common.json';
 import recipeEn from './english/recipe.json';
+import recipeDetailEn from './english/recipeDetail.json';
 import projectDataEn from './english/projectData.json';
 import ingredientsEn from './english/ingredients.json';
 import ingredientsSectionsEn from './english/ingredientsSections.json';
@@ -69,6 +70,7 @@ export default {
     ingredientsSections: ingredientsSectionsEn,
     projectData: projectDataEn,
     recipe: recipeEn,
+    recipeDetail: recipeDetailEn,
     recipesNames: recipesNamesEn,
     recipeSteps: {
       coulant: coulantEn,
@@ -89,6 +91,7 @@ export default {
     ingredientsSections: ingredientsSectionsJp,
     projectData: projectDataJp,
     recipe: recipeJp,
+    recipeDetail: recipeDetailEn, //TODO: translate
     recipesNames: recipesNamesJp,
     //TODO: create translated files for steps
     recipeSteps: {
@@ -110,6 +113,7 @@ export default {
     ingredientsSections: ingredientsSectionsMa,
     projectData: projectDataMa,
     recipe: recipeMa,
+    recipeDetail: recipeDetailEn, //TODO: translate
     recipesNames: recipesNamesMa,
     recipeSteps: {
       coulant: coulantMa,
@@ -130,6 +134,7 @@ export default {
     ingredientsSections: ingredientsSectionsSp,
     projectData: projectDataSp,
     recipe: recipeSp,
+    recipeDetail: recipeDetailEn, //TODO: translate
     recipesNames: recipesNamesSp,
     recipeSteps: {
       coulant: coulantSp,

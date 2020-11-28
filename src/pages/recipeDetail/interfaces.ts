@@ -1,4 +1,6 @@
 export interface Literals {
+    noIngredients: String;
+    noSteps: String;
     ingredients: String;
 }
 

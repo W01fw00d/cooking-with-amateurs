@@ -13,10 +13,11 @@ export default () => {
   const recipeSteps = translate('recipeSteps');
   const ingredientsSectionsLiterals = translate('ingredientsSections');
   const ingredientsLiterals = translate('ingredients');
-  const recipe = translate('recipe');
+  const recipeDetail = translate('recipeDetail');
 
-  const getLiterals = ({ ingredients }: Literals) => ({
-    ingredients,
+  const getLiterals = ({ noIngredients, noSteps }: Literals) => ({
+    noIngredients,
+    noSteps
   });
 
   const [data, setData] = useState<RecipeDetails | null>(null);
@@ -38,7 +39,7 @@ export default () => {
 
   return data &&
     <RecipeDetailTemplate
-      literals={getLiterals(recipe)}
+      literals={getLiterals(recipeDetail)}
       data={data}
       handleClick={() => { }}
     />;

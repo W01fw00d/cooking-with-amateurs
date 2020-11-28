@@ -3,6 +3,6 @@
   "difficulty": "Dificultad",
   "preparationTime": "Tiempo de preparación",
   "howManyIngredients": "Cuántos ingredientes?",
-  "--DescriptionSection": "",
+  "--unnused": "",
   "ingredients": "Ingredientes"
 }
