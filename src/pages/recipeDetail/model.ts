@@ -14,11 +14,12 @@ export const mapRecipeTranslations = (
     const ingredientsMapping =
         ({ sectionName, items }): { sectionName: any; items: any; } => ({
             sectionName: ingredientsSectionsLiterals[sectionName],
-            items: items.map(({ code, quantity }) => {
+            items: items.map(({ code, quantity, alternatives }) => {
                 let formattedItem = {
                     name: ingredientsLiterals[code],
                     emoji: emojis[code],
                     quantity,
+                    alternatives,
                 };
 
                 if (formattedItem.alternatives) {
