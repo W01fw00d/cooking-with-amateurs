@@ -15,8 +15,10 @@ export default () => {
   const ingredientsLiterals = translate('ingredients');
   const recipeDetail = translate('recipeDetail');
 
-  const getLiterals = ({ noIngredients, noSteps }: Literals) => ({
+  const getLiterals = ({ ingredients, noIngredients, steps, noSteps }: Literals) => ({
+    ingredients,
     noIngredients,
+    steps,
     noSteps
   });
 

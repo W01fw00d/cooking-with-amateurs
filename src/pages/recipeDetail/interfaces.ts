@@ -1,7 +1,8 @@
 export interface Literals {
-    noIngredients: String;
-    noSteps: String;
     ingredients: String;
+    noIngredients: String;
+    steps: String;
+    noSteps: String;
 }
 
 export interface RecipeDetails {

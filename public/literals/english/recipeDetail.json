@@ -1,6 +1,8 @@
 {
   "---IngredientsList": "",
+  "ingredients": "Ingredients",
   "noIngredients": "No ingredients required",
   "---StepsList": "",
+  "steps": "Steps",
   "noSteps": "No steps required"
 }
