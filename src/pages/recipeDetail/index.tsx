@@ -15,7 +15,8 @@ export default () => {
   const ingredientsLiterals = translate('ingredients');
   const recipeDetail = translate('recipeDetail');
 
-  const getLiterals = ({ ingredients, noIngredients, steps, noSteps }: Literals) => ({
+  const getLiterals = ({ image, ingredients, noIngredients, steps, noSteps }: Literals) => ({
+    image,
     ingredients,
     noIngredients,
     steps,

@@ -1,4 +1,5 @@
 export interface Literals {
+    image: String;
     ingredients: String;
     noIngredients: String;
     steps: String;
