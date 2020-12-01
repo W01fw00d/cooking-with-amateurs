@@ -12,10 +12,10 @@ export default () => {
   const common = translate('common');
   const recipe = translate('recipe');
   const recipesNamesLiterals = translate('recipesNames');
-  const projectData = translate('projectData');
 
   const literals = { ...common, ...recipe };
-  const getLiterals = ({ difficulty, preparationTime, howManyIngredients, participants }: Literals) => ({
+  const getLiterals = ({ about, difficulty, preparationTime, howManyIngredients, participants }: Literals) => ({
+    about,
     difficulty,
     preparationTime,
     howManyIngredients,
@@ -49,17 +49,6 @@ export default () => {
   return recipes &&
     <RecipeListTemplate
       literals={getLiterals(literals)}
-      authorData={{
-        name: common.gabriel,
-        email: 'romay.gabriel@gmail.com',
-        url: common.cv,
-      }}
-      projectData={{
-        description: projectData.description,
-        url: 'https://github.com/W01fw00d/cooking-with-amateurs/blob/master/README.md',
-        participants:
-          ["Mateu", "Marina", "Jose Luis", "Iris", "Malén", "PJ", "Francina", "Lluis", "Marta", "Gabriel"],
-      }}
       search={search}
       itemList={recipes}
       languageData={{

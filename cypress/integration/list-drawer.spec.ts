@@ -1,4 +1,4 @@
-describe('On List Page, in About Drawer Panel', function() {
+describe('On List Page, in About Drawer Panel', function () {
   const URL = 'list';
 
   const setStub = () => {
@@ -10,12 +10,11 @@ describe('On List Page, in About Drawer Panel', function() {
     });
   };
 
-  it('User opens drawer side menu and sees author and project data', function() {
+  it('User opens drawer side menu and sees About link', function () {
     setStub();
     cy.visit(URL);
 
     cy.get('#drawerButton').click({ force: true });
-    cy.contains('Gabriel Romay Machado');
-    cy.contains('romay.gabriel@gmail.com');
+    cy.contains('Acerca de');
   });
 });
