@@ -14,7 +14,8 @@ export default () => {
   const recipesNamesLiterals = translate('recipesNames');
 
   const literals = { ...common, ...recipe };
-  const getLiterals = ({ difficulty, preparationTime, howManyIngredients, participants }: Literals) => ({
+  const getLiterals = ({ about, difficulty, preparationTime, howManyIngredients, participants }: Literals) => ({
+    about,
     difficulty,
     preparationTime,
     howManyIngredients,
