@@ -46,6 +46,14 @@ sh link.sh
 npm run utest
 ```
 
+Launch with coverage
+
+```
+npm run utest-cover
+```
+
+Open '.../coverage/lcov-report/index.html' to see the coverage report
+
 - Launch Cypress (Functional Tests)
 
 ```

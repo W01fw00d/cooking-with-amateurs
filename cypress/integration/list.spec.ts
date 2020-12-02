@@ -1,4 +1,4 @@
-import { getRandomNumber, getRandomString } from '../test-utils';
+import { getRandomNumber, getRandomString } from '../../src/utils/test-utils';
 
 describe('On List Page', function() {
   const URL = 'list';
@@ -48,6 +48,7 @@ describe('On List Page', function() {
   it('User writes on search text input', function() {
     const inputText = getRandomString(getRandomNumber(1, 10));
 
+    setStub('arg1', 'arg1');
     cy.visit(URL);
 
     cy.get('#search')
