@@ -1,6 +1,6 @@
 import { getRandomNumber, getRandomString } from '../../src/utils/test-utils';
 
-describe('On List Page', function () {
+describe('On List Page', function() {
   const URL = 'list';
 
   const setStub = (firstName: string, secondName: string) => {
@@ -34,7 +34,7 @@ describe('On List Page', function () {
     });
   };
 
-  it('User sees that list items are rendered', function () {
+  it('User sees that list items are rendered', function() {
     const firstName = getRandomString(getRandomNumber(1, 20));
     const secondName = getRandomString(getRandomNumber(1, 20));
 
@@ -45,7 +45,7 @@ describe('On List Page', function () {
     cy.contains(secondName);
   });
 
-  it('User writes on search text input', function () {
+  it('User writes on search text input', function() {
     const inputText = getRandomString(getRandomNumber(1, 10));
 
     setStub('arg1', 'arg1');
@@ -56,7 +56,7 @@ describe('On List Page', function () {
       .should('have.value', 'Pròximament!' + inputText);
   });
 
-  it('User clicks the "recipe 1" item link', function () {
+  it('User clicks the "recipe 1" item link', function() {
     const firstName = getRandomString(getRandomNumber(1, 20));
 
     setStub(firstName, firstName);
