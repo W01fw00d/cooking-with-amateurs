@@ -8,6 +8,8 @@ import { getRecipeDetails } from '../../utils/request';
 import { Literals, RecipeDetails } from './interfaces';
 import { mapRecipeTranslations } from './model';
 
+import emojis from '../../../public/data/emojis.json';
+
 export default () => {
   const recipesNamesLiterals = translate('recipesNames');
   const recipeSteps = translate('recipeSteps');
@@ -20,7 +22,7 @@ export default () => {
     ingredients,
     noIngredients,
     steps,
-    noSteps
+    noSteps,
   });
 
   const [data, setData] = useState<RecipeDetails | null>(null);
@@ -29,21 +31,27 @@ export default () => {
   useEffect(() => {
     getRecipeDetails(recipeId, (result: Array<RecipeDetails>) => {
       if (result) {
-        setData(mapRecipeTranslations(
-          result,
-          recipesNamesLiterals,
-          recipeSteps,
-          ingredientsSectionsLiterals,
-          ingredientsLiterals
-        ));
+        setData(
+          mapRecipeTranslations(
+            result,
+            recipesNamesLiterals,
+            recipeSteps,
+            ingredientsSectionsLiterals,
+            ingredientsLiterals,
+            emojis,
+          ),
+        );
       }
     });
   }, [recipeId]);
 
-  return data &&
-    <RecipeDetailTemplate
-      literals={getLiterals(recipeDetail)}
-      data={data}
-      handleClick={() => { }}
-    />;
+  return (
+    data && (
+      <RecipeDetailTemplate
+        literals={getLiterals(recipeDetail)}
+        data={data}
+        handleClick={() => {}}
+      />
+    )
+  );
 };
