@@ -1,6 +1,6 @@
 import { getRandomNumber, getRandomString } from '../../src/utils/test-utils';
 
-describe('On Detail Page, navigate', function() {
+describe('On Detail Page, navigate', function () {
   const URL = 'detail/1';
 
   const setStub = () => {
@@ -24,14 +24,15 @@ describe('On Detail Page, navigate', function() {
     });
   };
 
-  it('User clicks on back button', function() {
+  it('User clicks on back button', function () {
+    setStub();
+
     cy.visit(URL);
-    cy.wait(10000);
     cy.get('#back').click();
     cy.url().should('include', '/list');
   });
 
-  it('User checks that list item is rendered with its name', function() {
+  it('User checks that list item is rendered with its name', function () {
     setStub();
 
     cy.visit(URL);
