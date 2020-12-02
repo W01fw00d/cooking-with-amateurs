@@ -1,4 +1,4 @@
-import { getRandomNumber, getRandomString } from '../test-utils';
+import { getRandomNumber, getRandomString } from '../../src/utils/test-utils';
 
 describe('On Detail Page, navigate', function() {
   const URL = 'detail/1';
@@ -12,7 +12,7 @@ describe('On Detail Page, navigate', function() {
       response: [
         {
           id: '1',
-          code : 'gnocchi',
+          code: 'gnocchi',
           description: getRandomString(getRandomNumber(1, 100)),
           preparationTime: '02:00',
           eventDate: '26/04/2020',
@@ -26,6 +26,7 @@ describe('On Detail Page, navigate', function() {
 
   it('User clicks on back button', function() {
     cy.visit(URL);
+    cy.wait(10000);
     cy.get('#back').click();
     cy.url().should('include', '/list');
   });

@@ -1,4 +1,4 @@
-import { getRandomNumber, getRandomString } from '../test-utils';
+import { getRandomNumber, getRandomString } from '../../src/utils/test-utils';
 
 describe('On List Page', function() {
   const URL = 'list';

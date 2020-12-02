@@ -46,6 +46,12 @@ sh link.sh
 npm run utest
 ```
 
+Launch with coverage
+
+```
+npm run utest-cover
+```
+
 - Launch Cypress (Functional Tests)
 
 ```
