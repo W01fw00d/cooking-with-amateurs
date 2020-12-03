@@ -1,24 +1,24 @@
-import commonEn from './english/common.json';
-import recipeEn from './english/recipe.json';
-import recipeDetailEn from './english/recipeDetail.json';
-import projectDataEn from './english/projectData.json';
-import ingredientsEn from './english/ingredients.json';
-import ingredientsSectionsEn from './english/ingredientsSections.json';
-import recipesNamesEn from './english/recipesNames.json';
+const commonEn = require('./english/common.json');
+const recipeEn = require('./english/recipe.json');
+const recipeDetailEn = require('./english/recipeDetail.json');
+const projectDataEn = require('./english/projectData.json');
+const ingredientsEn = require('./english/ingredients.json');
+const ingredientsSectionsEn = require('./english/ingredientsSections.json');
+const recipesNamesEn = require('./english/recipesNames.json');
 
-import coulantEn from './english/steps/coulant.json';
-import croquettesEn from './english/steps/croquettes.json';
-import custardEn from './english/steps/custard.json';
-import fideuaEn from './english/steps/fideua.json';
-import gnocchiEn from './english/steps/gnocchi.json';
-import gyozasEn from './english/steps/gyozas.json';
-import meatballsEn from './english/steps/meatballs.json';
-import butifarraRagoutEn from './english/steps/butifarraRagout.json';
-import risottoEn from './english/steps/risotto.json';
-import salmonTartarEn from './english/steps/salmonTartar.json';
+const coulantEn = require('./english/steps/coulant.json');
+const croquettesEn = require('./english/steps/croquettes.json');
+const custardEn = require('./english/steps/custard.json');
+const fideuaEn = require('./english/steps/fideua.json');
+const gnocchiEn = require('./english/steps/gnocchi.json');
+const gyozasEn = require('./english/steps/gyozas.json');
+const meatballsEn = require('./english/steps/meatballs.json');
+const butifarraRagoutEn = require('./english/steps/butifarraRagout.json');
+const risottoEn = require('./english/steps/risotto.json');
+const salmonTartarEn = require('./english/steps/salmonTartar.json');
 
 
-import commonJp from './japanese/common.json';
+/* import commonJp from './japanese/common.json';
 import recipeJp from './japanese/recipe.json';
 import ingredientsJp from './japanese/ingredients.json';
 import projectDataJp from './japanese/projectData.json';
@@ -61,9 +61,9 @@ import gyozasSp from './spanish/steps/gyozas.json';
 import meatballsSp from './spanish/steps/meatballs.json';
 import butifarraRagoutSp from './spanish/steps/butifarraRagout.json';
 import risottoSp from './spanish/steps/risotto.json';
-import salmonTartarSp from './spanish/steps/salmonTartar.json';
+import salmonTartarSp from './spanish/steps/salmonTartar.json'; */
 
-export default {
+exports.literals = {
   en: {
     common: commonEn,
     ingredients: ingredientsEn,
@@ -85,7 +85,7 @@ export default {
       salmonTartar: salmonTartarEn,
     },
   },
-  jp: {
+/*   jp: {
     common: commonJp,
     ingredients: ingredientsJp,
     ingredientsSections: ingredientsSectionsJp,
@@ -148,5 +148,5 @@ export default {
       risotto: risottoSp,
       salmonTartar: salmonTartarSp,
     },
-  },
+  }, */
 };

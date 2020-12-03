@@ -3,4 +3,6 @@ dist
 coverage
 cypress/screenshots
 
+debug.log
+
 notes.txt
