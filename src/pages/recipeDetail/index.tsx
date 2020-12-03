@@ -3,12 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 import translate from '../../language/translate';
-import { getRecipeDetails } from '../../utils/request';
+import { getRecipeDetails, getEmojis } from '../../utils/request';
 
 import { Literals, RecipeDetails } from './interfaces';
 import { mapRecipeTranslations } from './model';
-
-import emojis from '../../../public/data/emojis.json';
 
 export default () => {
   const recipesNamesLiterals = translate('recipesNames');
@@ -26,31 +24,40 @@ export default () => {
   });
 
   const [data, setData] = useState<RecipeDetails | null>(null);
+  const [emojis, setEmojis] = useState<{}>();
   const { recipeId } = useParams();
 
   useEffect(() => {
-    getRecipeDetails(recipeId, (result: Array<RecipeDetails>) => {
-      if (result) {
-        setData(
-          mapRecipeTranslations(
-            result,
-            recipesNamesLiterals,
-            recipeSteps,
-            ingredientsSectionsLiterals,
-            ingredientsLiterals,
-            emojis,
-          ),
-        );
-      }
+    getEmojis((result) => {
+      setEmojis(result)
     });
-  }, [recipeId]);
+  }, []);
+
+  useEffect(() => {
+    if (emojis) {
+      getRecipeDetails(recipeId, (result: Array<RecipeDetails>) => {
+        if (result) {
+          setData(
+            mapRecipeTranslations(
+              result,
+              recipesNamesLiterals,
+              recipeSteps,
+              ingredientsSectionsLiterals,
+              ingredientsLiterals,
+              emojis,
+            ),
+          );
+        }
+      });
+    }
+  }, [recipeId, emojis]);
 
   return (
     data && (
       <RecipeDetailTemplate
         literals={getLiterals(recipeDetail)}
         data={data}
-        handleClick={() => {}}
+        handleClick={() => { }}
       />
     )
   );

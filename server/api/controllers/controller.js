@@ -1,7 +1,9 @@
 'use strict';
 
-const dictionaries = require('../../../public/literals/dictionaries.js');
-const language = require('../../../public/literals/languageOptions.js');
+const dictionaries = require('../../../public/literals/dictionaries.ts');
+const language = require('../../../public/literals/languageOptions.ts');
+
+const emojis = require('../../../public/data/emojis.json');
 
 var mongoose = require('mongoose'),
   Recipe = mongoose.model('Recipes');
@@ -26,4 +28,8 @@ exports.list_literals = function(req, res) {
 
 exports.list_language_options = function(req, res) {
   res.json(language.options);
+};
+
+exports.list_emojis = function(req, res) {
+  res.json(emojis);
 };
