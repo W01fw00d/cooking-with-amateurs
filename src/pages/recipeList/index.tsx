@@ -3,11 +3,14 @@ import React, { useEffect, useState, useContext } from 'react';
 
 import translate from '../../language/translate';
 import LanguageContext from '../../language/languageContext';
-import { getRecipes, getLanguageOptions } from '../../utils/request';
+import { getRecipes } from '../../utils/request';
 
 import { Literals } from './interfaces';
 
+import language from '../../../public/literals/languageOptions.json';
+
 export default () => {
+  const languageOptions = language.options;
   const common = translate('common');
   const recipe = translate('recipe');
   const recipesNamesLiterals = translate('recipesNames');
@@ -23,7 +26,6 @@ export default () => {
 
   const [search, setSearch] = useState(''); //TODO
   const [recipes, setRecipes] = useState(null);
-  const [languageOptions, setLanguageOptions] = useState(null);
 
   useEffect(() => {
     if (recipesNamesLiterals) {
@@ -39,13 +41,6 @@ export default () => {
         );
       });
     }
-
-    if (!languageOptions) {
-      getLanguageOptions((options) => {
-        setLanguageOptions(options);
-      });
-    }
-
   }, []);
 
   const languageContext = useContext(LanguageContext);

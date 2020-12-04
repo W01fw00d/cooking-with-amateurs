@@ -1,7 +1,6 @@
 'use strict';
 
 const dictionaries = require('../../../public/literals/dictionaries.ts');
-const language = require('../../../public/literals/languageOptions.ts');
 
 const emojis = require('../../../public/data/emojis.json');
 
@@ -24,10 +23,6 @@ exports.read_a_recipe_details = function(req, res) {
 
 exports.list_literals = function(req, res) {
   res.json(dictionaries.literals[req.params.language]);
-};
-
-exports.list_language_options = function(req, res) {
-  res.json(language.options);
 };
 
 exports.list_emojis = function(req, res) {

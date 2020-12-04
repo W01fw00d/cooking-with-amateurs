@@ -1,24 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
 import LanguageContext from './languageContext';
-import { getLiterals, getLanguageOptions } from '../utils/request';
+import { getLiterals } from '../utils/request';
+
+import language from '../../public/literals/languageOptions.json';
 
 export default ({ children }) => {
-  const [languageState, setLanguageState] = useState();
+  const [languageState, setLanguageState] = useState(language.options[0]);
   const [dictionaryState, setDictionaryState] = useState();
-
-  useEffect(() => {
-    if (!languageState) {
-      getLanguageOptions((options) => {
-        setLanguageState(options[0]);
-      });
-    }
-  }, []);
 
   useEffect(() => {
     if (languageState) {
       getLiterals(languageState.id, (literals) => {
-        setDictionaryState(literals);
+        setDictionaryState({ ...literals.data, ...literals.template });
       });
     }
   }, [languageState]);
