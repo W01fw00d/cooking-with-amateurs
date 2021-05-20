@@ -11,7 +11,7 @@ export default ({ children }) => {
 
   useEffect(() => {
     if (languageState) {
-      getLiterals(languageState.id, (literals) => {
+      getLiterals(languageState.id, literals => {
         setDictionaryState({ ...literals.data, ...literals.template });
       });
     }

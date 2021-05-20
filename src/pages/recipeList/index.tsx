@@ -16,7 +16,13 @@ export default () => {
   const recipesNamesLiterals = translate('recipesNames');
 
   const literals = { ...common, ...recipe };
-  const getLiterals = ({ about, difficulty, preparationTime, howManyIngredients, participants }: Literals) => ({
+  const getLiterals = ({
+    about,
+    difficulty,
+    preparationTime,
+    howManyIngredients,
+    participants,
+  }: Literals) => ({
     about,
     difficulty,
     preparationTime,
@@ -52,19 +58,22 @@ export default () => {
 
   const languageActive = languageContext.language;
 
-  return recipes &&
-    <RecipeListTemplate
-      literals={getLiterals(literals)}
-      search={search}
-      itemList={recipes}
-      languageData={{
-        active: languageActive ? languageActive.id : 0,
-        options: languageOptions,
-        onChange: handleLanguageChange,
-      }}
-      handleChange={({ currentTarget }: { currentTarget: { value: string } }) => {
-        setSearch(currentTarget.value);
-      }}
-      handleClick={() => { }}
-    />;
+  return (
+    recipes && (
+      <RecipeListTemplate
+        literals={getLiterals(literals)}
+        search={search}
+        itemList={recipes}
+        languageData={{
+          active: languageActive ? languageActive.id : 0,
+          options: languageOptions,
+          onChange: handleLanguageChange,
+        }}
+        handleChange={({ currentTarget }: { currentTarget: { value: string } }) => {
+          setSearch(currentTarget.value);
+        }}
+        handleClick={() => {}}
+      />
+    )
+  );
 };

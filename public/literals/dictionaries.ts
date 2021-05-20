@@ -17,7 +17,6 @@ const butifarraRagoutEn = require('./english/data/steps/butifarraRagout.json');
 const risottoEn = require('./english/data/steps/risotto.json');
 const salmonTartarEn = require('./english/data/steps/salmonTartar.json');
 
-
 /* import commonJp from './japanese/common.json';
 import recipeJp from './japanese/recipe.json';
 import ingredientsJp from './japanese/ingredients.json';
@@ -43,25 +42,26 @@ import meatballsMa from './majorcan/steps/meatballs.json';
 import butifarraRagoutMa from './majorcan/steps/butifarraRagout.json';
 import risottoMa from './majorcan/steps/risotto.json';
 import salmonTartarMa from './majorcan/steps/salmonTartar.json';
+*/
 
+const commonSp = require('./spanish/template/common.json');
+const recipeSp = require('./spanish/template/recipe.json');
+const recipeDetailSp = require('./spanish/template/recipeDetail.json');
+const projectDataSp = require('./spanish/template/projectData.json');
+const ingredientsSp = require('./spanish/data/ingredients.json');
+const ingredientsSectionsSp = require('./spanish/data/ingredientsSections.json');
+const recipesNamesSp = require('./spanish/data/recipesNames.json');
 
-import commonSp from './spanish/common.json';
-import recipeSp from './spanish/recipe.json';
-import projectDataSp from './spanish/projectData.json';
-import ingredientsSp from './spanish/ingredients.json';
-import ingredientsSectionsSp from './spanish/ingredientsSections.json';
-import recipesNamesSp from './spanish/recipesNames.json';
-
-import coulantSp from './spanish/steps/coulant.json';
-import croquettesSp from './spanish/steps/croquettes.json';
-import custardSp from './spanish/steps/custard.json';
-import fideuaSp from './spanish/steps/fideua.json';
-import gnocchiSp from './spanish/steps/gnocchi.json';
-import gyozasSp from './spanish/steps/gyozas.json';
-import meatballsSp from './spanish/steps/meatballs.json';
-import butifarraRagoutSp from './spanish/steps/butifarraRagout.json';
-import risottoSp from './spanish/steps/risotto.json';
-import salmonTartarSp from './spanish/steps/salmonTartar.json'; */
+const coulantSp = require('./spanish/data/steps/coulant.json');
+const croquettesSp = require('./spanish/data/steps/croquettes.json');
+const custardSp = require('./spanish/data/steps/custard.json');
+const fideuaSp = require('./spanish/data/steps/fideua.json');
+const gnocchiSp = require('./spanish/data/steps/gnocchi.json');
+const gyozasSp = require('./spanish/data/steps/gyozas.json');
+const meatballsSp = require('./spanish/data/steps/meatballs.json');
+const butifarraRagoutSp = require('./spanish/data/steps/butifarraRagout.json');
+const risottoSp = require('./spanish/data/steps/risotto.json');
+const salmonTartarSp = require('./spanish/data/steps/salmonTartar.json');
 
 exports.literals = {
   en: {
@@ -87,7 +87,7 @@ exports.literals = {
       projectData: projectDataEn,
       recipe: recipeEn,
       recipeDetail: recipeDetailEn,
-    }
+    },
   },
   /*   jp: {
       common: commonJp,
@@ -132,13 +132,11 @@ exports.literals = {
         salmonTartar: salmonTartarMa,
       },
     },
-    sp: {
-      common: commonSp,
+    */
+  sp: {
+    data: {
       ingredients: ingredientsSp,
       ingredientsSections: ingredientsSectionsSp,
-      projectData: projectDataSp,
-      recipe: recipeSp,
-      recipeDetail: recipeDetailEn, //TODO: translate
       recipesNames: recipesNamesSp,
       recipeSteps: {
         coulant: coulantSp,
@@ -152,5 +150,12 @@ exports.literals = {
         risotto: risottoSp,
         salmonTartar: salmonTartarSp,
       },
-    }, */
+    },
+    template: {
+      common: commonSp,
+      projectData: projectDataSp,
+      recipe: recipeSp,
+      recipeDetail: recipeDetailSp,
+    },
+  },
 };
