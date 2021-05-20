@@ -17,14 +17,15 @@ const butifarraRagoutEn = require('./english/data/steps/butifarraRagout.json');
 const risottoEn = require('./english/data/steps/risotto.json');
 const salmonTartarEn = require('./english/data/steps/salmonTartar.json');
 
-/* import commonJp from './japanese/common.json';
-import recipeJp from './japanese/recipe.json';
-import ingredientsJp from './japanese/ingredients.json';
-import projectDataJp from './japanese/projectData.json';
-import recipesNamesJp from './japanese/recipesNames.json';
-import ingredientsSectionsJp from './japanese/ingredientsSections.json';
+const commonJp = require('./japanese/template/common.json');
+const recipeJp = require('./japanese/template/recipe.json');
+const recipeDetailJp = require('./japanese/template/recipeDetail.json');
+const projectDataJp = require('./japanese/template/projectData.json');
+const ingredientsJp = require('./japanese/data/ingredients.json');
+const ingredientsSectionsJp = require('./japanese/data/ingredientsSections.json');
+const recipesNamesJp = require('./japanese/data/recipesNames.json');
 
-
+/*
 import commonMa from './majorcan/common.json';
 import ingredientsMa from './majorcan/ingredients.json';
 import ingredientsSectionsMa from './majorcan/ingredientsSections.json';
@@ -89,15 +90,12 @@ exports.literals = {
       recipeDetail: recipeDetailEn,
     },
   },
-  /*   jp: {
-      common: commonJp,
+  jp: {
+    data: {
       ingredients: ingredientsJp,
       ingredientsSections: ingredientsSectionsJp,
-      projectData: projectDataJp,
-      recipe: recipeJp,
-      recipeDetail: recipeDetailEn, //TODO: translate
       recipesNames: recipesNamesJp,
-      //TODO: create translated files for steps
+      // TODO: create translated files for steps
       recipeSteps: {
         coulant: coulantEn,
         croquettes: croquettesEn,
@@ -111,6 +109,14 @@ exports.literals = {
         salmonTartar: salmonTartarEn,
       },
     },
+    template: {
+      common: commonJp,
+      projectData: projectDataJp,
+      recipe: recipeJp,
+      recipeDetail: recipeDetailJp,
+    },
+  },
+  /*
     ma: {
       common: commonMa,
       ingredients: ingredientsMa,
