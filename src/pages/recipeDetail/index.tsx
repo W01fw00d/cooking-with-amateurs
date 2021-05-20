@@ -1,14 +1,17 @@
 import { RecipeDetailTemplate } from 'chemistry-ui';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 
 import translate from '../../language/translate';
+import LanguageContext from '../../language/languageContext';
 import { getRecipeDetails, getEmojis } from '../../utils/request';
 
 import { Literals, RecipeDetails } from './interfaces';
 import { mapRecipeTranslations } from './model';
 
 export default () => {
+  const languageContext = useContext(LanguageContext);
+
   const recipesNamesLiterals = translate('recipesNames');
   const recipeSteps = translate('recipeSteps');
   const ingredientsSectionsLiterals = translate('ingredientsSections');
@@ -28,8 +31,8 @@ export default () => {
   const { recipeId } = useParams();
 
   useEffect(() => {
-    getEmojis((result) => {
-      setEmojis(result)
+    getEmojis(result => {
+      setEmojis(result);
     });
   }, []);
 
@@ -50,14 +53,14 @@ export default () => {
         }
       });
     }
-  }, [recipeId, emojis]);
+  }, [recipeId, emojis, languageContext]);
 
   return (
     data && (
       <RecipeDetailTemplate
         literals={getLiterals(recipeDetail)}
         data={data}
-        handleClick={() => { }}
+        handleClick={() => {}}
       />
     )
   );
