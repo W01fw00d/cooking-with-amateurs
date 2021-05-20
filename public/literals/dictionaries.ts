@@ -25,25 +25,24 @@ const ingredientsJp = require('./japanese/data/ingredients.json');
 const ingredientsSectionsJp = require('./japanese/data/ingredientsSections.json');
 const recipesNamesJp = require('./japanese/data/recipesNames.json');
 
-/*
-import commonMa from './majorcan/common.json';
-import ingredientsMa from './majorcan/ingredients.json';
-import ingredientsSectionsMa from './majorcan/ingredientsSections.json';
-import projectDataMa from './majorcan/projectData.json';
-import recipeMa from './majorcan/recipe.json';
-import recipesNamesMa from './majorcan/recipesNames.json';
+const commonMa = require('./majorcan/template/common.json');
+const recipeMa = require('./majorcan/template/recipe.json');
+const recipeDetailMa = require('./majorcan/template/recipeDetail.json');
+const projectDataMa = require('./majorcan/template/projectData.json');
+const ingredientsMa = require('./majorcan/data/ingredients.json');
+const ingredientsSectionsMa = require('./majorcan/data/ingredientsSections.json');
+const recipesNamesMa = require('./majorcan/data/recipesNames.json');
 
-import coulantMa from './majorcan/steps/coulant.json';
-import croquettesMa from './majorcan/steps/croquettes.json';
-import custardMa from './majorcan/steps/custard.json';
-import fideuaMa from './majorcan/steps/fideua.json';
-import gnocchiMa from './majorcan/steps/gnocchi.json';
-import gyozasMa from './majorcan/steps/gyozas.json';
-import meatballsMa from './majorcan/steps/meatballs.json';
-import butifarraRagoutMa from './majorcan/steps/butifarraRagout.json';
-import risottoMa from './majorcan/steps/risotto.json';
-import salmonTartarMa from './majorcan/steps/salmonTartar.json';
-*/
+const coulantMa = require('./majorcan/data/steps/coulant.json');
+const croquettesMa = require('./majorcan/data/steps/croquettes.json');
+const custardMa = require('./majorcan/data/steps/custard.json');
+const fideuaMa = require('./majorcan/data/steps/fideua.json');
+const gnocchiMa = require('./majorcan/data/steps/gnocchi.json');
+const gyozasMa = require('./majorcan/data/steps/gyozas.json');
+const meatballsMa = require('./majorcan/data/steps/meatballs.json');
+const butifarraRagoutMa = require('./majorcan/data/steps/butifarraRagout.json');
+const risottoMa = require('./majorcan/data/steps/risotto.json');
+const salmonTartarMa = require('./majorcan/data/steps/salmonTartar.json');
 
 const commonSp = require('./spanish/template/common.json');
 const recipeSp = require('./spanish/template/recipe.json');
@@ -116,14 +115,10 @@ exports.literals = {
       recipeDetail: recipeDetailJp,
     },
   },
-  /*
-    ma: {
-      common: commonMa,
+  ma: {
+    data: {
       ingredients: ingredientsMa,
       ingredientsSections: ingredientsSectionsMa,
-      projectData: projectDataMa,
-      recipe: recipeMa,
-      recipeDetail: recipeDetailEn, //TODO: translate
       recipesNames: recipesNamesMa,
       recipeSteps: {
         coulant: coulantMa,
@@ -138,7 +133,13 @@ exports.literals = {
         salmonTartar: salmonTartarMa,
       },
     },
-    */
+    template: {
+      common: commonMa,
+      projectData: projectDataMa,
+      recipe: recipeMa,
+      recipeDetail: recipeDetailMa,
+    },
+  },
   sp: {
     data: {
       ingredients: ingredientsSp,
