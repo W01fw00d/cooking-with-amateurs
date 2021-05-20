@@ -2,6 +2,8 @@
 
 ![Node.js CI](https://github.com/W01fw00d/cooking-with-amateurs/workflows/Node.js%20CI/badge.svg)
 
+[**Demo of the App**](https://cooking-with-amateurs.herokuapp.com/#/list)
+
 ## How to use
 
 1. Install dependencies
