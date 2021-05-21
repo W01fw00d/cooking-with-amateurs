@@ -7,7 +7,7 @@ import LanguageContext from '../../language/languageContext';
 import { getRecipeDetails, getEmojis } from '../../utils/request';
 
 import { Literals, RecipeDetails } from './interfaces';
-import { mapRecipeTranslations } from './model';
+import mapRecipeTranslations from './model';
 
 export default () => {
   const languageContext = useContext(LanguageContext);

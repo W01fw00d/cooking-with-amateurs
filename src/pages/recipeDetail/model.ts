@@ -1,6 +1,6 @@
 import { RecipeDetails } from './interfaces';
 
-export const mapRecipeTranslations = (
+const mapRecipeTranslations = (
   result: Array<RecipeDetails>,
   recipesNamesLiterals: Array<any>,
   recipeSteps: Array<any>,
@@ -21,9 +21,11 @@ export const mapRecipeTranslations = (
       };
 
       if (formattedItem.alternatives) {
-        formattedItem.alternatives = formattedItem.alternatives.map(alternative => ({
-          name: ingredientsLiterals[alternative.code],
-        }));
+        formattedItem.alternatives = formattedItem.alternatives.map(
+          (alternative: { code: string | number }) => ({
+            name: ingredientsLiterals[alternative.code],
+          }),
+        );
       }
 
       return formattedItem;
@@ -40,3 +42,5 @@ export const mapRecipeTranslations = (
     steps: recipeSteps[code],
   };
 };
+
+export default mapRecipeTranslations;
