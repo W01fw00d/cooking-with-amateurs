@@ -1,10 +1,10 @@
 import { getRandomNumber, getRandomString } from '../utils/random';
 
-describe('On List Page', function () {
+describe('On List Page', () => {
   const URL = 'list';
 
-  const firstName = "[Fideuà]";
-  const secondName = "[Risotto]";
+  const firstName = '[Fideuà]';
+  const secondName = '[Risotto]';
   const setStub = (showName?: boolean) => {
     cy.server();
 
@@ -14,9 +14,9 @@ describe('On List Page', function () {
       response: [
         {
           id: '1',
-          code: "fideua",
+          code: 'fideua',
           description: getRandomString(getRandomNumber(1, 100)),
-          preparationTime: "01:00",
+          preparationTime: '01:00',
           eventDate: '26/04/2020',
           difficulty: getRandomNumber(1, 5),
           nIngredients: getRandomNumber(1, 5),
@@ -25,9 +25,9 @@ describe('On List Page', function () {
         },
         {
           id: '2',
-          code: "risotto",
+          code: 'risotto',
           description: getRandomString(getRandomNumber(1, 100)),
-          preparationTime: "01:00",
+          preparationTime: '01:00',
           eventDate: '26/04/2020',
           difficulty: getRandomNumber(1, 5),
           nIngredients: getRandomNumber(1, 5),
@@ -38,7 +38,7 @@ describe('On List Page', function () {
     });
   };
 
-  it('User sees that list items are rendered', function () {
+  it('User sees that list items are rendered', () => {
     setStub(true);
     cy.visit(URL);
 
@@ -46,7 +46,7 @@ describe('On List Page', function () {
     cy.contains(secondName);
   });
 
-  it('User writes on search text input', function () {
+  it('User writes on search text input', () => {
     const inputText = getRandomString(getRandomNumber(1, 10));
 
     setStub();
@@ -57,7 +57,7 @@ describe('On List Page', function () {
       .should('have.value', 'Pròximament!' + inputText);
   });
 
-  it('User clicks the "recipe 1" item link', function () {
+  it('User clicks the "recipe 1" item link', () => {
     setStub(true);
     cy.visit(URL);
 
@@ -65,12 +65,12 @@ describe('On List Page', function () {
     cy.url().should('include', 'detail/1');
   });
 
-  it('User doesn\'t see names if recipes names are disabled', function () {
+  it("User doesn't see names if recipes names are disabled", () => {
     setStub(false);
     cy.visit(URL);
     cy.wait(500);
 
     cy.get('#root').should('not.contain', firstName);
-    cy.get('#root').should('not.contain', secondName)
+    cy.get('#root').should('not.contain', secondName);
   });
 });
