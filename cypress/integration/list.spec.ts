@@ -3,8 +3,10 @@ import { getRandomNumber, getRandomString } from '../utils/random';
 describe('On List Page', () => {
   const URL = 'list';
 
-  const firstName = '[Fideuà]';
-  const secondName = '[Risotto]';
+  const difficultyLiteral = 'difficulty';
+  const firstName = 'Fideuà';
+  const secondName = 'Risotto';
+
   const setStub = (showName?: boolean) => {
     cy.server();
 
@@ -20,7 +22,8 @@ describe('On List Page', () => {
           eventDate: '26/04/2020',
           difficulty: getRandomNumber(1, 5),
           nIngredients: getRandomNumber(1, 5),
-          image: 'imgs/recipes/gyozas.jpeg',
+          // image: 'imgs/recipes/gyozas.jpeg',
+          image: null,
           showName,
         },
         {
@@ -31,10 +34,42 @@ describe('On List Page', () => {
           eventDate: '26/04/2020',
           difficulty: getRandomNumber(1, 5),
           nIngredients: getRandomNumber(1, 5),
-          image: 'imgs/recipes/gyozas.jpeg',
+          // image: 'imgs/recipes/gyozas.jpeg',
+          image: null,
           showName,
         },
       ],
+    });
+
+    cy.route({
+      method: 'GET',
+      url: 'emojis',
+      response: {},
+    });
+
+    cy.route({
+      method: 'GET',
+      url: '/literals/en',
+      response: {
+        template: {
+          common: {
+            about: 'about',
+            difficulty: difficultyLiteral,
+            preparationTime: 'preparationTime',
+            howManyIngredients: 'howManyIngredients',
+          },
+        },
+        data: {
+          recipesNames: {
+            fideua: firstName,
+            risotto: secondName,
+          },
+          recipeSteps: {
+            fideua: [],
+            risotto: [],
+          },
+        },
+      },
     });
   };
 
@@ -54,7 +89,7 @@ describe('On List Page', () => {
 
     cy.get('#search')
       .type(inputText)
-      .should('have.value', 'Pròximament!' + inputText);
+      .should('have.value', inputText);
   });
 
   it('User clicks the "recipe 1" item link', () => {
@@ -69,6 +104,8 @@ describe('On List Page', () => {
     setStub(false);
     cy.visit(URL);
     cy.wait(500);
+
+    cy.get('#root').should('contain', difficultyLiteral);
 
     cy.get('#root').should('not.contain', firstName);
     cy.get('#root').should('not.contain', secondName);

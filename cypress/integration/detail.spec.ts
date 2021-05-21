@@ -19,7 +19,8 @@ describe('On Detail Page, navigate', () => {
           eventDate: '26/04/2020',
           difficulty: getRandomNumber(1, 5),
           nIngredients: getRandomNumber(1, 5),
-          image: 'imgs/recipes/gyozas.jpeg',
+          // image: 'imgs/recipes/gyozas.jpeg',
+          image: null,
         },
       ],
     });
