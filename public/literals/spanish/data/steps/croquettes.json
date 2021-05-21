@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Pasta de Croquetas",
+    "items": [
+      "Cortamos el pollo (pechugas o contramuslos) en dados. Los salpimentamos.",
+      "Doramos los dados en un sartén a fuego fuerte con un chorrito de aceite.",
+      "Añadimos la cebolla cortada a tiras finitas (juliana) con el tomillo. Bajamos el fuego para que confite el conjunto. Mínimo 30 minutos.",
+      "En otra olla realizaremos la **bechamel**. Para hacerla derretimos la mantequilla, cocinamos unos minutos la harina y añadimos la leche sin parar de remover. Removemos hasta que rompe a hervir y espesa.",
+      "Picamos a cuchillo todo el conjunto de pollo, cebolla y tomillo y lo mezclamos con la bechamel.",
+      "Ponemos la base de croquetas en un bol y lo tapamos con film pegado a la superficie (film a piel). Lo dejamos en el frigorífico entre 12-24 h."
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Rebozado",
+    "description": "Ahora que la base ha cogido consistencia ya podemos montar las croquetas.",
+    "items": [
+      "Para hacer el rebozado, intentamos coger siempre la misma cantidad de mezcla y hacemos una bola con las manos. Ésta la pasamos por: harina, huevo batido y pan rallado.",
+      "Al pasarlo por el pan rallado podemos optar por dejarlas en forma esférica o, si las presionamos ligeramente, podemos realizar la forma clásica cilíndrica.",
+      "Por último, las freímos en abundante aceite de girasol hasta que se doren."
+    ]
+  },
+  {
+    "id": 3,
+    "sectionName": "Finalización",
+    "description": "Recuerda que si te parecen demasiada cantidad puedes congelarlas para comer otro día. Ten en cuenta que es mejor guardarlas en el congelador sin apilar y separadas para que no pierdan su forma. Una vez estén bien congelada ya las puedes agrupar en un tupper más pequeño."
+  }
+]

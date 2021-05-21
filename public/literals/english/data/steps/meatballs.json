@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "sectionName": "_Pilotes_ (Meatballs)",
+    "description": "This recipe is a meatball stew very typical of Mallorca. In recent times they have gained fame off the island thanks to Miquel Montoro with his already mythical phrase _“mmmm ... pilotes, they are good, I love them!”_.",
+    "items": [
+      "In the pot where you will make the stew, cook two minced garlics.",
+      "When having the garlics ready, add two onions cut into brunoise (small cubes) with bay leaf and marjoram; cook them over low heat until they are well confited.",
+      "Once confited,remove half of it for the _“pilotes”_ and leave the other half in the pot to follow with the stew. ",
+      "To prepare the _“pilotes”_, put in a bowl a slice of bread. Moisten it with the milk and make a smooth paste with your hands.",
+      "Add the meat, the chopped marjoram, the onion/garlic confit (removed earlier) and season with salt and pepper. Mix well.",
+      "Make balls of about 20-30 g. Then flour and fry in abundant oil until they are well browned.",
+      "Finally, drain them on absorbent paper and reserve."
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "_Pilotes_ Stew",
+    "items": [
+      "In the pot where you started the stew, with the confited onion/garlic, continue adding the peeled carrots, cut them in half and thick crescent slices.",
+      "Next, add the peeled and _clicked_ potato (_introduced the knife into the potato and, instead of finishing the cut of the slice, rotate 90 degrees to tear it_).",
+      "Fry all the vegetables for a few minutes. Next, add the tomato with its juice and let it cook for a few more minutes.",
+      "Now is the time to add the broth (cold, important to avoid grounding the potato) and let it boil over low heat until the potatoes and carrots are cooked (pinching them with a knife finding no resistance). This will be the moment in which you will add the fried _“pilotes”_ and let all stew for about 10 min."
+    ]
+  },
+  {
+    "id": 3,
+    "sectionName": "Ending",
+    "description": "Keep in mind that this stew does not have to be very soupy, rather a sauce ... And we will have it ready to eat."
+  }
+]

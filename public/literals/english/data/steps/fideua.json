@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Aioli",
+    "description": "In my opinion, the aioli is a mandatory sauce to accompany the fideua since when mixed, it greatly enhances its flavor.",
+    "items": [
+      "Start by peeling the garlic and cutting it in half and then remove the central germ.",
+      "Fry these halves of garlic in sunflower oil until a golden brown color is reached and place them on absorbent paper to remove excess oil.",
+      "In a tube glass put the egg, the fried garlics and a pinch of salt. Crush everything with an electric stirring rod until obtaining a homogeneous mass.",
+      "We will leave the electric arm at the bottom of the glass and, without moving it, add the soft olive oil with a fine thread, until observing that the mixture is well emulsified.",
+      "At this time raise and lower the electric stirring rod and set it to the point of salt.",
+      "Store this preparation in the refrigerator until it is consumed. _Remember that recipes containing raw eggs are very susceptible to spoiling with heat._"
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Fideua",
+    "description": "First we will prepare the meats and let them marinate. It is preferable to do this the day before cooking the fideua. If it is not possible, a few hours before it will be enough. To start with it, remove the bones and skin of both the chicken and the pig. Cut them both in cubes and let them marinate with a crushed garlic, thyme, paprika and oil.",
+    "items": [
+      "The first step is frying the noodles. Put oil in the same paella where you will cook the fideua and toast them until they achieve a brownish color.",
+      "Once roasted, strain them to remove the oil.",
+      "Then, cook the meats already macerated in the paella over high heat and with a little oil. Then reserve.",
+      "Next, set the broth to heat so that it is already hot when we need it.",
+      "In the paella make a _sofrito_ adding the elements in the following order: minced garlic, minced onion, red and green peppers in cubes of half a cm.",
+      "To finish the sauce put the tomatos peeled and cut into cubes of half a cm. Fry all the ingredients for a few minutes so that all the flavors are well exchanged.",
+      "Add the cooked meats and leave them for a few minutes so that they release the juices.",
+      "Then add the fried noodles and stir for a few minutes.",
+      "Add the hot broth covering the fideua first and a little more. As it evaporates, add more broth, checking its cooking point. It usually takes between 6-14 min depending on the type of noodle chosen.",
+      "_It is important to have very little broth when the noodles are cooked._"
+    ]
+  },
+  {
+    "id": 3,
+    "sectionName": "Ending",
+    "description": "Let it rest for a few minutes. And you're ready to eat! Remember to accompany it with the **aioli**."
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Allioli",
+    "description": "Al meu entendre, l'allioli és obligatori que acompanyi a la fideuà ja que en mesclar-ho, destaca molt el seu sabor.",
+    "items": [
+      "Començarem pelant els alls i tallant-los per la meitat. Llevam el germen central dels alls.",
+      "Fregirem aquestes meitats d'alls amb oli de girasol fins que es dorin bé i els eixugarem sobre paper absorbent per eliminar l'excés d'oli.",
+      "A un tassó de tub posam l'ou sencer, els alls fregits i una mica de sal. Ho trituram tot amb un braç elèctric fins tenir una massa homogènia.",
+      "Deixarem el braç elèctric al fons del tassó i, sense moure'l, afegirem l'oli d'oliva suau a fil fi, fins observar que la mescla està ben emulsionada.",
+      "Ara ja podem pujar i baixar el braç elèctric i posar a punt de sal.",
+      "Reservams aquesta elaboració a la gelera fins el moment de consumir-la. _Recordau que les receptes amb ou cru són molt susceptibles de fer-se malbé amb la calor._"
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Fideuà",
+    "description": "Primer, arreglarem les carns i les deixarem adobar. Aquest procés estaria bé fer-lo el dia anterior a fer la fideuà. Si no és possible, amb unes hores abans serà suficient. Per fer-ho retiram els ossos i la pell tant del pollastre como del porc. Tallam ambdues carns a daus i les deixam macerar amb un all esclafat, farigola, prebe bord i oli.",
+    "items": [
+      "La primera passa serà fregir els fideus. Posam oli a la mateixa paella on farem la fideuà i els torram fins que agafin color.",
+      "En tenir-los, els posama un colador per eliminar-ne l'oli.",
+      "Seguidament, a la paella a foc fort i amb un poc d'oli, dauram les carns ja macerades. Les reservam.",
+      "A continuació, posam el brou a encalentir perquè ja estigui calent quan l'haguem de menester.",
+      "A la paella farem un sofregit afegint els element en el següent ordre: all picat, ceba picada, prebe vermell i verd a daus de mig cm.",
+      "Per acabar el sofregit hi afegirem la tomàtiga pelada i tallada a daus de mig cm. Deixam uns minuts sofregir tots els ingredients perquè s'intercanviin bé tots els sabors.",
+      "Afegirem les carns daurades i les deixarem uns minuts perquè amollin el suc.",
+      "Seguidament afegim els fideus fregits i remenam uns minuts.",
+      "Ara, anirem afegint el brou clent. Primer cubrirem la fideuà i una mica més. A mesura que s'evapora, anam afegint més brou, comprobant el punt de cocció. Solen torbar-se entre 6-14 min depenent del tipus de fideu triat.",
+      "_És important que quedi poc brou quan els fideus estiguin cuits._"
+    ]
+  },
+  {
+    "id": 3,
+    "sectionName": "Finalització",
+    "description": "Ho deixam reposar uns minuts. I ja està llest per menjar! Recorda acompanyar-lo de l'**allioli**."
+  }
+]

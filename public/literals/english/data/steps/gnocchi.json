@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Tomato sauce",
+    "description": "This sauce is very simple, but it has a secret to achieve excellence: **time**. Cook over very low heat, a long time.",
+    "items": [
+      "Start peeling and chopping the garlic.",
+      "Fry them with a splash of oil in a frying pan.",
+      "When they start to reach color, add the well-chopped onion (small brunoise). Leave it on very low heat to confit and add a pinch of salt.",
+      "When the onion is well cooked, add the chopped tomato with its juice and leave it over a low heat to confit.",
+      "When all the juices from the tomatoes has almost been consumed, it is time to add the chopped basil."
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Gnocchi",
+    "items": [
+      "Boil the potatoes with the skin, starting from the cold water. Cook them over medium heat until you can stick a knife without resistance (approximately 45-60 minutes).",
+      "While still hot, peel them and put in a bowl to make the dough.",
+      "Maash the potatos and add the yolks and flour. Then add salt, pepper and nutmeg. Mix well with your hands until the dough does not stick to your fingers.",
+      "To achive the gnocchi shape, take portions of dough and make a cilinder of 1 cm in diameter. Then cut it into 1 cm segments.",
+      "_For the most daring: _ to get gnocchi well soaked in the sauce, they are striated. This is achieved by sliding our portions on a sushi mat or on a fork with the tips down.",
+      "Cooking the gnocchi is very simple: bring to a boil a pot with water and a pinch of salt. Then, add the gnocchi and wait for them to float, which indicates that they are ready."
+    ]
+  },
+  {
+    "id": 3,
+    "sectionName": "Ending",
+    "description": "It is time to combine both preparations. For this, you need a little of the cooking water of the gnocchi, the already cooked gnocchi and the tomato sauce. Fry these elements for a few minutes over medium heat and you will have it ready to eat."
+  }
+]

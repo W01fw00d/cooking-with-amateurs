@@ -6,8 +6,8 @@
   "scripts": {
     "dev-front": "webpack-dev-server --mode development",
     "dev-back": "nodemon back-server.js",
-    "utest": "jest src",
-    "utest-cover": "jest src --coverage",
+    "utest": "jest src && jest cypress/utils",
+    "utest-cover": "jest src --coverage && jest cypress/utils --coverage",
     "ftest": "cypress run",
     "ftest-spec": "cypress run --spec",
     "ftest-ui": "cypress open",
@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "@types/jest": "^25.2.1",
-    "@types/node": "^13.13.4",
+    "@types/node": "^13.13.34",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
     "@types/react-router-dom": "^5.1.5",

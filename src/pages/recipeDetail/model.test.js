@@ -1,4 +1,4 @@
-import { mapRecipeTranslations } from './model.ts';
+import mapRecipeTranslations from './model.ts';
 
 describe('recipeDetail/model', () => {
   describe('mapRecipeTranslations', () => {

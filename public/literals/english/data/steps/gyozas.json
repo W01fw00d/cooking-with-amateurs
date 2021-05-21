@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Gyoza Dough",
+    "description": "It is recommendable to start the recipe making the dough since once kneaded, we will have to let it rest for about 30 min.",
+    "items": [
+      "To prepare the dough, put the flour in a bowl and heat 100 ml of water in the microwave for 40 s at 500 W adding a pinch of salt.",
+      "Using a fork integrate the water with the flour in the bowl, stirring constantly.",
+      "Once all the flour is integrated, use your hands to work the dough for about 10 min.",
+      "Once kneaded, make a ball and cover it with film. Let it rest for 30 min. _Remember that cornstarch yet will be used later to roll out the dough when forming the wafers_."
+    ]
+  },
+  {
+    "id": 2,
+    "sectionName": "Stuffing",
+    "description": "Commonly pork is used for stuffing but, without changing any quantity, it can be substituted for well-minced prawns or minced beef.",
+    "items": [
+      "Start by defoliating the cabbage and remove the hardest central part (the nerve of the leaf). Then cut it very finely.",
+      "Then, chop very finely the chive.",
+      "Next, peel the ginger (_with a teaspoon_) and half the garlic without germ, choppin them very small.",
+      "In a bowl, mix all the elements and add: the minced pork, sesame oil, half a teaspoon of cornstarch, a pinch of salt and sugar. In this way you will have the filling ready."
+    ]
+  },
+  {
+    "id": 3,
+    "sectionName": "Dipping Sauce",
+    "description": "Simply mix the four ingredients in a bowl, and you will have it ready."
+  },
+  {
+    "id": 4,
+    "sectionName": "Form the Gyozas",
+    "description": "Once the dough rest time has elapsed, clean a smooth working area well, and spread the cornstarch.",
+    "items": [
+      "Take the dough and make a stretched cilinder and cut it into halves until obtaining 20 equal portions.",
+      "Prepare a glass with cold water to seal the gyozas.",
+      "Start by taking one of the portions, pass it through cornstarch and with the help of a rolling pin, stretch it forming a **fine** wafer. If you have a round hoop about 8 cm in diameter, it would be great to have all the gyozas the same. If not, do not worry, they will have _personality_.",
+      "Put a tablespoon of the filling in the center of the wafer. Dip the finger in the cold water and paint half a wafer. Fold the wafer joining only the central part and make three folds on each side of it. Then, seat the gyoza well and press the edges to make sure they are well closed."
+    ]
+  },
+  {
+    "id": 5,
+    "sectionName": "Cooking the Gyozas",
+    "description": "To cook the gyozas, you will need a frying pan with a lid, a splash of olive oil, a glass of cold water, sesame oil and a pinch of cornstarch.",
+    "items": [
+      "First, heat the pan with a splash of olive oil well spread throughout the base.",
+      "When it is hot, place the gyozas (_it is recommended not to put many at the same time_).",
+      "Toast the base of the gyozas until they are golden brown, check by lifting them and looking at the color of the bottom.",
+      "When the gyozas are toasted, add the mixture of water, sesame oil and cornstarch, covering the base of the pan.",
+      "Quickly cover the pan and let the steam build over medium heat for about 6 min. After this time, raise the fire 2 min and for the last 30 seconds uncover the pan so that all the water evaporates leading to crispy gyozas."
+    ]
+  },
+  {
+    "id": 6,
+    "sectionName": "Ending",
+    "description": "Get ready to enjoy delicious gyozas with the sauce!"
+  }
+]

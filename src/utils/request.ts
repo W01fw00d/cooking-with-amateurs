@@ -20,3 +20,11 @@ export function getRecipes(callback: Function) {
 export function getRecipeDetails(id: string, callback: Function) {
   httpGet(`details/${id}`, callback);
 }
+
+export function getLiterals(language: string, callback: Function) {
+  httpGet(`literals/${language}`, callback);
+}
+
+export function getEmojis(callback: Function) {
+  httpGet('emojis', callback);
+}

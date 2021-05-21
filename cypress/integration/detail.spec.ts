@@ -1,7 +1,8 @@
-import { getRandomNumber, getRandomString } from '../../src/utils/test-utils';
+import { getRandomNumber, getRandomString } from '../utils/random';
 
-describe('On Detail Page, navigate', function() {
+describe('On Detail Page, navigate', () => {
   const URL = 'detail/1';
+  const gnocchiName = 'Gnocchi';
 
   const setStub = () => {
     cy.server();
@@ -18,13 +19,50 @@ describe('On Detail Page, navigate', function() {
           eventDate: '26/04/2020',
           difficulty: getRandomNumber(1, 5),
           nIngredients: getRandomNumber(1, 5),
-          image: 'imgs/recipes/gyozas.jpeg',
+          // image: 'imgs/recipes/gyozas.jpeg',
+          image: null,
         },
       ],
     });
+
+    cy.route({
+      method: 'GET',
+      url: 'emojis',
+      response: {},
+    });
+
+    cy.route({
+      method: 'GET',
+      url: '/literals/en',
+      response: {
+        template: {
+          common: {
+            gabriel: 'gabriel',
+            about: 'about',
+            participants: 'participants',
+            cv: 'cv',
+          },
+          recipeDetail: {
+            image: 'Image',
+            ingredients: 'Ingredients',
+            noIngredients: 'No ingredients required',
+            steps: 'Steps',
+            noSteps: 'No steps required',
+          },
+        },
+        data: {
+          recipesNames: {
+            gnocchi: gnocchiName,
+          },
+          recipeSteps: {
+            gnocchi: [],
+          },
+        },
+      },
+    });
   };
 
-  it('User clicks on back button', function() {
+  it('User clicks on back button', () => {
     setStub();
 
     cy.visit(URL);
@@ -32,11 +70,11 @@ describe('On Detail Page, navigate', function() {
     cy.url().should('include', '/list');
   });
 
-  it('User checks that list item is rendered with its name', function() {
+  it('User checks that list item is rendered with its name', () => {
     setStub();
 
     cy.visit(URL);
 
-    cy.contains('Gnocchi');
+    cy.contains(gnocchiName);
   });
 });
