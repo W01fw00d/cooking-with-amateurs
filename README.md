@@ -62,6 +62,8 @@ rs
 
 To solve this, you can execute this bash script that will perform the correct linking:
 
+(Note: You can use Git Bash to be able to execute that in Windows)
+
 ```
 sh link.sh
 ```
