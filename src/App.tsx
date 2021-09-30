@@ -6,6 +6,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+
 import LanguageProvider from './language/languageProvider';
 
 import NotFoundPage from './pages/notFound';
