@@ -8,6 +8,8 @@
 
 ## How to use
 
+### Dev Environment
+
 1. Install dependencies
 
 ```
@@ -22,7 +24,7 @@ npm run dev-front
 
 3. Deploy Back App
 
-Launch a mongoDB and then:
+Run a MongoDB instance and then:
 
 ```
 npm run dev-back
@@ -60,34 +62,48 @@ npm run utest-cover
 
 Open '.../coverage/lcov-report/index.html' to see the coverage report
 
-- Launch Cypress (Functional Tests)
+- Run Cypress (Functional Tests)
 
 ```
 npm run dev-front
 ```
 
-Launch without ui
+Run without ui
 
 ```
 npm run ftest
 ```
 
-Launch only a spec
+Run only a spec
 
 ```
 npm run ftest-spec cypress/integration/[spec-file-name].spec.js
 ```
 
-Launch with ui
+Run with ui
 
 ```
 npm run ftest-ui
 ```
 
-- Build
+### Prod Environment
+
+1. Install dependencies
+
+```
+npm install
+```
+
+2. Build the Frontend code
 
 ```
 npm run build
+```
+
+3. Run the Production Server
+
+```
+npm run start
 ```
 
 ## Functional description
