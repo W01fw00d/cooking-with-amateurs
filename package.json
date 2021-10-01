@@ -1,17 +1,17 @@
 {
   "name": "cooking-with-amateurs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Portfolio Web App about Cooking Recipes",
   "main": "index.js",
   "scripts": {
-    "dev-front": "webpack-dev-server --mode development",
+    "dev-front": "webpack-dev-server --config webpack.dev.js",
     "dev-back": "nodemon back-server.js",
     "utest": "jest src && jest cypress/utils",
     "utest-cover": "jest src --coverage && jest cypress/utils --coverage",
     "ftest": "cypress run",
     "ftest-spec": "cypress run --spec",
     "ftest-ui": "cypress open",
-    "build": "webpack --mode development",
+    "build": "webpack --config webpack.prod.js",
     "start": "node server.js"
   },
   "repository": {
@@ -46,6 +46,7 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^4.2.1",
     "jest": "^25.5.2",
     "lint-staged": "^10.0.7",
@@ -54,11 +55,13 @@
     "pretty-quick": "^2.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.8.0",
+    "react-hot-loader": "^4.12.19",
     "style-loader": "^0.23.0",
     "ts-loader": "^7.0.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.1.1",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^5.8.0"
   },
   "dependencies": {
     "@types/jest": "^25.2.1",
@@ -67,10 +70,8 @@
     "@types/react-dom": "^16.9.7",
     "@types/react-router-dom": "^5.1.5",
     "chemistry-ui": "^2.4.1",
-    "eslint-plugin-react-hooks": "^1.7.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.7",
-    "react-hot-loader": "^4.12.19",
     "react-router-dom": "^5.1.2",
     "typescript": "^3.8.3"
   },
