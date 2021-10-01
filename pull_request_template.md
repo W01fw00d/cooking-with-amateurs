@@ -1,4 +1,5 @@
 - [ ] Unit tests: `npm run utest-cover` and check coverage
 - [ ] Functional tests: `npm run ftest` (make sure backend server is down)
 - [ ] While functional tests coverage is incomplete, manually test main pages
-- [ ] No errors or warning in browser console
+- [ ] No errors or warnings in browser console
+- [ ] Update to last version of chemistry-ui
