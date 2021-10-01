@@ -1,6 +1,6 @@
 {
   "name": "cooking-with-amateurs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Portfolio Web App about Cooking Recipes",
   "main": "index.js",
   "scripts": {
@@ -66,7 +66,7 @@
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
     "@types/react-router-dom": "^5.1.5",
-    "chemistry-ui": "^2.4.0",
+    "chemistry-ui": "^2.4.1",
     "eslint-plugin-react-hooks": "^1.7.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.7",

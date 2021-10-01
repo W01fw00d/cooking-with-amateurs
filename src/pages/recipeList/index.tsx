@@ -30,7 +30,7 @@ export default () => {
     participants,
   });
 
-  const [search, setSearch] = useState(''); //TODO
+  const [search, setSearch] = useState(''); // TODO: Implement search feature
   const [recipes, setRecipes] = useState(null);
 
   useEffect(() => {
@@ -38,9 +38,7 @@ export default () => {
       getRecipes(recipeResults => {
         setRecipes(
           recipeResults.map(recipeResult => {
-            if (recipeResult.showName) {
-              recipeResult.name = recipesNamesLiterals[recipeResult.code];
-            }
+            recipeResult.name = recipesNamesLiterals[recipeResult.code];
 
             return recipeResult;
           }),

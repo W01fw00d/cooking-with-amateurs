@@ -19,8 +19,9 @@ export default () => {
         url: common.cv,
       }}
       projectData={{
+        name: projectData.name,
         description: projectData.description,
-        url: 'https://github.com/W01fw00d/cooking-with-amateurs/blob/master/README.md',
+        url: 'https://github.com/W01fw00d/cooking-with-amateurs',
         participants: [
           'Mateu',
           'Marina',
