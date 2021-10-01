@@ -68,7 +68,7 @@ Open '.../coverage/lcov-report/index.html' to see the coverage report
 npm run dev-front
 ```
 
-Run without ui
+Run on console
 
 ```
 npm run ftest
@@ -80,7 +80,7 @@ Run only a spec
 npm run ftest-spec cypress/integration/[spec-file-name].spec.js
 ```
 
-Run with ui
+Run with Cypress UI
 
 ```
 npm run ftest-ui
