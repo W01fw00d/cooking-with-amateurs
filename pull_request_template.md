@@ -2,4 +2,5 @@
 - [ ] Functional tests: `npm run ftest` (make sure backend server is down)
 - [ ] While functional tests coverage is incomplete, manually test main pages
 - [ ] No errors or warnings in browser console
+- [ ] Upgrade version
 - [ ] Update to last version of chemistry-ui
