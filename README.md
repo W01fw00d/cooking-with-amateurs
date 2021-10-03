@@ -77,7 +77,7 @@ npm run ftest
 Run only a spec
 
 ```
-npm run ftest-spec cypress/integration/[spec-file-name].spec.js
+npm run ftest-spec cypress/integration/[spec-file-name].spec.ts
 ```
 
 Run with Cypress UI
