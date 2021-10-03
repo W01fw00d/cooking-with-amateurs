@@ -31,7 +31,7 @@ export default () => {
   });
 
   const [search, setSearch] = useState(''); // TODO: Implement search feature
-  const [recipes, setRecipes] = useState(null);
+  const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
     if (recipesNamesLiterals) {
@@ -57,21 +57,19 @@ export default () => {
   const languageActive = languageContext.language;
 
   return (
-    recipes && (
-      <RecipeListTemplate
-        literals={getLiterals(literals)}
-        search={search}
-        itemList={recipes}
-        languageData={{
-          active: languageActive ? languageActive.id : 0,
-          options: languageOptions,
-          onChange: handleLanguageChange,
-        }}
-        handleChange={({ currentTarget }: { currentTarget: { value: string } }) => {
-          setSearch(currentTarget.value);
-        }}
-        handleClick={() => {}}
-      />
-    )
+    <RecipeListTemplate
+      literals={getLiterals(literals)}
+      search={search}
+      itemList={recipes}
+      languageData={{
+        active: languageActive ? languageActive.id : 0,
+        options: languageOptions,
+        onChange: handleLanguageChange,
+      }}
+      handleChange={({ currentTarget }: { currentTarget: { value: string } }) => {
+        setSearch(currentTarget.value);
+      }}
+      handleClick={() => {}}
+    />
   );
 };
