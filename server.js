@@ -1,28 +1,35 @@
 const express = require('express');
 const path = require('path');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+
+const recipeModel = require('./server/api/models/recipe-model');
+const routes = require('./server/api/routes/routes');
+
+const PRODUCTION_ENV = 'production';
 const port = process.env.PORT || 5000;
+
 const app = express();
 
-// the __dirname is the current directory from where the script is running
-app.use(express.static(__dirname));
-
-const mongoose = require('mongoose'),
-  recipeModel = require('./server/api/models/recipe-model'),
-  bodyParser = require('body-parser');
+app.use(express.static(__dirname)); // This was not used in back-server.js
 
 mongoose.Promise = global.Promise;
-mongoose.connect(
-  'mongodb+srv://escapingBoredom:CM9pW7gYwVuptOk7@' +
-    'escaping-boredom-au4px.mongodb.net/test?' +
-    'retryWrites=true&w=majority',
-  () => {
-    recipeModel.initData(recipeModel);
-  },
-);
+
+const mongoDBUrl =
+  process.env.NODE_ENV === PRODUCTION_ENV
+    ? // TODO: this string should be secret and not included in the repo
+      'mongodb+srv://escapingBoredom:CM9pW7gYwVuptOk7@' +
+      'escaping-boredom-au4px.mongodb.net/test?' +
+      'retryWrites=true&w=majority'
+    : 'mongodb://localhost/Tododb';
+
+mongoose.connect(mongoDBUrl, () => {
+  recipeModel.initData(recipeModel);
+});
 
 app.use(function(req, res, next) {
   // We allow all origins for the moment for development purposes
-  // TODO: fix this, this is a server only used by prod
+  // TODO: fix this, this shouldn't be used in prod, right?
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
@@ -31,10 +38,10 @@ app.use(function(req, res, next) {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-const routes = require('./server/api/routes/routes');
 routes(app);
 
-// send the user to index html page inspite of the url
+// Send the user to index html page inspite of the url
+// TODO: I think this wasn't necessary for prod server
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'index.html'));
 });
@@ -43,5 +50,4 @@ app.use(({ originalUrl }, res) => res.status(404).send(`"${originalUrl}" endpoin
 
 app.listen(port);
 
-console.log('React App started on: ' + port);
-console.log('RESTful API server started on: ' + port);
+console.log(`RESTful API server started on: ${port}`);

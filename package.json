@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev-front": "webpack-dev-server --config webpack.dev.js",
-    "dev-back": "nodemon back-server.js",
+    "dev-back": "nodemon server.js",
     "utest": "jest src && jest cypress/utils",
     "utest-cover": "jest src --coverage && jest cypress/utils --coverage",
     "ftest": "cypress run",
