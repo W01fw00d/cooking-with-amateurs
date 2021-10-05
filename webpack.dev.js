@@ -5,10 +5,9 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
   mode: 'development',
   devServer: {
-    contentBase: __dirname,
+    hot: 'only',
     port: 3000,
-    publicPath: 'http://localhost:3000/dist/',
-    hotOnly: true,
+    static: __dirname,
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
 });
