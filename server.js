@@ -8,6 +8,8 @@ const routes = require('./server/api/routes/routes');
 
 const PRODUCTION_ENV = 'production';
 const port = process.env.PORT || 5000;
+// TODO: can we rename this as "main" and move it into the server folder?
+// TODO: modularize this into smaller files with a specific "action/feature/function"
 
 const app = express();
 
@@ -41,7 +43,7 @@ app.use(bodyParser.json());
 routes(app);
 
 // Send the user to index html page inspite of the url
-// TODO: I think this wasn't necessary for prod server
+// This was not used in back-server.js
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'index.html'));
 });
