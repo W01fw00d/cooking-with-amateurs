@@ -4,8 +4,8 @@ const path = require('path');
 
 const routes = require('./api/routes/routes');
 
-exports.init = (port, isProdEnv) => {
-  const DIRNAME = __dirname.replace('\\server', '');
+exports.init = (dirname, port, isProdEnv) => {
+  console.log('DIRNAME', dirname); // TODO: remove this after testing in Heroku
 
   const app = express();
 
@@ -24,20 +24,22 @@ exports.init = (port, isProdEnv) => {
     allowAllOrigins();
   } */
 
-  app.use(express.static(DIRNAME));
-
+  app.use(express.static(dirname));
   if (!isProdEnv) {
     allowAllOrigins();
   }
+
+  //
 
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(bodyParser.json());
 
   routes(app);
 
-  // send the user to index html page inspite of the url, needed only for Heroku?
+  // send the user to index html page inspite of the url
+  // TODO: needed only for Heroku?
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(DIRNAME, 'index.html'));
+    res.sendFile(path.resolve(dirname, 'index.html'));
   });
 
   app.use(({ originalUrl }, res) =>
