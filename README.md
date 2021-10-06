@@ -88,7 +88,9 @@ npm run ftest-ui
 
 ### Prod Environment
 
-1. Set `secrets/prod/mongDBUrl` file with your DB url
+1. Set `MONGODB_URL` environment variable in your node environment with your DB url.
+
+In Heroku, that can be done using `Config Vars`.
 
 2. Install dependencies
 
