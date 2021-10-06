@@ -14,9 +14,16 @@ exports.init = (port, isProdEnv) => {
     });
   };
 
-  if (isProdEnv) {
+  // Workaround for a current issue with Heroku build. We run Heroku on dev env temporary
+  /*   if (isProdEnv) {
     app.use(express.static(__dirname.replace('\\server', '')));
   } else {
+    allowAllOrigins();
+  } */
+
+  app.use(express.static(__dirname.replace('\\server', '')));
+
+  if (!isProdEnv) {
     allowAllOrigins();
   }
 
