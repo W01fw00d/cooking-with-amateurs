@@ -17,7 +17,7 @@ exports.init = (dirname, port, isProdEnv) => {
     });
   };
 
-  // Workaround for a current issue with Heroku build. We run Heroku on dev env temporary
+  // TODO init: Workaround for a current issue with Heroku build. We run Heroku on dev env temporary
   /*   if (isProdEnv) {
     app.use(express.static(__dirname.replace('\\server', '')));
   } else {
@@ -29,7 +29,7 @@ exports.init = (dirname, port, isProdEnv) => {
     allowAllOrigins();
   }
 
-  //
+  // TODO end
 
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(bodyParser.json());
