@@ -88,19 +88,21 @@ npm run ftest-ui
 
 ### Prod Environment
 
-1. Install dependencies
+1. Set `secrets/prod/mongDBUrl` file with your DB url
+
+2. Install dependencies
 
 ```
 npm install
 ```
 
-2. Build the Frontend code
+3. Build the Frontend code
 
 ```
 npm run build
 ```
 
-3. Run the Production Server
+4. Run the Production Server
 
 ```
 npm run start
