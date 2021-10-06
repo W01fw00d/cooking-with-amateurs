@@ -8,7 +8,7 @@ module.exports = merge(common, {
     compress: true,
     hot: 'only',
     port: 3000,
-    static: __dirname,
+    static: __dirname.replace('\\webpack', ''),
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
 });

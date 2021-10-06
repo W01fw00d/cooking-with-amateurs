@@ -45,7 +45,7 @@ To solve this, you can execute this bash script that will perform the correct li
 (Note: You can use Git Bash to be able to execute that in Windows)
 
 ```
-sh link.sh
+cd dev_tools && sh link.sh
 ```
 
 - Launch Jest (Unit Tests)
