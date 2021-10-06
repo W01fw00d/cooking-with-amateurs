@@ -45,7 +45,7 @@ To solve this, you can execute this bash script that will perform the correct li
 (Note: You can use Git Bash to be able to execute that in Windows)
 
 ```
-sh link.sh
+cd dev_tools && sh link.sh
 ```
 
 - Launch Jest (Unit Tests)
@@ -88,19 +88,21 @@ npm run ftest-ui
 
 ### Prod Environment
 
-1. Install dependencies
+1. Set `secrets/prod/mongDBUrl` file with your DB url
+
+2. Install dependencies
 
 ```
 npm install
 ```
 
-2. Build the Frontend code
+3. Build the Frontend code
 
 ```
 npm run build
 ```
 
-3. Run the Production Server
+4. Run the Production Server
 
 ```
 npm run start

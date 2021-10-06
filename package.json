@@ -1,18 +1,18 @@
 {
   "name": "cooking-with-amateurs",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Portfolio Web App about Cooking Recipes",
   "main": "src/index.js",
   "scripts": {
-    "dev-front": "webpack-dev-server --config webpack.dev.js",
-    "dev-back": "nodemon back-server.js",
+    "dev-front": "webpack-dev-server --config webpack/webpack.dev.js",
+    "dev-back": "set NODE_ENV=development&& nodemon server/main.js",
     "utest": "jest src && jest cypress/utils",
     "utest-cover": "jest src --coverage && jest cypress/utils --coverage",
     "ftest": "cypress run",
     "ftest-spec": "cypress run --spec",
     "ftest-ui": "cypress open",
-    "build": "webpack --config webpack.prod.js",
-    "start": "node server.js"
+    "build": "webpack --config webpack/webpack.prod.js",
+    "start": "set NODE_ENV=production&& node server/main.js"
   },
   "repository": {
     "type": "git",
@@ -29,14 +29,14 @@
     "node": "12.13.1"
   },
   "devDependencies": {
-    "@cypress/webpack-preprocessor": "^5.1.2",
+    "@cypress/webpack-dev-server": "^1.6.0",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.34",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
     "@types/react-router-dom": "^5.1.5",
     "babel-eslint": "^10.0.3",
-    "cypress": "^8.4.1",
+    "cypress": "^8.5.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
@@ -52,7 +52,7 @@
     "pretty-quick": "^2.0.1",
     "react-hot-loader": "^4.12.19",
     "typescript": "^3.8.3",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^4.3.1"
   },
   "dependencies": {
     "@babel/cli": "^7.1.0",
@@ -69,8 +69,8 @@
     "react-dom": "^16.8.0",
     "react-router-dom": "^5.1.2",
     "ts-loader": "^7.0.2",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.1.1",
+    "webpack": "^5.56.1",
+    "webpack-cli": "^4.8.0",
     "webpack-merge": "^5.8.0"
   },
   "husky": {

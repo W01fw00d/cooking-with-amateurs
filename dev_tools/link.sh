@@ -1,3 +1,4 @@
+cd ../
 echo "Building chemistry-ui"
 cd ../chemistry-ui
 npm run build
