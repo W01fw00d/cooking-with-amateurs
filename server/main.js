@@ -3,17 +3,18 @@ const path = require('path');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-const recipeModel = require('./server/api/models/recipe-model');
-const routes = require('./server/api/routes/routes');
+const recipeModel = require('./api/models/recipe-model');
+const routes = require('./api/routes/routes');
 
 const PRODUCTION_ENV = 'production';
 const port = process.env.PORT || 5000;
+const DIRNAME = __dirname.replace('\\server', '');
 // TODO: can we rename this as "main" and move it into the server folder?
 // TODO: modularize this into smaller files with a specific "action/feature/function"
 
 const app = express();
 
-app.use(express.static(__dirname)); // This was not used in back-server.js
+app.use(express.static(DIRNAME)); // This was not used in back-server.js
 
 mongoose.Promise = global.Promise;
 
@@ -44,8 +45,11 @@ routes(app);
 
 // Send the user to index html page inspite of the url
 // This was not used in back-server.js
+
+console.log('DIRNAME', DIRNAME);
+
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'index.html'));
+  res.sendFile(path.resolve(DIRNAME, 'index.html'));
 });
 
 app.use(({ originalUrl }, res) => res.status(404).send(`"${originalUrl}" endpoint was not found`));
