@@ -6,6 +6,6 @@ const PRODUCTION_ENV = 'production';
 const isProdEnv = process.env.NODE_ENV === PRODUCTION_ENV;
 
 mongoDB.init(isProdEnv);
-app.init(PORT);
+app.init(PORT, isProdEnv);
 
 console.log(`RESTful API server started on: ${PORT}`);
