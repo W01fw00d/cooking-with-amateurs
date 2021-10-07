@@ -5,8 +5,6 @@ const path = require('path');
 const routes = require('./api/routes/routes');
 
 exports.init = (dirname, port, isProdEnv) => {
-  console.log('DIRNAME', dirname); // TODO: remove this after testing in Heroku
-
   const app = express();
 
   const allowAllOrigins = () => {

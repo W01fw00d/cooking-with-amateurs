@@ -1,6 +1,6 @@
 {
   "name": "cooking-with-amateurs",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Portfolio Web App about Cooking Recipes",
   "main": "src/index.js",
   "scripts": {
