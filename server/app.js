@@ -26,12 +26,6 @@ exports.init = (dirname, port, isProdEnv) => {
 
   routes(app);
 
-  // send the user to index html page inspite of the url
-  // TODO: needed only for Heroku?
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(dirname, 'index.html'));
-  });
-
   app.use(({ originalUrl }, res) =>
     res.status(404).send(`"${originalUrl}" endpoint was not found`),
   );
