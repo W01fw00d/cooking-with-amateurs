@@ -1,18 +1,19 @@
 {
   "name": "cooking-with-amateurs",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Portfolio Web App about Cooking Recipes",
   "main": "src/index.js",
   "scripts": {
-    "dev-front": "webpack-dev-server --config webpack.dev.js",
-    "dev-back": "set NODE_ENV=development&& set MONGODB_URL=mongodb://localhost/Tododb&& nodemon server.js",
+    "dev-front": "webpack-dev-server --config webpack/webpack.dev.js",
+    "dev-back": "set NODE_ENV=development&& set MONGODB_URL=mongodb://localhost/Tododb&& nodemon server/main.js",
     "utest": "jest src && jest cypress/utils",
     "utest-cover": "jest src --coverage && jest cypress/utils --coverage",
     "ftest": "cypress run",
     "ftest-spec": "cypress run --spec",
     "ftest-ui": "cypress open",
-    "build": "webpack --config webpack.prod.js",
-    "start": "set NODE_ENV=production&& node server.js"
+    "build": "webpack --config webpack/webpack.prod.js",
+    "start": "set NODE_ENV=production&& node server/main.js",
+    "dev-start": "set NODE_ENV=production&& set MONGODB_URL=mongodb://localhost/Tododb&& node server/main.js"
   },
   "repository": {
     "type": "git",
@@ -61,6 +62,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.9.4",
     "@babel/preset-typescript": "^7.9.0",
+    "acorn": "^8.5.0",
     "babel-loader": "^8.1.0",
     "chemistry-ui": "^2.4.1",
     "express": "^4.17.1",
