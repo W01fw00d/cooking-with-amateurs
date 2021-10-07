@@ -19,7 +19,7 @@ exports.init = (dirname, port, isProdEnv) => {
 
   // TODO init: Workaround for a current issue with Heroku build. We run Heroku on dev env temporary
   /*   if (isProdEnv) {
-    app.use(express.static(__dirname.replace('\\server', '')));
+    app.use(express.static(dirname));
   } else {
     allowAllOrigins();
   } */
