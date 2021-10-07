@@ -12,7 +12,8 @@
     "ftest-spec": "cypress run --spec",
     "ftest-ui": "cypress open",
     "build": "webpack --config webpack/webpack.prod.js",
-    "start": "set NODE_ENV=production&& node server/main.js"
+    "start": "set NODE_ENV=production&& node server/main.js",
+    "dev-start": "set NODE_ENV=production&& set MONGODB_URL=mongodb://localhost/Tododb&& node server/main.js"
   },
   "repository": {
     "type": "git",
