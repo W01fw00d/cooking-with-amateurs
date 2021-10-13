@@ -1,30 +1,29 @@
-'use strict';
+
+const mongoose = require('mongoose');
 
 const dictionaries = require('../../../public/literals/dictionaries.ts');
-
 const emojis = require('../../../public/data/emojis.json');
 
-var mongoose = require('mongoose'),
-  Recipe = mongoose.model('Recipes');
+const Recipe = mongoose.model('Recipes');
 
-exports.list_all_recipes = function(req, res) {
-  Recipe.find({}, function(err, result) {
+exports.list_all_recipes = (req, res) => {
+  Recipe.find({}, (err, result) => {
     if (err) res.send(err);
     res.json(result);
   });
 };
 
-exports.read_a_recipe_details = function(req, res) {
-  Recipe.find({ id: req.params.recipeId }, function(err, result) {
+exports.read_a_recipe_details = (req, res) => {
+  Recipe.find({ id: req.params.recipeId }, (err, result) => {
     if (err) res.send(err);
     res.json(result);
   });
 };
 
-exports.list_literals = function(req, res) {
+exports.list_literals = (req, res) => {
   res.json(dictionaries.literals[req.params.language]);
 };
 
-exports.list_emojis = function(req, res) {
+exports.list_emojis = (req, res) => {
   res.json(emojis);
 };
