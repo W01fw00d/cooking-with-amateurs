@@ -69,7 +69,7 @@ describe('On Detail Page, navigate', () => {
     cy.url().should('include', '/list');
   });
 
-  it('User checks that list item is rendered with its name', () => {
+  it('User checks that recipe is rendered with its name', () => {
     setStub();
 
     cy.visit(URL);

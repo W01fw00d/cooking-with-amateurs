@@ -2,7 +2,11 @@
   {
     "id": 1,
     "code": "gnocchi",
-    "image": "public/imgs/recipes/gnocchi.jpg",
+    "image": {
+      "src": "public/imgs/recipes/gnocchi.jpg",
+      "width": 1080,
+      "height": 1440
+    },
     "category": "main",
     "preparationTime": "02:00",
     "eventDate": "28/03/2020",
@@ -81,7 +85,11 @@
   {
     "id": 2,
     "code": "croquettes",
-    "image": "public/imgs/recipes/croquetas.jpg",
+    "image": {
+      "src": "public/imgs/recipes/croquetas.jpg",
+      "width": 1080,
+      "height": 1440
+    },
     "category": "main",
     "preparationTime": "02:00",
     "eventDate": "05/04/2020",
@@ -129,6 +137,11 @@
   {
     "id": 3,
     "code": "risotto",
+    "image": {
+      "src": "public/imgs/recipes/risotto.jpg",
+      "width": 1080,
+      "height": 1440
+    },
     "category": "main",
     "preparationTime": "02:00",
     "eventDate": "11/04/2020",
@@ -202,12 +215,16 @@
           }
         ]
       }
-    ],
-    "image": "public/imgs/recipes/risotto.jpg"
+    ]
   },
   {
     "id": 4,
     "code": "fideua",
+    "image": {
+      "src": "public/imgs/recipes/fideua.jpg",
+      "width": 1080,
+      "height": 1440
+    },
     "category": "main",
     "preparationTime": "02:00",
     "eventDate": "18/04/2020",
@@ -282,12 +299,16 @@
           }
         ]
       }
-    ],
-    "image": "public/imgs/recipes/fideua.jpg"
+    ]
   },
   {
     "id": 5,
     "code": "salmonTartar",
+    "image": {
+      "src": "public/imgs/recipes/tartar.jpg",
+      "width": 1080,
+      "height": 1440
+    },
     "category": "main",
     "preparationTime": "01:00",
     "eventDate": "19/04/2020",
@@ -346,12 +367,16 @@
           }
         ]
       }
-    ],
-    "image": "public/imgs/recipes/tartar.jpg"
+    ]
   },
   {
     "id": 6,
     "code": "meatballs",
+    "image": {
+      "src": "public/imgs/recipes/pilotes.jpg",
+      "width": 1080,
+      "height": 1440
+    },
     "category": "main",
     "preparationTime": "01:30",
     "eventDate": "25/04/2020",
@@ -444,12 +469,16 @@
           }
         ]
       }
-    ],
-    "image": "public/imgs/recipes/pilotes.jpg"
+    ]
   },
   {
     "id": 7,
     "code": "custard",
+    "image": {
+      "src": "public/imgs/recipes/natillas.jpg",
+      "width": 1600,
+      "height": 900
+    },
     "category": "dessert",
     "preparationTime": "00:30",
     "eventDate": "25/04/2020",
@@ -480,12 +509,16 @@
         ]
       }
     ],
-    "image": "public/imgs/recipes/natillas.jpg",
     "showName": true
   },
   {
     "id": 8,
     "code": "gyozas",
+    "image": {
+      "src": "public/imgs/recipes/gyozas.jpg",
+      "width": 1080,
+      "height": 1440
+    },
     "category": "main",
     "preparationTime": "02:00",
     "eventDate": "26/04/2020",
@@ -570,13 +603,16 @@
           }
         ]
       }
-    ],
-    "image": "public/imgs/recipes/gyozas.jpg"
+    ]
   },
   {
     "id": 9,
     "code": "butifarraRagout",
-    "image": "public/imgs/recipes/butifarra.jpg",
+    "image": {
+      "src": "public/imgs/recipes/butifarra.jpg",
+      "width": 1536,
+      "height": 2048
+    },
     "category": "main",
     "preparationTime": "01:30",
     "eventDate": "02/05/2020",
@@ -649,7 +685,11 @@
   {
     "id": 10,
     "code": "coulant",
-    "image": "public/imgs/recipes/coulant.jpg",
+    "image": {
+      "src": "public/imgs/recipes/coulant.jpg",
+      "width": 1080,
+      "height": 1440
+    },
     "category": "main",
     "preparationTime": "00:30",
     "eventDate": "02/05/2020",

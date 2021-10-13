@@ -1,20 +1,25 @@
-'use strict';
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 const newData = require('../../../public/data/recipes.json');
 
-var Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
-var IngredientAlternativeSchema = new Schema({ code: String });
+const IngredientAlternativeSchema = new Schema({ code: String });
 
-var IngredientSchema = new Schema({
+const IngredientSchema = new Schema({
   code: String,
   quantity: String,
   alternatives: [IngredientAlternativeSchema],
 });
 
-var IngredientSectionSchema = new Schema({ sectionName: String, items: [IngredientSchema] });
+const IngredientSectionSchema = new Schema({ sectionName: String, items: [IngredientSchema] });
 
-var RecipeSchema = new Schema({
+const ImageSchema = new Schema({
+  src: String,
+  width: Number,
+  height: Number,
+});
+
+const RecipeSchema = new Schema({
   id: {
     type: Number,
     required: 'Kindly enter the id of the room',
@@ -39,7 +44,7 @@ var RecipeSchema = new Schema({
     type: Number,
   },
   image: {
-    type: String,
+    type: ImageSchema,
   },
   showName: {
     type: Boolean,
@@ -50,7 +55,8 @@ var RecipeSchema = new Schema({
 });
 
 RecipeSchema.statics.initData = data => {
-  data.remove({}, err => {
+  data.remove({}, error => {
+    // TODO: handle error
     newData.forEach(newRegister => {
       data.create(newRegister);
     });
