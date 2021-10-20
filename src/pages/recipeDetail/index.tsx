@@ -55,13 +55,5 @@ export default () => {
     }
   }, [recipeId, emojis, languageContext]);
 
-  return (
-    data && (
-      <RecipeDetailTemplate
-        literals={getLiterals(recipeDetail)}
-        data={data}
-        handleClick={() => {}}
-      />
-    )
-  );
+  return data && <RecipeDetailTemplate literals={getLiterals(recipeDetail)} data={data} />;
 };

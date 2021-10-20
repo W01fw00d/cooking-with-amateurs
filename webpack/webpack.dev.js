@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 
@@ -10,5 +9,4 @@ module.exports = merge(common, {
     port: 3000,
     static: process.cwd(),
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
 });

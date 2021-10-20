@@ -12,6 +12,6 @@ export interface RecipeDetails {
     image: String;
     description: String;
     preparationTime: String;
-    ingredients: { sectionName: any; items: any; }[];
+    ingredients: { id: number; sectionName: any; items: any; }[];
     steps: [];
 }
