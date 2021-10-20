@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "@cypress/webpack-dev-server": "^1.6.0",
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.34",
     "@types/react": "^16.9.34",
@@ -38,6 +39,7 @@
     "@types/react-router-dom": "^5.1.5",
     "babel-eslint": "^10.0.3",
     "cypress": "^8.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
@@ -86,5 +88,8 @@
       "pretty-quick — staged",
       "git add"
     ]
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
