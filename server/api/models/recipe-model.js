@@ -11,7 +11,7 @@ const IngredientSchema = new Schema({
   alternatives: [IngredientAlternativeSchema],
 });
 
-const IngredientSectionSchema = new Schema({ sectionName: String, items: [IngredientSchema] });
+const IngredientSectionSchema = new Schema({ id: Number, sectionName: String, items: [IngredientSchema] });
 
 const ImageSchema = new Schema({
   src: String,

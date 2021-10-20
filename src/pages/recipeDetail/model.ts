@@ -10,7 +10,12 @@ const mapRecipeTranslations = (
 ) => {
   const { code, image, description, preparationTime, ingredients } = result[0];
 
-  const ingredientsMapping = ({ sectionName, items }): { sectionName: any; items: any } => ({
+  const ingredientsMapping = ({
+    id,
+    sectionName,
+    items,
+  }): { id: number; sectionName: any; items: any } => ({
+    id,
     sectionName: ingredientsSectionsLiterals[sectionName],
     items: items.map(({ code, quantity, alternatives }) => {
       let formattedItem = {
