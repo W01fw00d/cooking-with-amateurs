@@ -1,4 +1,4 @@
-import { Before, Given, Then } from 'cypress-cucumber-preprocessor/steps';
+import { Before, Given } from 'cypress-cucumber-preprocessor/steps';
 
 const URL = 'about';
 
@@ -32,8 +32,4 @@ Before(() => {
 
 Given('I visit About Page', () => {
   cy.visit(URL);
-});
-
-Then('I see {string} in the page', string => {
-  cy.contains(string);
 });
