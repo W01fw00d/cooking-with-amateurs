@@ -1,7 +1,8 @@
-import { getRandomNumber, getRandomString } from '../utils/random';
+import { Before } from 'cypress-cucumber-preprocessor/steps';
 
-describe('On Detail Page, navigate', () => {
-  const URL = 'detail/1';
+import { getRandomNumber, getRandomString } from '../../utils/random';
+
+Before(() => {
   const gnocchiName = 'Gnocchi';
 
   const setStub = () => {
@@ -61,19 +62,5 @@ describe('On Detail Page, navigate', () => {
     });
   };
 
-  it('User clicks on back button', () => {
-    setStub();
-
-    cy.visit(URL);
-    cy.get('#back').click();
-    cy.url().should('include', '/list');
-  });
-
-  it('User checks that recipe is rendered with its name', () => {
-    setStub();
-
-    cy.visit(URL);
-
-    cy.contains(gnocchiName);
-  });
+  setStub();
 });

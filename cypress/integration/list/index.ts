@@ -1,13 +1,15 @@
-import { getRandomNumber, getRandomString } from '../utils/random';
+import { Given } from 'cypress-cucumber-preprocessor/steps';
 
-describe('On List Page', () => {
-  const URL = 'list';
+import { getRandomNumber, getRandomString } from '../../utils/random';
+
+Given(/^Recipes will( not)? show their name$/, conditionalWord => {
+  const showName = conditionalWord !== ' not';
 
   const difficultyLiteral = 'difficulty';
   const firstName = 'Fideuà';
   const secondName = 'Risotto';
 
-  const setStub = (showName?: boolean) => {
+  const setStub = () => {
     cy.server();
 
     cy.route({
@@ -71,41 +73,5 @@ describe('On List Page', () => {
     });
   };
 
-  it('User sees that list items are rendered', () => {
-    setStub(true);
-    cy.visit(URL);
-
-    cy.contains(firstName);
-    cy.contains(secondName);
-  });
-
-  it('User writes on search text input', () => {
-    const inputText = getRandomString(getRandomNumber(1, 10));
-
-    setStub();
-    cy.visit(URL);
-
-    cy.get('#search')
-      .type(inputText)
-      .should('have.value', inputText);
-  });
-
-  it('User clicks the "recipe 1" item link', () => {
-    setStub(true);
-    cy.visit(URL);
-
-    cy.contains(firstName).click({ force: true });
-    cy.url().should('include', 'detail/1');
-  });
-
-  it("User doesn't see names if recipes names are disabled", () => {
-    setStub(false);
-    cy.visit(URL);
-    cy.wait(500);
-
-    cy.get('#root').should('contain', difficultyLiteral);
-
-    cy.get('#root').should('not.contain', firstName);
-    cy.get('#root').should('not.contain', secondName);
-  });
+  setStub();
 });

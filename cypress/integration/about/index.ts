@@ -1,6 +1,4 @@
-import { Before, Given } from 'cypress-cucumber-preprocessor/steps';
-
-const URL = 'about';
+import { Before } from 'cypress-cucumber-preprocessor/steps';
 
 Before(() => {
   const user = 'gabriel';
@@ -28,8 +26,4 @@ Before(() => {
   };
 
   setStub();
-});
-
-Given('I visit About Page', () => {
-  cy.visit(URL);
 });
