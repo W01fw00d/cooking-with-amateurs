@@ -13,5 +13,5 @@ Feature: On Not Found Page
 
   Scenario: Go back to Home Page
     Given I visit "Fake" Page
-    When I click on the "Back" Button
+    When I click on the "back" Button
     Then I am redirected to "List" Page

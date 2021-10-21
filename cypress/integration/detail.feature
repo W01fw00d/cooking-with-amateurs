@@ -8,5 +8,5 @@ Feature: On Detail Page
   Scenario: Go back to Home Page
     # TODO: Refactor this step to allow adding a subdirectory
     Given I visit "detail/1" Page
-    When I click on the "Back" Button
+    When I click on the "back" Button
     Then I am redirected to "List" Page

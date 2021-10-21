@@ -5,7 +5,7 @@ When('I wait {int} milliseconds', milliseconds => {
 });
 
 When('I click on the {string} Button', id => {
-  cy.get(`#${id.toLowerCase()}`).click();
+  cy.get(`#${id}`).click({ force: true });
 });
 
 When('I click on the {string} Text', text => {
