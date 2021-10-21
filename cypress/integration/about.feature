@@ -1,6 +1,5 @@
 Feature: On About Page
-  
-  #@focus
+
   @core
   Scenario: See author details
     Given I visit "About" Page
