@@ -10,7 +10,7 @@ Given(/^Recipes will( not)? show their name$/, conditionalWord => {
   const secondName = 'Risotto';
 
   const setStub = () => {
-    cy.server();
+    cy.server(); // TODO: refactor this because it's deprecated
 
     cy.route({
       method: 'GET',

@@ -74,13 +74,11 @@ Run on console
 npm run ftest
 ```
 
-Run only a spec # TODO: is this possible with cucumber?
+Run all scenarios with a @core tag (critical test cases)
 
 ```
-npm run ftest-spec cypress/integration/[spec-file-name].spec.ts
+npm run ftest-core
 ```
-
-# TODO: Run all scenarios with a tag (@core)
 
 Run with Cypress UI
 
@@ -88,7 +86,7 @@ Run with Cypress UI
 npm run ftest-ui
 ```
 
-- Development/debugging note: you can add the `@focus` tag to a Cucumber feature scenario in order to force Cypress to only execute that scenario
+- Development/debugging note: you can add the `@focus` tag to a `Cucumber` feature scenario in order to force `Cypress` to only execute that scenario
 
 ### Prod Environment
 
