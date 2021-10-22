@@ -74,10 +74,10 @@ Run on console
 npm run ftest
 ```
 
-Run only a spec
+Run all scenarios with a @core tag (critical test cases)
 
 ```
-npm run ftest-spec cypress/integration/[spec-file-name].spec.ts
+npm run ftest-core
 ```
 
 Run with Cypress UI
@@ -85,6 +85,8 @@ Run with Cypress UI
 ```
 npm run ftest-ui
 ```
+
+- Development/debugging note: you can add the `@focus` tag to a `Cucumber` feature scenario in order to force `Cypress` to only execute that scenario
 
 ### Prod Environment
 
@@ -133,6 +135,7 @@ npm run start
   <img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/progress.svg"/>
   <img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/webpack.svg"/>
   <img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/jest.svg"/>
+  <img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/cucumber.svg"/>
   <img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/cypress.svg"/>
   <img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/eslint.svg"/>
   <img width="55" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/prettier.svg"/>
@@ -152,6 +155,7 @@ npm run start
 
 - Jest (Unit Testing Tool)
 - Cypress (Integration Testing Tool)
+- Cucumber (Preprocessing Testing Tool)
 
 - [Chemistry-UI](https://github.com/W01fw00d/chemistry-ui) (my own Components Library, based on Material-UI)
 
@@ -167,6 +171,8 @@ npm run start
 - Literals are not hardcoded but instead passed down to components by props in order to implement a multilanguage support system in the future.
 
 - A random number and string generator has been added to Cypress Tests in order to garantee that different data will fit correctly on the UI (for example, this simulates the effect of having different languages).
+
+- Cucumber is used as a preprocessor for Cypress Tests, in order to make tests more readable for non-tech collaborators. This allows to use them as specifications too, as they represent the User Journey in this App.
 
 - Build and unit tests are executed on the CI in GitHub with every push to master and pull request.
 

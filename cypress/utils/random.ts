@@ -12,4 +12,8 @@ const getRandomString = (requestedLength: number = 10): string => {
   return result;
 };
 
-export { getRandomNumber, getRandomString };
+// TODO: unit test this
+const getRandomStringWithLengthInRange = (min: number = 0, max: number = 9): string =>
+  getRandomString(getRandomNumber(min, max));
+
+export { getRandomNumber, getRandomString, getRandomStringWithLengthInRange };

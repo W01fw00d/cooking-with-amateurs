@@ -1,6 +1,6 @@
 {
   "name": "cooking-with-amateurs",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "Portfolio Web App about Cooking Recipes",
   "main": "src/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "utest": "jest src && jest cypress/utils",
     "utest-cover": "jest src --coverage && jest cypress/utils --coverage",
     "ftest": "cypress run",
-    "ftest-spec": "cypress run --spec",
+    "ftest-core": "cypress-tags run -e TAGS=@core",
     "ftest-ui": "cypress open",
     "build": "webpack --config webpack/webpack.prod.js",
     "start": "set NODE_ENV=production&& node server/main.js",
@@ -26,21 +26,24 @@
   },
   "homepage": "https://github.com/W01fw00d/cooking-with-amateurs#readme",
   "engines": {
-    "npm": "6.12.1",
-    "node": "12.13.1"
+    "node": "v14.18.0",
+    "npm": "8.1.1"
   },
   "devDependencies": {
     "@cypress/webpack-dev-server": "^1.6.0",
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.34",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
     "@types/react-router-dom": "^5.1.5",
     "babel-eslint": "^10.0.3",
-    "cypress": "^8.5.0",
+    "cypress": "^8.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.3",
@@ -64,7 +67,7 @@
     "@babel/preset-typescript": "^7.9.0",
     "acorn": "^8.5.0",
     "babel-loader": "^8.1.0",
-    "chemistry-ui": "^2.4.5",
+    "chemistry-ui": "^2.4.6",
     "express": "^4.17.1",
     "mongoose": "^5.9.7",
     "react": "^16.13.1",
@@ -86,5 +89,8 @@
       "pretty-quick — staged",
       "git add"
     ]
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
