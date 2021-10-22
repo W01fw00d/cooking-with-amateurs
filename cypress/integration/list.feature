@@ -1,6 +1,11 @@
 Feature: On List Page
 
   @core
+  Scenario: Be redirected to List page from root
+    Given I visit "" Page
+    Then I am redirected to "List" Page
+
+  @core
   Scenario: See the recipes names
     Given Recipes will show their name
     Given I visit "list" Page
