@@ -1,6 +1,6 @@
 import { Before } from 'cypress-cucumber-preprocessor/steps';
 
-import { getRandomNumber, getRandomString } from '../../utils/random';
+import { getRandomNumber, getRandomStringWithLengthInRange } from '../../utils/random';
 
 Before(() => {
   const gnocchiName = 'Gnocchi';
@@ -10,7 +10,7 @@ Before(() => {
       {
         id: '1',
         code: 'gnocchi',
-        description: getRandomString(getRandomNumber(1, 100)),
+        description: getRandomStringWithLengthInRange(1, 100),
         preparationTime: '02:00',
         eventDate: '26/04/2020',
         difficulty: getRandomNumber(1, 5),
