@@ -1,12 +1,11 @@
 import { Then } from 'cypress-cucumber-preprocessor/steps';
 
-Then('I see {string} in the page', string => {
+Then('I see {string} in the screen', string => {
   cy.contains(string);
 });
 
-Then(/^I do( not)? see "(.*)" in the page root$/, (conditionalWord, text) => {
-  // TODO: refactor: can this be combined with 'I see {string} in the page' ?
-  const shallContain = conditionalWord !== ' not';
+Then(/^I( do not)? see "(.*)" in the page$/, (conditionalWord, text) => {
+  const shallContain = conditionalWord !== ' do not';
 
   cy.get('#root').should(`${shallContain ? '' : 'not.'}contain`, text);
 });

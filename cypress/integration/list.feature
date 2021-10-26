@@ -28,19 +28,17 @@ Feature: On List Page
   @core
   Scenario: Open drawer side menu and click in About link to be redirected
     Given System loads List and About Page
-    # TODO: refactor, could use a generic Given that sets random recipes
-    And System will load Recipes that will show their name
+    And System will load random Recipes
     And I visit "list" Page
     When I click on the "drawerButton" Button
-    Then I see "about" in the page
+    Then I see "about" in the screen
     When I click on the "about" Text
     Then I am redirected to "about" Page
     And I see "about" in the page
 
   Scenario: Write on search text input
     Given System loads List Page only
-    # TODO: refactor, could use a generic Given that sets random recipes
-    And System will load Recipes that will show their name
+    And System will load random Recipes
     And I visit "list" Page
     When I write "text" on the "search" Input
     Then I see "text" on the "search" Input
@@ -50,6 +48,6 @@ Feature: On List Page
     And System will load Recipes that will not show their name
     And I visit "list" Page
     When I wait 500 milliseconds
-    Then I do see "difficulty" in the page root
-    And I do not see "Fideuà" in the page root
-    And I do not see "Risotto" in the page root
+    Then I see "difficulty" in the page
+    And I do not see "Fideuà" in the page
+    And I do not see "Risotto" in the page

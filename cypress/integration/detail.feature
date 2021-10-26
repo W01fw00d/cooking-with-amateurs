@@ -3,7 +3,6 @@ Feature: On Detail Page
   @core
   Scenario: See the recipe name
     Given System loads Detail Page only
-    # TODO: Refactor this step to allow adding a subdirectory
     And I visit "detail/1" Page
     Then I see "Gnocchi" in the page
 
