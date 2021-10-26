@@ -3,7 +3,7 @@ import { Given } from 'cypress-cucumber-preprocessor/steps';
 import getRecipe from '../../fixtures/recipe';
 import getCommon from '../../fixtures/list/literals';
 
-Given('I will be visiting Not Found Page only', () => {
+Given('System loads Not Found Page only', () => {
   cy.intercept('GET', '/literals/en', {
     template: {
       common: {
@@ -14,7 +14,7 @@ Given('I will be visiting Not Found Page only', () => {
   });
 });
 
-Given('I will be visiting List Page too', () => {
+Given('System loads Not Found and List Page', () => {
   cy.intercept('GET', '/literals/en', {
     template: {
       common: { ...getCommon(), notFound: 'notFound', goHome: 'goHome' },

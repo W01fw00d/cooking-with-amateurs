@@ -33,6 +33,7 @@ Before(() => {
   would call that function and build upon that data as a base
 */
 
+// TODO: rename to /^System will load Recipes that will( not)? show their name$/
 Given(/^Recipes will( not)? show their name$/, conditionalWord => {
   const showName = conditionalWord !== ' not';
 
