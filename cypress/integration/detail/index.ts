@@ -1,52 +1,30 @@
 import { Before } from 'cypress-cucumber-preprocessor/steps';
 
-import { getRandomNumber, getRandomStringWithLengthInRange } from '../../utils/random';
+import getRecipe from '../../fixtures/recipe';
+import getRecipeDetail from '../../fixtures/details/literals';
 
 Before(() => {
-  const gnocchiName = 'Gnocchi';
+  cy.intercept('GET', 'details/*', [
+    {
+      ...getRecipe(),
+      id: '1',
+      code: 'gnocchi',
+    },
+  ]);
 
-  const setStub = () => {
-    cy.intercept('GET', 'details/*', [
-      {
-        id: '1',
-        code: 'gnocchi',
-        description: getRandomStringWithLengthInRange(1, 100),
-        preparationTime: '02:00',
-        eventDate: '26/04/2020',
-        difficulty: getRandomNumber(1, 5),
-        nIngredients: getRandomNumber(1, 5),
-        image: null,
+  cy.intercept('GET', 'emojis', { empty: 'empty' });
+
+  cy.intercept('GET', '/literals/en', {
+    template: {
+      recipeDetail: getRecipeDetail(),
+    },
+    data: {
+      recipesNames: {
+        gnocchi: 'Gnocchi',
       },
-    ]);
-
-    cy.intercept('GET', 'emojis', { empty: 'empty' });
-
-    cy.intercept('GET', '/literals/en', {
-      template: {
-        common: {
-          gabriel: 'gabriel',
-          about: 'about',
-          participants: 'participants',
-          cv: 'cv',
-        },
-        recipeDetail: {
-          image: 'Image',
-          ingredients: 'Ingredients',
-          noIngredients: 'No ingredients required',
-          steps: 'Steps',
-          noSteps: 'No steps required',
-        },
+      recipeSteps: {
+        gnocchi: [],
       },
-      data: {
-        recipesNames: {
-          gnocchi: gnocchiName,
-        },
-        recipeSteps: {
-          gnocchi: [],
-        },
-      },
-    });
-  };
-
-  setStub();
+    },
+  });
 });
