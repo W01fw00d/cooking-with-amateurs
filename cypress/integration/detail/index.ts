@@ -10,6 +10,11 @@ Given('System loads Detail Page only', () => {
       ...getRecipe(),
       id: '1',
       code: 'gnocchi',
+      image: {
+        src: 'cypress/fixtures/images/recipe.jpg?id=1',
+        width: 1080,
+        height: 1440,
+      },
     },
   ]);
 
