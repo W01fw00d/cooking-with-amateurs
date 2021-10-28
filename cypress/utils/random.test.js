@@ -1,4 +1,8 @@
-import { getRandomNumber, getRandomString } from '../../cypress/utils/random.ts';
+import {
+  getRandomNumber,
+  getRandomString,
+  getRandomStringWithLengthInRange,
+} from '../../cypress/utils/random.ts';
 
 describe('test/utils/random', () => {
   const EMPTY_STRING = '';
@@ -57,5 +61,13 @@ describe('test/utils/random', () => {
 
     it('shall return an empty string if requested length is negative', () =>
       expect(getRandomString(-6)).toBe(EMPTY_STRING));
+  });
+
+  describe('getRandomStringWithLengthInRange', () => {
+    it('shall return a string with min and max arguments', () =>
+      expect(typeof getRandomStringWithLengthInRange(0, 10)).toBe('string'));
+
+    it('shall return a string without min and max arguments', () =>
+      expect(typeof getRandomStringWithLengthInRange()).toBe('string'));
   });
 });

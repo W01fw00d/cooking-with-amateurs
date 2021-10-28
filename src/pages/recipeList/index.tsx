@@ -7,6 +7,7 @@ import { getRecipes } from '../../utils/request';
 
 import { Literals } from './interfaces';
 
+// TODO: this should be accesed through an API call, that way we can mock it on the ftests
 import language from '../../../public/literals/languageOptions.json';
 
 export default () => {
