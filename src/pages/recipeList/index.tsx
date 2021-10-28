@@ -29,7 +29,6 @@ export default () => {
 
   const [search, setSearch] = useState(''); // TODO: Implement search feature
   const [recipes, setRecipes] = useState([]);
-
   const [languageOptions, setLanguageOptions] = useState();
 
   useEffect(() => {
