@@ -1,8 +1,8 @@
 import { Given } from 'cypress-cucumber-preprocessor/steps';
 
-import getCommon from '../../fixtures/list/literals';
-import getRecipe from '../../fixtures/recipe';
-import { getCommon as aboutGetCommon, getProjectData } from '../../fixtures/about/literals';
+import getCommon from '../../../fixtures/list/literals';
+import getRecipe from '../../../fixtures/recipe';
+import { getCommon as aboutGetCommon, getProjectData } from '../../../fixtures/about/literals';
 
 /*
 TODO: refactor: to make this step more Readable,

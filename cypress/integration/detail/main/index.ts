@@ -1,8 +1,8 @@
 import { Given } from 'cypress-cucumber-preprocessor/steps';
 
-import getRecipe from '../../fixtures/recipe';
-import getRecipeDetail from '../../fixtures/details/literals';
-import getCommon from '../../fixtures/list/literals';
+import getRecipe from '../../../fixtures/recipe';
+import getRecipeDetail from '../../../fixtures/details/literals';
+import getCommon from '../../../fixtures/list/literals';
 
 Given('System loads Detail Page only', () => {
   cy.intercept('GET', 'details/*', [

@@ -1,9 +1,9 @@
 import { Given } from 'cypress-cucumber-preprocessor/steps';
 
-import getRecipe from '../../fixtures/recipe';
-import getCommon from '../../fixtures/list/literals';
-import getRecipeDetail from '../../fixtures/details/literals';
-import { getCommon as aboutGetCommon, getProjectData } from '../../fixtures/about/literals';
+import getRecipe from '../../../fixtures/recipe';
+import getCommon from '../../../fixtures/list/literals';
+import getRecipeDetail from '../../../fixtures/details/literals';
+import { getCommon as aboutGetCommon, getProjectData } from '../../../fixtures/about/literals';
 
 Given('System loads List Page only', () => {
   cy.intercept('GET', '/literals/en', {

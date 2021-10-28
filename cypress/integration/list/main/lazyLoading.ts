@@ -1,6 +1,6 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 
-import getRecipe from '../../fixtures/recipe';
+import getRecipe from '../../../fixtures/recipe';
 
 /*
 We use the "id" url param to differentiate the last recipe image call,

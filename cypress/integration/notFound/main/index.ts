@@ -1,7 +1,7 @@
 import { Given } from 'cypress-cucumber-preprocessor/steps';
 
-import getRecipe from '../../fixtures/recipe';
-import getCommon from '../../fixtures/list/literals';
+import getRecipe from '../../../fixtures/recipe';
+import getCommon from '../../../fixtures/list/literals';
 
 Given('System loads Not Found Page only', () => {
   cy.intercept('GET', '/literals/en', {
