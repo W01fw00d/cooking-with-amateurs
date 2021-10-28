@@ -38,7 +38,10 @@ export default () => {
   }, []);
 
   useEffect(() => {
-    if (recipesNamesLiterals) {
+    const isObjectEmpty = obj =>
+      obj && Object.keys(obj).length === 0 && Object.getPrototypeOf(obj) === Object.prototype;
+
+    if (!isObjectEmpty(recipesNamesLiterals)) {
       getRecipes(recipeResults => {
         setRecipes(
           recipeResults.map(recipeResult => {

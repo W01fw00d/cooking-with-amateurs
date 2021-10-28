@@ -1,9 +1,20 @@
-import { Given } from 'cypress-cucumber-preprocessor/steps';
+import { Before, Given } from 'cypress-cucumber-preprocessor/steps';
 
 import getRecipe from '../../../fixtures/recipe';
 import getCommon from '../../../fixtures/list/literals';
 import getRecipeDetail from '../../../fixtures/details/literals';
 import { getCommon as aboutGetCommon, getProjectData } from '../../../fixtures/about/literals';
+
+Before(() => {
+  cy.intercept('GET', '/languageOptions', {
+    options: [
+      {
+        id: 'en',
+        text: 'English',
+      },
+    ],
+  });
+});
 
 Given('System loads List and Detail Page data', () => {
   cy.intercept('GET', 'emojis', { empty: 'empty' });

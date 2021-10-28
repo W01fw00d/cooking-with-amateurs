@@ -1,6 +1,17 @@
-import { Given } from 'cypress-cucumber-preprocessor/steps';
+import { Before, Given } from 'cypress-cucumber-preprocessor/steps';
 
 import { getCommon as aboutGetCommon, getProjectData } from '../../../fixtures/about/literals';
+
+Before(() => {
+  cy.intercept('GET', '/languageOptions', {
+    options: [
+      {
+        id: 'en',
+        text: 'English',
+      },
+    ],
+  });
+});
 
 /*
 TODO: refactor: to make this step more Readable,

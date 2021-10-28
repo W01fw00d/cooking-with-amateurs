@@ -1,8 +1,17 @@
-import { Given } from 'cypress-cucumber-preprocessor/steps';
+import { Before } from 'cypress-cucumber-preprocessor/steps';
 
 import getCommon from '../../../fixtures/list/literals';
 
-Given('System loads List Page data', () => {
+Before(() => {
+  cy.intercept('GET', '/languageOptions', {
+    options: [
+      {
+        id: 'en',
+        text: 'English',
+      },
+    ],
+  });
+
   cy.intercept('GET', '/literals/en', {
     template: {
       common: {
