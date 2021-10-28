@@ -1,7 +1,7 @@
 Feature: On List Page
 
   Scenario: Recipes images are lazy loading
-    Given System loads List Page only
+    Given System loads List Page
     And System will load Recipes with images
     And I visit "list" Page
     When I wait 500 milliseconds
