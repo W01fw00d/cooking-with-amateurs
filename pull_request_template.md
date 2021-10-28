@@ -1,7 +1,7 @@
 - [ ] Unit tests: `npm run utest-cover` and check coverage
-- [ ] Functional tests: `npm run dev-front` and `npm run ftest`
+- [ ] Functional tests: `npm run dev-front` and `npm run ftest-mobile` and `npm run ftest-desktop`
 - [ ] Run App: `npm run build` and `npm run dev-start` -> check that no errors/warnings appear in browser console
-- [ ] Run App: with Chrome Devtools Mobile Device Screen
+- [ ] Run App with Chrome Devtools Mobile Device Screen
 - [ ] Upgrade version
 - [ ] Update to last version of chemistry-ui
 - [ ] Deploy in Heroku before merging in case of potential breaking changes

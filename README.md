@@ -166,6 +166,8 @@ npm run start
 
 ## Technical discusion
 
+- Mobile-First Design: App is always designed, implemented and tested in Mobile Devices Screens first (Cypress tests run in Mobile Screen by default).
+
 - A pre-commit has been added to this repository to help maintain a coherent code style, even if new developers were added to this project in the future.
 
 - Literals are not hardcoded but instead passed down to components by props in order to implement a multilanguage support system in the future.
@@ -174,7 +176,7 @@ npm run start
 
 - Cucumber is used as a preprocessor for Cypress Tests, in order to make tests more readable for non-tech collaborators. This allows to use them as specifications too, as they represent the User Journey in this App.
 
-- Build and unit tests are executed on the CI in GitHub with every push to master and pull request.
+- Build and unit tests are executed on the CI in GitHub with every push to master and pull request (currently disabled).
 
 ## Atribution
 
