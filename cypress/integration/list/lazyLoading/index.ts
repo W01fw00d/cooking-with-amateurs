@@ -1,6 +1,7 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 
 import getRecipe from '../../../fixtures/recipe';
+import getCommon from '../../../fixtures/list/literals';
 
 /*
 We use the "id" url param to differentiate the last recipe image call,
@@ -8,6 +9,22 @@ even if the image file is the same for all recipes
 */
 const LAST_IMAGE = 'cypress/fixtures/images/recipe.jpg?id=8';
 let isLastImageLoaded = false;
+
+Given('System loads List Page only', () => {
+  cy.intercept('GET', '/literals/en', {
+    template: {
+      common: {
+        ...getCommon(),
+        difficulty: 'difficulty',
+      },
+    },
+    data: {
+      recipesNames: {
+        fideua: 'Fideuà',
+      },
+    },
+  });
+});
 
 Given('System will load Recipes with images', () => {
   cy.intercept(LAST_IMAGE, () => {
