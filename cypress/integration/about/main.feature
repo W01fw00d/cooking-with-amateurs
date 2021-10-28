@@ -12,3 +12,6 @@ Feature: On About Page
   Scenario: See author details
     Then I see "gabriel" in the page
     And I see "romay.gabriel@gmail.com" in the page
+
+  # TODO: Scenario: Click image and get redirected to testUrl
+  # TODO: Scenario: Click "gabriel" name and get redirected to testUrl
