@@ -5,7 +5,7 @@ import getCommon from '../../../fixtures/list/literals';
 import getRecipeDetail from '../../../fixtures/details/literals';
 import { getCommon as aboutGetCommon, getProjectData } from '../../../fixtures/about/literals';
 
-Given('System loads List and Detail Page', () => {
+Given('System loads List and Detail Page data', () => {
   cy.intercept('GET', 'emojis', { empty: 'empty' });
 
   cy.intercept('GET', '/literals/en', {
@@ -36,7 +36,7 @@ Given('System loads List and Detail Page', () => {
   ]);
 });
 
-Given('System loads List and About Page', () => {
+Given('System loads List and About Page data', () => {
   cy.intercept('GET', '/literals/en', {
     template: {
       common: {

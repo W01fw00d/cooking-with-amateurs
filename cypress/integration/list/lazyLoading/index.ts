@@ -10,7 +10,7 @@ even if the image file is the same for all recipes
 const LAST_IMAGE = 'cypress/fixtures/images/recipe.jpg?id=8';
 let isLastImageLoaded = false;
 
-Given('System loads List Page', () => {
+Given('System loads List Page data', () => {
   cy.intercept('GET', '/literals/en', {
     template: {
       common: {

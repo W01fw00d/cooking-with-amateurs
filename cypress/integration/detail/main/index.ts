@@ -4,7 +4,7 @@ import getRecipe from '../../../fixtures/recipe';
 import getRecipeDetail from '../../../fixtures/details/literals';
 import getCommon from '../../../fixtures/list/literals';
 
-Given('System loads Detail Page only', () => {
+Given('System loads Detail Page data', () => {
   cy.intercept('GET', 'details/*', [
     {
       ...getRecipe(),
@@ -35,7 +35,7 @@ Given('System loads Detail Page only', () => {
   });
 });
 
-Given('System loads Detail and List Page', () => {
+Given('System loads Detail and List Page data', () => {
   cy.intercept('GET', 'details/*', [
     {
       ...getRecipe(),

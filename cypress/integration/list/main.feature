@@ -1,7 +1,7 @@
 Feature: On List Page
 
   Background:
-    Given System loads List Page
+    Given System loads List Page data
 
   @core
   Scenario: Be redirected to List page from root
