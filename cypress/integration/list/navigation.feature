@@ -14,8 +14,10 @@ Feature: On List Page
     Given System loads List and About Page data
     And System will load random Recipes
     And I visit "list" Page
-    When I click on the "drawerButton" Button
-    Then I see "about" in the screen
+    When I wait 500 milliseconds
+    And I click on the "drawerButton" Button
+    Then I see the Drawer Panel
+    And I see "about" in the Drawer Panel
     When I click on the "about" Text
     Then I am redirected to "about" Page
     And I see "about" in the page
