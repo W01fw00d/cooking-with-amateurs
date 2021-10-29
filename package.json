@@ -4,6 +4,7 @@
   "description": "Portfolio Web App about Cooking Recipes",
   "main": "src/index.js",
   "scripts": {
+    "dev-link": "node dev_tools/link.js",
     "dev-front": "webpack-dev-server --config webpack/webpack.dev.js",
     "dev-back": "set NODE_ENV=development&& set MONGODB_URL=mongodb://localhost/Tododb&& nodemon server/main.js",
     "utest": "jest",

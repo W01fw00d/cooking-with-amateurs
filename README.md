@@ -30,22 +30,14 @@ Run a MongoDB instance and then:
 npm run dev-back
 ```
 
-If you need to restart the server:
-
-```
-rs
-```
-
 - chemistry-ui as local dependency (for development and testing)
 
-"npm link" is useful, but there're some issues regarding having different "react" and "react-router-dom" instances.
+"npm link" is useful, but there are some issues regarding having multiple "react", "react-dom" and "react-router-dom" instances running.
 
-To solve this, you can execute this bash script that will perform the correct linking:
-
-(Note: You can use Git Bash to be able to execute that in Windows)
+To solve this, you can execute this script that will perform the correct linking:
 
 ```
-cd dev_tools && sh link.sh
+npm run dev-link
 ```
 
 - Launch Jest (Unit Tests)
@@ -68,10 +60,16 @@ Open '.../coverage/lcov-report/index.html' to see the coverage report
 npm run dev-front
 ```
 
-Run on console
+Run on console (mobile screen by default)
 
 ```
-npm run ftest
+npm run ftest-mobile
+```
+
+Run on console (desktop screen)
+
+```
+npm run ftest-desktop
 ```
 
 Run all scenarios with a @core tag (critical test cases)
@@ -90,7 +88,7 @@ npm run ftest-ui
 
 ### Prod Environment
 
-1. Set `MONGODB_URL` environment variable in your node environment with your DB url.
+1. Set the `MONGODB_URL` environment variable in your node environment with your DB url.
 
 In Heroku, that can be done using `Config Vars`.
 
@@ -112,9 +110,15 @@ npm run build
 npm run start
 ```
 
+- If you want to run the Production Server but with Localhost MongoDB instance (for testing purposes)
+
+```
+npm run dev-start
+```
+
 ## Functional description
 
-- When the App is launched, real data como from node.js server.
+- When the App is launched, real data comes from Node.js server.
 
 - When Cypress Tests are launched, fake data is used from randomized JSONs.
 
@@ -164,7 +168,7 @@ npm run start
 
 - Heroku (deploying free site for this App Demo)
 
-## Technical discusion
+## Technical discussion
 
 - Mobile-First Design: App is always designed, implemented and tested in Mobile Devices Screens first (Cypress tests run in Mobile Screen by default).
 
@@ -172,18 +176,18 @@ npm run start
 
 - Literals are not hardcoded but instead passed down to components by props in order to implement a multilanguage support system in the future.
 
-- A random number and string generator has been added to Cypress Tests in order to garantee that different data will fit correctly on the UI (for example, this simulates the effect of having different languages).
+- A random number and string generator has been added to Cypress Tests in order to guarantee that different data will fit correctly on the UI (for example, this simulates the effect of having different languages).
 
-- Cucumber is used as a preprocessor for Cypress Tests, in order to make tests more readable for non-tech collaborators. This allows to use them as specifications too, as they represent the User Journey in this App.
+- Cucumber is used as a preprocessor for Cypress Tests, in order to make tests more readable for non-tech collaborators. This allows us to use use them as specifications too, as they represent the User Journey in this App.
 
 - Build and unit tests are executed on the CI in GitHub with every push to master and pull request (currently disabled).
 
-## Atribution
+## Attribution
 
 - [Logo created by Marta Ximenis](https://www.domestika.org/es/projects/692722-cocina-con-amateurs) @XimenisMarta
 
 - Favicon formatted from logo with [favicon-generator](https://www.favicon-generator.org/)
 
-- Recipes data and photo recopilations by Mateu
+- Recipes data and photo compilations by Mateu
 
 - Translations by @XimenisMarta
