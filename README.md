@@ -24,7 +24,7 @@ npm run dev-front
 
 3. Deploy Back App
 
-Run a MongoDB instance and then:
+Install and run a MongoDB instance and then:
 
 ```
 npm run dev-back
@@ -85,6 +85,20 @@ npm run ftest-ui
 ```
 
 - Development/debugging note: you can add the `@focus` tag to a `Cucumber` feature scenario in order to force `Cypress` to only execute that scenario
+
+- If cypress is not installed properly, try:
+
+Prune your cache:
+
+```
+./node_modules/.bin/cypress cache clear
+```
+
+Then install cypress:
+
+```
+./node_modules/.bin/cypress install --force
+```
 
 ### Prod Environment
 
