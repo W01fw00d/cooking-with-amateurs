@@ -26,3 +26,7 @@ export function getLiterals(language: string, callback: Function) {
 export function getEmojis(callback: Function) {
   httpGet('emojis', callback);
 }
+
+export function getLanguageOptions(callback: Function) {
+  httpGet(`languageOptions`, callback);
+}

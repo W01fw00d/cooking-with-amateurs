@@ -1,4 +1,4 @@
-import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
+import { Before, When, Then } from 'cypress-cucumber-preprocessor/steps';
 
 import getRecipe from '../../../fixtures/recipe';
 import getCommon from '../../../fixtures/list/literals';
@@ -10,7 +10,16 @@ even if the image file is the same for all recipes
 const LAST_IMAGE = 'cypress/fixtures/images/recipe.jpg?id=8';
 let isLastImageLoaded = false;
 
-Given('System loads List Page data', () => {
+Before(() => {
+  cy.intercept('GET', '/languageOptions', {
+    options: [
+      {
+        id: 'en',
+        text: 'English',
+      },
+    ],
+  });
+
   cy.intercept('GET', '/literals/en', {
     template: {
       common: {
@@ -24,9 +33,7 @@ Given('System loads List Page data', () => {
       },
     },
   });
-});
 
-Given('System will load Recipes with images', () => {
   cy.intercept(LAST_IMAGE, () => {
     isLastImageLoaded = true;
   });

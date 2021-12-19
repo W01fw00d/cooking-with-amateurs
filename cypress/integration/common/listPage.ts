@@ -1,4 +1,4 @@
-import { Given } from 'cypress-cucumber-preprocessor/steps';
+import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 
 import getRecipe from '../../fixtures/recipe';
 
@@ -38,4 +38,20 @@ Given('System will load random Recipes', () => {
       code: 'risotto',
     },
   ]);
+});
+
+When('I close the Drawer Panel', () => {
+  cy.get('#drawerPanel').click('right');
+});
+
+Then(/^I( do not)? see the Drawer Panel$/, conditionalWord => {
+  const shallContain = conditionalWord !== ' do not';
+
+  cy.get('#drawerPanel').should(`${shallContain ? '' : 'not.'}exist`);
+});
+
+Then(/^I( do not)? see "(.*)" in the Drawer Panel$/, (conditionalWord, text) => {
+  const shallContain = conditionalWord !== ' do not';
+
+  cy.get('#drawerPanel').should(`${shallContain ? '' : 'not.'}contain`, text);
 });

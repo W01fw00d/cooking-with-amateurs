@@ -1,8 +1,8 @@
-
 const mongoose = require('mongoose');
 
 const dictionaries = require('../../../public/literals/dictionaries.ts');
 const emojis = require('../../../public/data/emojis.json');
+const languageOptions = require('../../../public/data/languageOptions.json');
 
 const Recipe = mongoose.model('Recipes');
 
@@ -26,4 +26,8 @@ exports.list_literals = (req, res) => {
 
 exports.list_emojis = (req, res) => {
   res.json(emojis);
+};
+
+exports.language_options = (req, res) => {
+  res.json(languageOptions);
 };
