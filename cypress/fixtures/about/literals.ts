@@ -4,7 +4,7 @@ export const getCommon = () => ({
   gabriel: getRandomStringWithLengthInRange(1, 20),
   about: getRandomStringWithLengthInRange(1, 20),
   participants: getRandomStringWithLengthInRange(1, 20),
-  cv: 'https://www.google.com/',
+  cv: 'https://www.google.com/search?q=cv',
 });
 
 export const getProjectData = () => ({

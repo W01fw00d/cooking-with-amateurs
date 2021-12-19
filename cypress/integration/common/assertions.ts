@@ -18,3 +18,13 @@ Then('I see the {string} image in the page', imageAlt => {
       expect($img[0].naturalWidth).to.be.greaterThan(0);
     });
 });
+
+Then('System checks that {string} Button opens a new tab with {string} url', (button, url) => {
+  cy.get(`#${button}`)
+    .should('have.attr', 'target')
+    .and('include', '_blank');
+
+  cy.get(`#${button}`)
+    .should('have.attr', 'href')
+    .and('include', url);
+});
