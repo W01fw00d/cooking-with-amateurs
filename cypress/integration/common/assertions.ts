@@ -1,7 +1,7 @@
 import { Then } from 'cypress-cucumber-preprocessor/steps';
 
 Then(/^I( do not)? see "(.*)" in the page$/, (shallNotBeVisible, text) => {
-  /* TODO: ideally, this and next step should be combined in a single step,
+  /* TODO: (Refactor) ideally, this and next step should be combined in a single step,
   cucumber writer does NOT need to know if they are not seeing an element
   because it's not present in DOM or because is not visible by CSS rule
   */

@@ -2,7 +2,6 @@ import { Before, Given } from 'cypress-cucumber-preprocessor/steps';
 
 import getRecipe from '../../../fixtures/recipe';
 import getRecipeDetail from '../../../fixtures/details/literals';
-import getCommon from '../../../fixtures/list/literals';
 
 Before(() => {
   cy.intercept('GET', '/languageOptions', {
@@ -29,11 +28,12 @@ Given(/^System loads Detail Page data( without ingredients)?$/, conditionalWord 
         ? null
         : [
             {
+              id: 1,
               sectionName: 'sectionName',
               items: [
                 {
                   code: 'ingredient1',
-                  quantity: 1,
+                  quantity: '1 unit',
                   alternatives: [
                     {
                       code: 'alternative1',
@@ -69,7 +69,7 @@ Given(/^System loads Detail Page data( without ingredients)?$/, conditionalWord 
       },
       ingredients: {
         ingredient1: 'Ingredient A',
-        alternative1: 'Alternative Ingredient A',
+        alternative1: 'Alternative A',
       },
     },
   });
