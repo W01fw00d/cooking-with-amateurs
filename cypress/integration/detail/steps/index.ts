@@ -13,7 +13,8 @@ Before(() => {
     ],
   });
 });
-Given(/^System loads Detail Page data( without ingredients)?$/, withoutIngredients => {
+
+Given(/^System loads Detail Page data( without steps)?$/, withoutSteps => {
   cy.intercept('GET', 'details/*', [
     {
       ...getRecipe(),
@@ -24,25 +25,6 @@ Given(/^System loads Detail Page data( without ingredients)?$/, withoutIngredien
         width: 1080,
         height: 1440,
       },
-      ingredients: withoutIngredients
-        ? null
-        : [
-            {
-              id: 1,
-              sectionName: 'sectionName',
-              items: [
-                {
-                  code: 'ingredient1',
-                  quantity: '1 unit',
-                  alternatives: [
-                    {
-                      code: 'alternative1',
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
     },
   ]);
 
@@ -53,8 +35,8 @@ Given(/^System loads Detail Page data( without ingredients)?$/, withoutIngredien
       recipeDetail: {
         ...getRecipeDetail(),
         image: 'Image',
-        ingredients: 'Ingredients',
-        noIngredients: 'No ingredients',
+        steps: 'Steps',
+        noSteps: 'No steps',
       },
     },
     data: {
@@ -62,14 +44,21 @@ Given(/^System loads Detail Page data( without ingredients)?$/, withoutIngredien
         gnocchi: 'Gnocchi',
       },
       recipeSteps: {
-        gnocchi: [],
-      },
-      ingredientsSections: {
-        sectionName: 'Section 1',
-      },
-      ingredients: {
-        ingredient1: 'Ingredient A',
-        alternative1: 'Alternative A',
+        gnocchi: withoutSteps
+          ? []
+          : [
+              {
+                id: 1,
+                sectionName: 'Section A',
+                items: ['Step 1', 'Step 2', 'Step 3'],
+              },
+              {
+                id: 2,
+                sectionName: 'Section B',
+                description: 'Section B Description',
+                items: ['Step 4', 'Step 5', 'Step 6'],
+              },
+            ],
       },
     },
   });
