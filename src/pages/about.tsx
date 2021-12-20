@@ -21,7 +21,7 @@ export default () => {
       projectData={{
         name: projectData.name,
         description: projectData.description,
-        url: 'https://github.com/W01fw00d/cooking-with-amateurs',
+        url: common.codeRepositoryUrl,
         participants: [
           'Mateu',
           'Marina',

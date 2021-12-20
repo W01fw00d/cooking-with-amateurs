@@ -12,7 +12,7 @@ Feature: On About Page
     Given System loads About and List Page data
     And I visit "About" Page
     Then I see "about" in the page
-    And System checks that "projectUrl" Button opens a new tab with "https://github.com/W01fw00d/cooking-with-amateurs" url
+    And System checks that "projectUrl" Button opens a new tab with "https://www.google.com/search?q=code+repository" url
 
   Scenario: Check that Author's name opens a new tab to their CV Page
     Given System loads About and List Page data
