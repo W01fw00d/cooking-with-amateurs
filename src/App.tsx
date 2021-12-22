@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { hot } from 'react-hot-loader';
 import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 
-import { LoadingText } from 'chemistry-ui';
+import { LoadingTemplate } from 'chemistry-ui';
 
 const LanguageProvider = lazy(() => import('./language/languageProvider'));
 
@@ -12,7 +12,7 @@ const DetailPage = lazy(() => import('./pages/recipeDetail'));
 const ListPage = lazy(() => import('./pages/recipeList'));
 
 export default hot(module)(() => (
-  <Suspense fallback={<LoadingText />}>
+  <Suspense fallback={<LoadingTemplate />}>
     <LanguageProvider>
       <div className="App">
         <Router>
