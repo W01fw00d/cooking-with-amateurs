@@ -1,9 +1,15 @@
 import { Then } from 'cypress-cucumber-preprocessor/steps';
 
-Then(/^I( do not)? see "(.*)" in the page$/, (conditionalWord, text) => {
-  const shallContain = conditionalWord !== ' do not';
+Then(/^I( do not)? see "(.*)" in the page$/, (shallNotBeVisible, text) => {
+  /* TODO: (Refactor) ideally, this and next step should be combined in a single step,
+  cucumber writer does NOT need to know if they are not seeing an element
+  because it's not present in DOM or because is not visible by CSS rule
+  */
+  cy.contains(text).should(`${shallNotBeVisible ? 'not.' : ''}be.visible`);
+});
 
-  cy.get('#root').should(`${shallContain ? '' : 'not.'}contain`, text);
+Then(/^"(.*)" is not present in the page$/, (shallNotContain, text) => {
+  cy.get('#root').should(`${shallNotContain ? 'not.' : ''}contain`, text);
 });
 
 Then('I see {string} on the {string} Input', (inputText, inputName) => {

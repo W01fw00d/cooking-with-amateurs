@@ -25,7 +25,7 @@ Feature: On List Page
     And I visit "list" Page
     When I wait 500 milliseconds
     Then I see "difficulty" in the page
-    And I do not see "Fideuà" in the page
-    And I do not see "Risotto" in the page
+    And "Fideuà" is not present in the page
+    And "Risotto" is not present in the page
 
   # TODO: Scenario: Change language
