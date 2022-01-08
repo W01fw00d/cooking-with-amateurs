@@ -1,6 +1,6 @@
 {
   "name": "cooking-with-amateurs",
-  "version": "1.1.15",
+  "version": "1.1.16",
   "description": "Portfolio Web App about Cooking Recipes",
   "main": "src/index.js",
   "scripts": {
@@ -68,7 +68,7 @@
     "@babel/preset-typescript": "^7.9.0",
     "acorn": "^8.5.0",
     "babel-loader": "^8.1.0",
-    "chemistry-ui": "^2.4.7",
+    "chemistry-ui": "^2.4.8",
     "express": "^4.17.1",
     "mongoose": "^5.9.7",
     "react": "^16.13.1",
