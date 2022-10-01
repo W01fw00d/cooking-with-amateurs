@@ -30,7 +30,7 @@ Install and run a MongoDB instance and then:
 npm run dev-back
 ```
 
-- chemistry-ui as local dependency (for development and testing)
+- chemistry-ui as a local dependency (for development and testing)
 
 "npm link" is useful, but there are some issues regarding having multiple "react", "react-dom" and "react-router-dom" instances running.
 
@@ -84,7 +84,7 @@ Run with Cypress UI
 npm run ftest-ui
 ```
 
-- Development/debugging note: you can add the `@focus` tag to a `Cucumber` feature scenario in order to force `Cypress` to only execute that scenario
+- Development/debugging note: you can add the `@focus` tag to a `Cucumber` feature scenario to force `Cypress`` to only execute that scenario
 
 - If cypress is not installed properly, try:
 
@@ -102,7 +102,7 @@ Then install cypress:
 
 ### Prod Environment
 
-1. Set the `MONGODB_URL` environment variable in your node environment with your DB url.
+1. Set the `MONGODB_URL` environment variable in your node environment with your DB URL.
 
 In Heroku, that can be done using `Config Vars`.
 
@@ -132,7 +132,7 @@ npm run dev-start
 
 ## Functional description
 
-- When the App is launched, real data comes from Node.js server.
+- When the App is launched, real data comes from the Node.js server.
 
 - When Cypress Tests are launched, fake data is used from randomized JSONs.
 
@@ -177,7 +177,7 @@ npm run dev-start
 
 - [Chemistry-UI](https://github.com/W01fw00d/chemistry-ui) (my own Components Library, based on Material-UI)
 
-- Prettier, ESLint (code style tools, based on airbnb conventions)
+- Prettier, ESLint (code style tools, based on Airbnb conventions)
 - Husky (pre-commit automated formatting tool)
 
 - Heroku (deploying free site for this App Demo)
@@ -188,11 +188,11 @@ npm run dev-start
 
 - A pre-commit has been added to this repository to help maintain a coherent code style, even if new developers were added to this project in the future.
 
-- Literals are not hardcoded but instead passed down to components by props in order to implement a multilanguage support system in the future.
+- Literals are not hardcoded but instead passed down to components by props to implement a multilanguage support system in the future.
 
-- A random number and string generator has been added to Cypress Tests in order to guarantee that different data will fit correctly on the UI (for example, this simulates the effect of having different languages).
+- A random number and string generator have been added to Cypress Tests to guarantee that different data will fit correctly on the UI (for example, this simulates the effect of having different languages).
 
-- Cucumber is used as a preprocessor for Cypress Tests, in order to make tests more readable for non-tech collaborators. This allows us to use use them as specifications too, as they represent the User Journey in this App.
+- Cucumber is used as a preprocessor for Cypress Tests, to make tests more readable for non-tech collaborators. This allows us to use use them as specifications too, as they represent the User Journey in this App.
 
 - Build and unit tests are executed on the CI in GitHub with every push to master and pull request (currently disabled).
 
@@ -200,7 +200,7 @@ npm run dev-start
 
 - [Logo created by Marta Ximenis](https://www.domestika.org/es/projects/692722-cocina-con-amateurs) @XimenisMarta
 
-- Favicon formatted from logo with [favicon-generator](https://www.favicon-generator.org/)
+- Favicon formatted from the logo with [favicon-generator](https://www.favicon-generator.org/)](https://www.favicon-generator.org/)
 
 - Recipes data and photo compilations by Mateu
 
