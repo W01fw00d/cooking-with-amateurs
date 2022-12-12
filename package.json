@@ -69,7 +69,7 @@
     "acorn": "^8.5.0",
     "babel-loader": "^8.1.0",
     "chemistry-ui": "^2.4.8",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongoose": "^5.9.7",
     "react": "^16.13.1",
     "react-dom": "^16.8.0",
